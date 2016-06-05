@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ScheduleViewController.swift
 //  The Gunn App
 //
 //  Created by Xavi Loinaz on 6/5/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ScheduleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

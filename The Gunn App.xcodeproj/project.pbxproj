@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		47D7D40F1D04D24A00BC1F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D40E1D04D24A00BC1F5D /* AppDelegate.swift */; };
-		47D7D4111D04D24A00BC1F5D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4101D04D24A00BC1F5D /* FirstViewController.swift */; };
-		47D7D4131D04D24A00BC1F5D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4121D04D24A00BC1F5D /* SecondViewController.swift */; };
+		47D7D4111D04D24A00BC1F5D /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4101D04D24A00BC1F5D /* ScheduleViewController.swift */; };
+		47D7D4131D04D24A00BC1F5D /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4121D04D24A00BC1F5D /* EventsViewController.swift */; };
 		47D7D4161D04D24A00BC1F5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D7D4141D04D24A00BC1F5D /* Main.storyboard */; };
 		47D7D4181D04D24A00BC1F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D7D4171D04D24A00BC1F5D /* Assets.xcassets */; };
 		47D7D41B1D04D24A00BC1F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D7D4191D04D24A00BC1F5D /* LaunchScreen.storyboard */; };
 		47D7D4261D04D24A00BC1F5D /* The_Gunn_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4251D04D24A00BC1F5D /* The_Gunn_AppTests.swift */; };
 		47D7D4311D04D24A00BC1F5D /* The_Gunn_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4301D04D24A00BC1F5D /* The_Gunn_AppUITests.swift */; };
+		47D7D43F1D04D5F600BC1F5D /* GunnGoogleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D43E1D04D5F600BC1F5D /* GunnGoogleCalendar.swift */; };
+		47D7D4431D04D9BA00BC1F5D /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4421D04D9BA00BC1F5D /* DirectoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,8 @@
 /* Begin PBXFileReference section */
 		47D7D40B1D04D24A00BC1F5D /* The Gunn App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Gunn App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D7D40E1D04D24A00BC1F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47D7D4101D04D24A00BC1F5D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		47D7D4121D04D24A00BC1F5D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		47D7D4101D04D24A00BC1F5D /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		47D7D4121D04D24A00BC1F5D /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		47D7D4151D04D24A00BC1F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47D7D4171D04D24A00BC1F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47D7D41A1D04D24A00BC1F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		47D7D42C1D04D24A00BC1F5D /* The Gunn AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Gunn AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D7D4301D04D24A00BC1F5D /* The_Gunn_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Gunn_AppUITests.swift; sourceTree = "<group>"; };
 		47D7D4321D04D24A00BC1F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D7D43E1D04D5F600BC1F5D /* GunnGoogleCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunnGoogleCalendar.swift; sourceTree = "<group>"; };
+		47D7D4421D04D9BA00BC1F5D /* DirectoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				47D7D40E1D04D24A00BC1F5D /* AppDelegate.swift */,
-				47D7D4101D04D24A00BC1F5D /* FirstViewController.swift */,
-				47D7D4121D04D24A00BC1F5D /* SecondViewController.swift */,
+				47D7D4101D04D24A00BC1F5D /* ScheduleViewController.swift */,
+				47D7D4121D04D24A00BC1F5D /* EventsViewController.swift */,
+				47D7D4421D04D9BA00BC1F5D /* DirectoryViewController.swift */,
 				47D7D4141D04D24A00BC1F5D /* Main.storyboard */,
+				47D7D43E1D04D5F600BC1F5D /* GunnGoogleCalendar.swift */,
 				47D7D4171D04D24A00BC1F5D /* Assets.xcassets */,
 				47D7D4191D04D24A00BC1F5D /* LaunchScreen.storyboard */,
 				47D7D41C1D04D24A00BC1F5D /* Info.plist */,
@@ -259,9 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D7D4131D04D24A00BC1F5D /* SecondViewController.swift in Sources */,
+				47D7D4131D04D24A00BC1F5D /* EventsViewController.swift in Sources */,
 				47D7D40F1D04D24A00BC1F5D /* AppDelegate.swift in Sources */,
-				47D7D4111D04D24A00BC1F5D /* FirstViewController.swift in Sources */,
+				47D7D43F1D04D5F600BC1F5D /* GunnGoogleCalendar.swift in Sources */,
+				47D7D4431D04D9BA00BC1F5D /* DirectoryViewController.swift in Sources */,
+				47D7D4111D04D24A00BC1F5D /* ScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
