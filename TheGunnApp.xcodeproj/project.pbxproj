@@ -17,7 +17,9 @@
 		47D7D4311D04D24A00BC1F5D /* The_Gunn_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4301D04D24A00BC1F5D /* The_Gunn_AppUITests.swift */; };
 		47D7D43F1D04D5F600BC1F5D /* GunnGoogleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D43E1D04D5F600BC1F5D /* GunnGoogleCalendar.swift */; };
 		47D7D4431D04D9BA00BC1F5D /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4421D04D9BA00BC1F5D /* DirectoryViewController.swift */; };
-		47D7D4831D17337C00BC1F5D /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4821D17337C00BC1F5D /* Staff.swift */; };
+		47D7D4851D17465300BC1F5D /* StaffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4841D17465300BC1F5D /* StaffTableViewCell.swift */; };
+		47D7D4871D174DB500BC1F5D /* StaffTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4861D174DB500BC1F5D /* StaffTableViewController.swift */; };
+		47D7D48B1D174F4C00BC1F5D /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D48A1D174F4C00BC1F5D /* Staff.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,9 @@
 		47D7D4321D04D24A00BC1F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47D7D43E1D04D5F600BC1F5D /* GunnGoogleCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunnGoogleCalendar.swift; sourceTree = "<group>"; };
 		47D7D4421D04D9BA00BC1F5D /* DirectoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
-		47D7D4821D17337C00BC1F5D /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		47D7D4841D17465300BC1F5D /* StaffTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StaffTableViewCell.swift; path = ../StaffTableViewCell.swift; sourceTree = "<group>"; };
+		47D7D4861D174DB500BC1F5D /* StaffTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffTableViewController.swift; sourceTree = "<group>"; };
+		47D7D48A1D174F4C00BC1F5D /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +113,10 @@
 				47D7D4101D04D24A00BC1F5D /* ScheduleViewController.swift */,
 				47D7D4121D04D24A00BC1F5D /* EventsViewController.swift */,
 				47D7D4421D04D9BA00BC1F5D /* DirectoryViewController.swift */,
+				47D7D4841D17465300BC1F5D /* StaffTableViewCell.swift */,
 				47D7D4141D04D24A00BC1F5D /* Main.storyboard */,
-				47D7D4821D17337C00BC1F5D /* Staff.swift */,
+				47D7D4861D174DB500BC1F5D /* StaffTableViewController.swift */,
+				47D7D48A1D174F4C00BC1F5D /* Staff.swift */,
 				47D7D43E1D04D5F600BC1F5D /* GunnGoogleCalendar.swift */,
 				47D7D4171D04D24A00BC1F5D /* Assets.xcassets */,
 				47D7D4191D04D24A00BC1F5D /* LaunchScreen.storyboard */,
@@ -268,12 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D7D4831D17337C00BC1F5D /* Staff.swift in Sources */,
 				47D7D4131D04D24A00BC1F5D /* EventsViewController.swift in Sources */,
 				47D7D40F1D04D24A00BC1F5D /* AppDelegate.swift in Sources */,
+				47D7D48B1D174F4C00BC1F5D /* Staff.swift in Sources */,
 				47D7D43F1D04D5F600BC1F5D /* GunnGoogleCalendar.swift in Sources */,
 				47D7D4431D04D9BA00BC1F5D /* DirectoryViewController.swift in Sources */,
+				47D7D4851D17465300BC1F5D /* StaffTableViewCell.swift in Sources */,
 				47D7D4111D04D24A00BC1F5D /* ScheduleViewController.swift in Sources */,
+				47D7D4871D174DB500BC1F5D /* StaffTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

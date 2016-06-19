@@ -13,14 +13,14 @@ class DirectoryViewController: UITableViewController {
     
 //    @IBOutlet weak var navigationBar: UINavigationItem!
     
-    var staffs = [Staff]()
+//    var staffs = [Staff]()
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
-        staffs = [
+/*        staffs = [
             Staff(name:"Chocolate", department:"Chocolate Bar"),
             Staff(name:"Chocolate", department:"Chocolate Chip"),
             Staff(name:"Chocolate", department:"Dark Chocolate"),
@@ -31,7 +31,7 @@ class DirectoryViewController: UITableViewController {
             Staff(name:"Other", department:"Sour Chew"),
             Staff(name:"Other", department:"Gummi Bear")
         ]
-    }
+*/    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -40,13 +40,13 @@ class DirectoryViewController: UITableViewController {
     
     // Table view sutff
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+/*    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
 
-//    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return staffs.count
-//    }
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return staffs.count
+    }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
@@ -57,7 +57,7 @@ class DirectoryViewController: UITableViewController {
         return cell
  
     }
- 
+*/
  
 
 }
