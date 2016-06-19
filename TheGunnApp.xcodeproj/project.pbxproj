@@ -18,6 +18,7 @@
 		47D7D43F1D04D5F600BC1F5D /* GunnGoogleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D43E1D04D5F600BC1F5D /* GunnGoogleCalendar.swift */; };
 		47D7D4431D04D9BA00BC1F5D /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4421D04D9BA00BC1F5D /* DirectoryViewController.swift */; };
 		47D7D4831D17337C00BC1F5D /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4821D17337C00BC1F5D /* Staff.swift */; };
+		B1AC027E2162D350F80D0D78 /* Pods_TheGunnApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B0B14F556575280738CCB2 /* Pods_TheGunnApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FCC4CBF035602B60139EE94 /* Pods-TheGunnApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGunnApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheGunnApp/Pods-TheGunnApp.debug.xcconfig"; sourceTree = "<group>"; };
 		47D7D40B1D04D24A00BC1F5D /* TheGunnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGunnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D7D40E1D04D24A00BC1F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D7D4101D04D24A00BC1F5D /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,8 @@
 		47D7D43E1D04D5F600BC1F5D /* GunnGoogleCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunnGoogleCalendar.swift; sourceTree = "<group>"; };
 		47D7D4421D04D9BA00BC1F5D /* DirectoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
 		47D7D4821D17337C00BC1F5D /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		E1B0B14F556575280738CCB2 /* Pods_TheGunnApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheGunnApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2E571C627E3C69E6351E64 /* Pods-TheGunnApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGunnApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheGunnApp/Pods-TheGunnApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1AC027E2162D350F80D0D78 /* Pods_TheGunnApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +94,8 @@
 				47D7D4241D04D24A00BC1F5D /* The Gunn AppTests */,
 				47D7D42F1D04D24A00BC1F5D /* The Gunn AppUITests */,
 				47D7D40C1D04D24A00BC1F5D /* Products */,
+				EB147BACC3131309280CB324 /* Pods */,
+				E9419C71BA1D148E8D90DEA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +144,23 @@
 			path = "The Gunn AppUITests";
 			sourceTree = "<group>";
 		};
+		E9419C71BA1D148E8D90DEA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1B0B14F556575280738CCB2 /* Pods_TheGunnApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB147BACC3131309280CB324 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FCC4CBF035602B60139EE94 /* Pods-TheGunnApp.debug.xcconfig */,
+				FB2E571C627E3C69E6351E64 /* Pods-TheGunnApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47D7D4351D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "TheGunnApp" */;
 			buildPhases = (
+				5A2FB545BE78034CF7F4E33B /* [CP] Check Pods Manifest.lock */,
 				47D7D4071D04D24A00BC1F5D /* Sources */,
 				47D7D4081D04D24A00BC1F5D /* Frameworks */,
 				47D7D4091D04D24A00BC1F5D /* Resources */,
+				5595CD812D3C4DF3EE3D8D43 /* [CP] Embed Pods Frameworks */,
+				25AF559614AC2B862B74C7BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +289,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25AF559614AC2B862B74C7BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheGunnApp/Pods-TheGunnApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5595CD812D3C4DF3EE3D8D43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheGunnApp/Pods-TheGunnApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A2FB545BE78034CF7F4E33B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		47D7D4071D04D24A00BC1F5D /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		47D7D4361D04D24A00BC1F5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FCC4CBF035602B60139EE94 /* Pods-TheGunnApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "The Gunn App/Info.plist";
@@ -424,6 +500,7 @@
 		};
 		47D7D4371D04D24A00BC1F5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB2E571C627E3C69E6351E64 /* Pods-TheGunnApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "The Gunn App/Info.plist";
