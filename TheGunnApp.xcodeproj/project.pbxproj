@@ -19,6 +19,7 @@
 		47D7D4431D04D9BA00BC1F5D /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4421D04D9BA00BC1F5D /* DirectoryViewController.swift */; };
 		47D7D4831D17337C00BC1F5D /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4821D17337C00BC1F5D /* Staff.swift */; };
 		B1AC027E2162D350F80D0D78 /* Pods_TheGunnApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B0B14F556575280738CCB2 /* Pods_TheGunnApp.framework */; };
+		E794C0341D17505B00780A4E /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = E794C0331D17505B00780A4E /* GTMOAuth2ViewTouch.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		47D7D4421D04D9BA00BC1F5D /* DirectoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
 		47D7D4821D17337C00BC1F5D /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
 		E1B0B14F556575280738CCB2 /* Pods_TheGunnApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheGunnApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E794C0331D17505B00780A4E /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = ../Pods/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
 		FB2E571C627E3C69E6351E64 /* Pods-TheGunnApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGunnApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheGunnApp/Pods-TheGunnApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 		47D7D40D1D04D24A00BC1F5D /* The Gunn App */ = {
 			isa = PBXGroup;
 			children = (
+				E794C0331D17505B00780A4E /* GTMOAuth2ViewTouch.xib */,
 				47D7D40E1D04D24A00BC1F5D /* AppDelegate.swift */,
 				47D7D4101D04D24A00BC1F5D /* ScheduleViewController.swift */,
 				47D7D4121D04D24A00BC1F5D /* EventsViewController.swift */,
@@ -268,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E794C0341D17505B00780A4E /* GTMOAuth2ViewTouch.xib in Resources */,
 				47D7D41B1D04D24A00BC1F5D /* LaunchScreen.storyboard in Resources */,
 				47D7D4181D04D24A00BC1F5D /* Assets.xcassets in Resources */,
 				47D7D4161D04D24A00BC1F5D /* Main.storyboard in Resources */,
