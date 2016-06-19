@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN" customClass="SCheduleViewController">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -34,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-68" y="-842"/>
+            <point key="canvasLocation" x="-146" y="-816"/>
         </scene>
         <!--Events-->
         <scene sceneID="wg7-f3-ORb">
@@ -90,7 +90,7 @@
         <!--Directory-->
         <scene sceneID="jRj-41-AKR">
             <objects>
-                <viewController id="46L-2z-prk" sceneMemberID="viewController">
+                <viewController id="46L-2z-prk" customClass="DirectoryViewController" customModule="The_Gunn_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qeo-Sc-JiO"/>
                         <viewControllerLayoutGuide type="bottom" id="P4X-74-lEN"/>

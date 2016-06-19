@@ -16,7 +16,18 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gunnlogo" translatesAutoresizingMaskIntoConstraints="NO" id="B9S-sy-Kgb">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88445321779999997" green="0.0" blue="0.024592773740000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstItem="B9S-sy-Kgb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5X8-YA-Dr7"/>
+                            <constraint firstItem="B9S-sy-Kgb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="KbJ-tW-2qu"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +35,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gunnlogo" width="240" height="240"/>
+    </resources>
 </document>
