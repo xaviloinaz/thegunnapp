@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "47D7D40A1D04D24A00BC1F5D"
-               BuildableName = "The Gunn App.app"
-               BlueprintName = "The Gunn App"
-               ReferencedContainer = "container:The Gunn App.xcodeproj">
+               BuildableName = "TheGunnApp.app"
+               BlueprintName = "TheGunnApp"
+               ReferencedContainer = "container:TheGunnApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "47D7D4201D04D24A00BC1F5D"
-               BuildableName = "The Gunn AppTests.xctest"
-               BlueprintName = "The Gunn AppTests"
-               ReferencedContainer = "container:The Gunn App.xcodeproj">
+               BuildableName = "TheGunnApp.xctest"
+               BlueprintName = "TheGunnAppTests"
+               ReferencedContainer = "container:TheGunnApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "47D7D42B1D04D24A00BC1F5D"
-               BuildableName = "The Gunn AppUITests.xctest"
-               BlueprintName = "The Gunn AppUITests"
-               ReferencedContainer = "container:The Gunn App.xcodeproj">
+               BuildableName = "TheGunnApp.xctest"
+               BlueprintName = "TheGunnAppUITests"
+               ReferencedContainer = "container:TheGunnApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "47D7D40A1D04D24A00BC1F5D"
-            BuildableName = "The Gunn App.app"
-            BlueprintName = "The Gunn App"
-            ReferencedContainer = "container:The Gunn App.xcodeproj">
+            BuildableName = "TheGunnApp.app"
+            BlueprintName = "TheGunnApp"
+            ReferencedContainer = "container:TheGunnApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "47D7D40A1D04D24A00BC1F5D"
-            BuildableName = "The Gunn App.app"
-            BlueprintName = "The Gunn App"
-            ReferencedContainer = "container:The Gunn App.xcodeproj">
+            BuildableName = "TheGunnApp.app"
+            BlueprintName = "TheGunnApp"
+            ReferencedContainer = "container:TheGunnApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "47D7D40A1D04D24A00BC1F5D"
-            BuildableName = "The Gunn App.app"
-            BlueprintName = "The Gunn App"
-            ReferencedContainer = "container:The Gunn App.xcodeproj">
+            BuildableName = "TheGunnApp.app"
+            BlueprintName = "TheGunnApp"
+            ReferencedContainer = "container:TheGunnApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

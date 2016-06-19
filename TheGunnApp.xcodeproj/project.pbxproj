@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		47D7D40B1D04D24A00BC1F5D /* The Gunn App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Gunn App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D7D40B1D04D24A00BC1F5D /* TheGunnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGunnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D7D40E1D04D24A00BC1F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D7D4101D04D24A00BC1F5D /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		47D7D4121D04D24A00BC1F5D /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -46,10 +46,10 @@
 		47D7D4171D04D24A00BC1F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47D7D41A1D04D24A00BC1F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47D7D41C1D04D24A00BC1F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47D7D4211D04D24A00BC1F5D /* The Gunn AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Gunn AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D7D4211D04D24A00BC1F5D /* TheGunnApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheGunnApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D7D4251D04D24A00BC1F5D /* The_Gunn_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Gunn_AppTests.swift; sourceTree = "<group>"; };
 		47D7D4271D04D24A00BC1F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47D7D42C1D04D24A00BC1F5D /* The Gunn AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Gunn AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D7D42C1D04D24A00BC1F5D /* TheGunnApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheGunnApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D7D4301D04D24A00BC1F5D /* The_Gunn_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Gunn_AppUITests.swift; sourceTree = "<group>"; };
 		47D7D4321D04D24A00BC1F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47D7D43E1D04D5F600BC1F5D /* GunnGoogleCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunnGoogleCalendar.swift; sourceTree = "<group>"; };
@@ -95,9 +95,9 @@
 		47D7D40C1D04D24A00BC1F5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				47D7D40B1D04D24A00BC1F5D /* The Gunn App.app */,
-				47D7D4211D04D24A00BC1F5D /* The Gunn AppTests.xctest */,
-				47D7D42C1D04D24A00BC1F5D /* The Gunn AppUITests.xctest */,
+				47D7D40B1D04D24A00BC1F5D /* TheGunnApp.app */,
+				47D7D4211D04D24A00BC1F5D /* TheGunnApp.xctest */,
+				47D7D42C1D04D24A00BC1F5D /* TheGunnApp.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		47D7D40A1D04D24A00BC1F5D /* The Gunn App */ = {
+		47D7D40A1D04D24A00BC1F5D /* TheGunnApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47D7D4351D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "The Gunn App" */;
+			buildConfigurationList = 47D7D4351D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "TheGunnApp" */;
 			buildPhases = (
 				47D7D4071D04D24A00BC1F5D /* Sources */,
 				47D7D4081D04D24A00BC1F5D /* Frameworks */,
@@ -152,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = "The Gunn App";
+			name = TheGunnApp;
 			productName = "The Gunn App";
-			productReference = 47D7D40B1D04D24A00BC1F5D /* The Gunn App.app */;
+			productReference = 47D7D40B1D04D24A00BC1F5D /* TheGunnApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		47D7D4201D04D24A00BC1F5D /* The Gunn AppTests */ = {
+		47D7D4201D04D24A00BC1F5D /* TheGunnAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47D7D4381D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "The Gunn AppTests" */;
+			buildConfigurationList = 47D7D4381D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "TheGunnAppTests" */;
 			buildPhases = (
 				47D7D41D1D04D24A00BC1F5D /* Sources */,
 				47D7D41E1D04D24A00BC1F5D /* Frameworks */,
@@ -170,14 +170,14 @@
 			dependencies = (
 				47D7D4231D04D24A00BC1F5D /* PBXTargetDependency */,
 			);
-			name = "The Gunn AppTests";
+			name = TheGunnAppTests;
 			productName = "The Gunn AppTests";
-			productReference = 47D7D4211D04D24A00BC1F5D /* The Gunn AppTests.xctest */;
+			productReference = 47D7D4211D04D24A00BC1F5D /* TheGunnApp.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		47D7D42B1D04D24A00BC1F5D /* The Gunn AppUITests */ = {
+		47D7D42B1D04D24A00BC1F5D /* TheGunnAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47D7D43B1D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "The Gunn AppUITests" */;
+			buildConfigurationList = 47D7D43B1D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "TheGunnAppUITests" */;
 			buildPhases = (
 				47D7D4281D04D24A00BC1F5D /* Sources */,
 				47D7D4291D04D24A00BC1F5D /* Frameworks */,
@@ -188,9 +188,9 @@
 			dependencies = (
 				47D7D42E1D04D24A00BC1F5D /* PBXTargetDependency */,
 			);
-			name = "The Gunn AppUITests";
+			name = TheGunnAppUITests;
 			productName = "The Gunn AppUITests";
-			productReference = 47D7D42C1D04D24A00BC1F5D /* The Gunn AppUITests.xctest */;
+			productReference = 47D7D42C1D04D24A00BC1F5D /* TheGunnApp.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 47D7D4061D04D24A00BC1F5D /* Build configuration list for PBXProject "The Gunn App" */;
+			buildConfigurationList = 47D7D4061D04D24A00BC1F5D /* Build configuration list for PBXProject "TheGunnApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,9 +229,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				47D7D40A1D04D24A00BC1F5D /* The Gunn App */,
-				47D7D4201D04D24A00BC1F5D /* The Gunn AppTests */,
-				47D7D42B1D04D24A00BC1F5D /* The Gunn AppUITests */,
+				47D7D40A1D04D24A00BC1F5D /* TheGunnApp */,
+				47D7D4201D04D24A00BC1F5D /* TheGunnAppTests */,
+				47D7D42B1D04D24A00BC1F5D /* TheGunnAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,12 +298,12 @@
 /* Begin PBXTargetDependency section */
 		47D7D4231D04D24A00BC1F5D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 47D7D40A1D04D24A00BC1F5D /* The Gunn App */;
+			target = 47D7D40A1D04D24A00BC1F5D /* TheGunnApp */;
 			targetProxy = 47D7D4221D04D24A00BC1F5D /* PBXContainerItemProxy */;
 		};
 		47D7D42E1D04D24A00BC1F5D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 47D7D40A1D04D24A00BC1F5D /* The Gunn App */;
+			target = 47D7D40A1D04D24A00BC1F5D /* TheGunnApp */;
 			targetProxy = 47D7D42D1D04D24A00BC1F5D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -418,7 +418,7 @@
 				INFOPLIST_FILE = "The Gunn App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TheGunnApp;
 			};
 			name = Debug;
 		};
@@ -429,7 +429,7 @@
 				INFOPLIST_FILE = "The Gunn App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TheGunnApp;
 			};
 			name = Release;
 		};
@@ -440,8 +440,8 @@
 				INFOPLIST_FILE = "The Gunn AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Gunn App.app/The Gunn App";
+				PRODUCT_NAME = TheGunnApp;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheGunnApp.app/TheGunnApp";
 			};
 			name = Debug;
 		};
@@ -452,8 +452,8 @@
 				INFOPLIST_FILE = "The Gunn AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Gunn App.app/The Gunn App";
+				PRODUCT_NAME = TheGunnApp;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheGunnApp.app/TheGunnApp";
 			};
 			name = Release;
 		};
@@ -463,7 +463,7 @@
 				INFOPLIST_FILE = "The Gunn AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TheGunnApp;
 				TEST_TARGET_NAME = "The Gunn App";
 			};
 			name = Debug;
@@ -474,7 +474,7 @@
 				INFOPLIST_FILE = "The Gunn AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TheGunnApp;
 				TEST_TARGET_NAME = "The Gunn App";
 			};
 			name = Release;
@@ -482,7 +482,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		47D7D4061D04D24A00BC1F5D /* Build configuration list for PBXProject "The Gunn App" */ = {
+		47D7D4061D04D24A00BC1F5D /* Build configuration list for PBXProject "TheGunnApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47D7D4331D04D24A00BC1F5D /* Debug */,
@@ -491,7 +491,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47D7D4351D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "The Gunn App" */ = {
+		47D7D4351D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "TheGunnApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47D7D4361D04D24A00BC1F5D /* Debug */,
@@ -500,7 +500,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47D7D4381D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "The Gunn AppTests" */ = {
+		47D7D4381D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "TheGunnAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47D7D4391D04D24A00BC1F5D /* Debug */,
@@ -509,7 +509,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47D7D43B1D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "The Gunn AppUITests" */ = {
+		47D7D43B1D04D24A00BC1F5D /* Build configuration list for PBXNativeTarget "TheGunnAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47D7D43C1D04D24A00BC1F5D /* Debug */,
