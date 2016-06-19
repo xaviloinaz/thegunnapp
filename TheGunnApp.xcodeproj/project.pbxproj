@@ -92,7 +92,7 @@
 		47D7D4021D04D24A00BC1F5D = {
 			isa = PBXGroup;
 			children = (
-				47D7D40D1D04D24A00BC1F5D /* The Gunn App */,
+				47D7D40D1D04D24A00BC1F5D /* TheGunnApp */,
 				47D7D4241D04D24A00BC1F5D /* The Gunn AppTests */,
 				47D7D42F1D04D24A00BC1F5D /* The Gunn AppUITests */,
 				47D7D40C1D04D24A00BC1F5D /* Products */,
@@ -111,7 +111,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		47D7D40D1D04D24A00BC1F5D /* The Gunn App */ = {
+		47D7D40D1D04D24A00BC1F5D /* TheGunnApp */ = {
 			isa = PBXGroup;
 			children = (
 				E794C0331D17505B00780A4E /* GTMOAuth2ViewTouch.xib */,
@@ -126,6 +126,7 @@
 				47D7D4191D04D24A00BC1F5D /* LaunchScreen.storyboard */,
 				47D7D41C1D04D24A00BC1F5D /* Info.plist */,
 			);
+			name = TheGunnApp;
 			path = "The Gunn App";
 			sourceTree = "<group>";
 		};
