@@ -13,8 +13,7 @@ class StaffTableViewController: UITableViewController {
     
     var staffs = [Staff]()
     
-    
-    
+//    var stringOfStaffs : String
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +28,17 @@ class StaffTableViewController: UITableViewController {
     }
     
     
+    
+    
     func loadSampleMeals() {
+        
+            stringOfStaffs =
+        
+        
+        
+//        for x in 1...6*numberOfStaff {
+            
+//        }
         
         
         let staff1 = Staff(name: "Alec MacLean", department: "Science")
@@ -37,6 +46,9 @@ class StaffTableViewController: UITableViewController {
         let staff2 = Staff(name: "Josh Paley", department: "Mathematics")
         
         let staff3 = Staff(name: "Heather Wheeler", department: "AP Monster")
+        
+        
+        
         
         staffs += [staff1, staff2, staff3]
     }
