@@ -11,7 +11,7 @@ import UIKit
 
 class DirectoryViewController: UITableViewController {
     
-//    @IBOutlet weak var navigationBar: UINavigationItem!
+    @IBOutlet weak var navigationBar: UINavigationItem!
     
 //    var staffs = [Staff]()
 
@@ -31,7 +31,8 @@ class DirectoryViewController: UITableViewController {
             Staff(name:"Other", department:"Sour Chew"),
             Staff(name:"Other", department:"Gummi Bear")
         ]
-*/    }
+*/
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
