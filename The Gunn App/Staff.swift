@@ -11,15 +11,19 @@ import Foundation
 class Staff {
     
     var name : String
+    var position: String
     var department : String
+    var phoneNumber : String
     var email : String
-    var website : String?
+//    var website : String?
     
     
-    init(name: String, department: String) {
+    init(name: String, position: String, department: String, phoneNumber : String, email: String) {
         self.name = name
+        self.position = position
         self.department = department
-        self.email = ""
+        self.phoneNumber = phoneNumber
+        self.email = email
     }
     
 }
