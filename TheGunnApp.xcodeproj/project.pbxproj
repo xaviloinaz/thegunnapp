@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A1CFACEA874202BA5DF6A47 /* Pods_TheGunnApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DD0517FCF6BA736214175E /* Pods_TheGunnApp.framework */; };
+		4759AEFA1D2270E300BB502B /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4759AEF91D2270E300BB502B /* PortalViewController.swift */; };
 		47D7D40F1D04D24A00BC1F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D40E1D04D24A00BC1F5D /* AppDelegate.swift */; };
 		47D7D4111D04D24A00BC1F5D /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4101D04D24A00BC1F5D /* ScheduleViewController.swift */; };
 		47D7D4131D04D24A00BC1F5D /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4121D04D24A00BC1F5D /* EventsViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		2FCC4CBF035602B60139EE94 /* Pods-TheGunnApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGunnApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheGunnApp/Pods-TheGunnApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4759AEF91D2270E300BB502B /* PortalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
 		47D7D40B1D04D24A00BC1F5D /* TheGunnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGunnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D7D40E1D04D24A00BC1F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D7D4101D04D24A00BC1F5D /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				47D7D4101D04D24A00BC1F5D /* ScheduleViewController.swift */,
 				47D7D4121D04D24A00BC1F5D /* EventsViewController.swift */,
 				47D7D4841D17465300BC1F5D /* StaffTableViewCell.swift */,
+				4759AEF91D2270E300BB502B /* PortalViewController.swift */,
 				47D7D4141D04D24A00BC1F5D /* Main.storyboard */,
 				47D7D4861D174DB500BC1F5D /* StaffTableViewController.swift */,
 				47D7D48A1D174F4C00BC1F5D /* Staff.swift */,
@@ -353,6 +356,7 @@
 				47D7D43F1D04D5F600BC1F5D /* GunnGoogleCalendar.swift in Sources */,
 				47D7D4851D17465300BC1F5D /* StaffTableViewCell.swift in Sources */,
 				47D7D4111D04D24A00BC1F5D /* ScheduleViewController.swift in Sources */,
+				4759AEFA1D2270E300BB502B /* PortalViewController.swift in Sources */,
 				47D7D4871D174DB500BC1F5D /* StaffTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
