@@ -13,9 +13,11 @@ class StaffTableViewController: UITableViewController {
     
     var staffs = [Staff]()
     
-//    var staffsInfo = [Staff]()
-    
     var stringOfStaffs = ""
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    
+    var filteredStaff = [Staff]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,19 @@ class StaffTableViewController: UITableViewController {
         
         loadStaffList()
         
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+        
+    }
+    
+    func filterContentForSearchText(searchText: String, scope: String = "All") {
+        filteredStaff = staffs.filter { staff in
+            return staff.name.lowercaseString.containsString(searchText.lowercaseString)
+        }
+        
+        tableView.reloadData()
     }
     
     
@@ -85,11 +100,29 @@ class StaffTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchController.active && searchController.searchBar.text != "" {
+            return filteredStaff.count
+        }
         return staffs.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
+        let cellIdentifier = "StaffTableViewCell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! StaffTableViewCell
+        let staff: Staff
+        if searchController.active && searchController.searchBar.text != "" {
+            staff = filteredStaff[indexPath.row]
+        } else {
+            staff = staffs[indexPath.row]
+        }
+        cell.staffName.text = staff.name
+        cell.staffDepartment.text = staff.department
+        return cell
+
+        
+        
+/*
         // Table view cells are reused and should be dequeued using a cell identifier.
         let cellIdentifier = "StaffTableViewCell"
         
@@ -102,6 +135,8 @@ class StaffTableViewController: UITableViewController {
         cell.staffDepartment.text = staff.department
         
         return cell
+*/
+ 
     }
     
     
@@ -119,4 +154,12 @@ class StaffTableViewController: UITableViewController {
         
     }
     
+    
+    
+}
+
+extension StaffTableViewController : UISearchResultsUpdating {
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
 }

@@ -198,9 +198,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6n-yX-EWp">
-                                <rect key="frame" x="31" y="94" width="180" height="34"/>
+                                <rect key="frame" x="31" y="94" width="406" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="3go-ed-2uF"/>
+                                    <constraint firstAttribute="width" constant="406" id="3go-ed-2uF"/>
                                     <constraint firstAttribute="height" constant="34" id="ULK-w2-sax"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
