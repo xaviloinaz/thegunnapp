@@ -18,12 +18,40 @@ class Staff {
 //    var website : String?
     
     
+    init() {
+        self.name = ""
+        self.position = ""
+        self.department = ""
+        self.phoneNumber = ""
+        self.email = ""
+    }
+    
     init(name: String, position: String, department: String, phoneNumber : String, email: String) {
         self.name = name
         self.position = position
         self.department = department
         self.phoneNumber = phoneNumber
         self.email = email
+    }
+    
+    func getName() -> String {
+        return name
+    }
+    
+    func getPosition() -> String {
+        return position
+    }
+    
+    func getDepartment() -> String {
+        return department
+    }
+    
+    func getPhoneNumber() -> String {
+        return phoneNumber
+    }
+    
+    func getEmail() -> String {
+        return email
     }
     
 }
