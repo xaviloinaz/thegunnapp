@@ -15,7 +15,7 @@ class Staff {
     var department : String
     var phoneNumber : String
     var email : String
-//    var website : String?
+    var website : String?
     
     
     init() {
@@ -32,6 +32,15 @@ class Staff {
         self.department = department
         self.phoneNumber = phoneNumber
         self.email = email
+    }
+    
+    init(name: String, position: String, department: String, phoneNumber : String, email: String, website: String?) {
+        self.name = name
+        self.position = position
+        self.department = department
+        self.phoneNumber = phoneNumber
+        self.email = email
+        self.website = website
     }
     
     func getName() -> String {
@@ -52,6 +61,15 @@ class Staff {
     
     func getEmail() -> String {
         return email
+    }
+    
+    func getWebsite() -> String? {
+/*        if let retVal = website{
+            return retVal
+        } else {
+            return nil
+        }
+*/  return website
     }
     
 }
