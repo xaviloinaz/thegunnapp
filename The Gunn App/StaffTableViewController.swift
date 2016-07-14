@@ -146,11 +146,17 @@ class StaffTableViewController: UITableViewController {
         
         var destViewController = segue.destinationViewController as! StaffInfoViewController
         
-        var thisStaff : Staff = staffs[indexPath.row]
+        var thisStaff : Staff
         
-        destViewController.thisStaff = thisStaff
+//        destViewController.thisStaff = thisStaff
         
-        
+        if searchController.active && searchController.searchBar.text != "" {
+            thisStaff = filteredStaff[indexPath.row]
+            destViewController.thisStaff = thisStaff
+        } else {
+            thisStaff = staffs[indexPath.row]
+            destViewController.thisStaff = thisStaff
+        }
         
     }
     
