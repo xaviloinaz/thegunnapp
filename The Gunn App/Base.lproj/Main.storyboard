@@ -274,13 +274,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grm-87-p0T">
-                                <rect key="frame" x="31" y="228" width="90" height="18"/>
+                                <rect key="frame" x="31" y="228" width="76" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="ST0-dg-MZu"/>
-                                    <constraint firstAttribute="width" constant="90" id="kKv-b8-h1c"/>
+                                    <constraint firstAttribute="width" constant="76" id="kKv-b8-h1c"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Email Faculty">
+                                <state key="normal" title="Send Email">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -319,8 +319,10 @@
                     <navigationItem key="navigationItem" id="Sx3-xU-Vfe"/>
                     <connections>
                         <outlet property="department" destination="HzP-Dm-DXv" id="q3C-Aw-bxj"/>
+                        <outlet property="goToWebsiteButton" destination="kRb-Fa-kop" id="mZ4-7L-tNN"/>
                         <outlet property="phoneNumber" destination="7VA-G0-Iwj" id="tID-0P-hGn"/>
                         <outlet property="position" destination="Skh-aZ-nLh" id="cqW-U4-rg7"/>
+                        <outlet property="sendEmailButton" destination="grm-87-p0T" id="rPj-5K-OqE"/>
                         <outlet property="teacherName" destination="L6n-yX-EWp" id="Lqs-zY-LsB"/>
                     </connections>
                 </viewController>

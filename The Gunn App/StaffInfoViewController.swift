@@ -17,6 +17,9 @@ class StaffInfoViewController: UIViewController,MFMailComposeViewControllerDeleg
     @IBOutlet weak var position: UILabel!
     @IBOutlet weak var department: UILabel!
     @IBOutlet weak var phoneNumber: UILabel!
+    @IBOutlet weak var sendEmailButton: UIButton!
+    @IBOutlet weak var goToWebsiteButton: UIButton!
+    
     
     var staffs = [Staff]()
     var thisStaff : Staff = Staff()
@@ -42,6 +45,12 @@ class StaffInfoViewController: UIViewController,MFMailComposeViewControllerDeleg
         position.text = thisStaff.getPosition()
         department.text = thisStaff.getDepartment()
         phoneNumber.text = thisStaff.getPhoneNumber()
+        
+        if thisStaff.getWebsite() != " " && thisStaff.getWebsite() != "" {
+            goToWebsiteButton.hidden = false
+        } else {
+            goToWebsiteButton.hidden = true
+        }
         
         
     }
