@@ -1,25 +1,16 @@
 //
-//  PortalViewController.swift
-//  
+//  MapViewController.swift
+//  TheGunnApp
 //
-//  Created by Xavi Loinaz on 6/28/16.
-//
+//  Created by Xavi Loinaz on 7/13/16.
+//  Copyright © 2016 Xavi Loinaz. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class PortalViewController: UIViewController {
-    
-    @IBAction func myPAUSDButton() {
-        if let url = NSURL(string: "https://id.pausd.org/arms/p/applications/my") {
-            
-            UIApplication.sharedApplication().openURL(url)
-            
-        }
-    }
-    
-    
+class MapViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
@@ -30,7 +21,5 @@ class PortalViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-}
 
+}
