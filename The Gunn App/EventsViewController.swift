@@ -27,6 +27,8 @@ class EventsViewController: UITableViewController {
     let output = UITextView()
     var eventNames = [String]()
     var eventDates = [String]()
+    let events = [Event]()
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -80,9 +82,8 @@ class EventsViewController: UITableViewController {
                     if let items = json["items"] as? [[String: AnyObject]] {
                         
                         for item in items {
-                            
+                            var event : Event? = Event()
                             if let summary = item["summary"] as? String {
-                                
                                 if let start = item["start"]!["date"] as? String {
                                     self.eventNames.append(summary)
                                     
@@ -90,6 +91,9 @@ class EventsViewController: UITableViewController {
                                     print(self.eventNames.count)
                                 
                                 }
+                                
+                                event?.summary = summary
+                                
                                 
                             }
                         }
@@ -185,8 +189,8 @@ class EventsViewController: UITableViewController {
         
         
     }
-    
-//    
+}
+//
 //    // When the view appears, ensure that the Google Calendar API service is authorized
 //    // and perform API calls
 //    
@@ -298,6 +302,6 @@ class EventsViewController: UITableViewController {
 //    
 //}
 //
-}
+
 
 
