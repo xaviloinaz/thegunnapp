@@ -27,6 +27,8 @@ class EventsViewController: UITableViewController {
     let output = UITextView()
     var eventNames = [String]()
     var eventDates = [String]()
+    let events = [Event]()
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -78,16 +80,22 @@ class EventsViewController: UITableViewController {
                     if let items = json["items"] as? [[String: AnyObject]] {
                         
                         for item in items {
-                            
+                            var event : Event? = Event()
                             if let summary = item["summary"] as? String {
-                                
                                 if let start = item["start"]!["date"] as? String {
-                                    self.eventNames.append(summary)
-                                    
-                                    self.eventDates.append(start)
-                                    print("start retrieved")
-//                                    print(summary, start)
+                                     if let end = item["end"]!["date"] as? String {
+                                        if let dateTime = item["start"]!["dateTime"] as? String {
+                                            print(dateTime)
+                                            event?.startTime = dateTime
+                                        }
+                                        print(summary, start, end)
+                                        event?.endTime = end
+                                    }
+                                    event?.date = start
                                 }
+                                
+                                event?.summary = summary
+                                
                                 
                             }
                         }
