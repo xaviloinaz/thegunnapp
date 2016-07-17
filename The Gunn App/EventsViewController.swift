@@ -139,7 +139,7 @@ class EventsViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! EventsViewCell
         
-        let staff: Staff
+//        let event: Event
         
         cell.summary.text = "bla"
         
