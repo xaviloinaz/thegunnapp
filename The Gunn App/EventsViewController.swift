@@ -11,7 +11,7 @@ import UIKit
 
 
 
-class EventsViewController: UIViewController {
+class EventsViewController: UITableViewController {
     @IBOutlet weak var navigationBar: UINavigationItem!
     
     // If modifying these scopes, delete your previously saved credentials by
@@ -53,6 +53,8 @@ class EventsViewController: UIViewController {
         }
         
         downloadAndParseJSON()
+        
+        
         
     }
     
@@ -102,11 +104,85 @@ class EventsViewController: UIViewController {
         
     }
     
-    func parseJSON() {
+    
+    
+    
+    
+    
+    
+    
+    // MARK: - Table view data source
+    
+    
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        
+        return 1
+        
+    }
+    
+    
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return eventNames.count
+        
+    }
+    
+    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        
+        
+        let cellIdentifier = "EventsViewCell"
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! EventsViewCell
+        
+        let staff: Staff
+        
+        cell.summary.text = "bla"
+        
+        return cell
+        
+        
+        
+        
+        
+        
+        
+        /*
+         
+         // Table view cells are reused and should be dequeued using a cell identifier.
+         
+         let cellIdentifier = "StaffTableViewCell"
+         
+         
+         
+         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! StaffTableViewCell
+         
+         
+         
+         // Fetches the appropriate staff for the data source layout.
+         
+         let staff = staffs[indexPath.row]
+         
+         
+         
+         cell.staffName.text = staff.name
+         
+         cell.staffDepartment.text = staff.department
+         
+         
+         
+         return cell
+         
+         */
         
         
         
     }
+    
 //    
 //    // When the view appears, ensure that the Google Calendar API service is authorized
 //    // and perform API calls
