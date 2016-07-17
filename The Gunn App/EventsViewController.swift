@@ -72,7 +72,7 @@ class EventsViewController: UIViewController {
                     
                     let json = try NSJSONSerialization.JSONObjectWithData(data!, options:.AllowFragments)
                     
-                    if let stations = json["stations"] as? [[String: AnyObject]] {
+                    if let stations = json["items"] as? [[String: AnyObject]] {
                         
                         for station in stations {
                             
