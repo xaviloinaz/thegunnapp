@@ -27,7 +27,7 @@ class EventsViewController: UITableViewController {
     let output = UITextView()
     var eventNames = [String]()
     var eventDates = [String]()
-    let events = [Event]()
+    var events = [Event]()
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -94,7 +94,7 @@ class EventsViewController: UITableViewController {
                                 
                                 event?.summary = summary
                                 
-                                
+                                self.events.append(event!)
                             }
                         }
                         
