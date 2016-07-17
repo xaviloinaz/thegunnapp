@@ -22,7 +22,8 @@ class EventsViewController: UIViewController {
 
     private let service = GTLServiceCalendar()
    
-    
+    let url = NSURL(string: "https://www.googleapis.com/calendar/v3/calendars/email.gmail.com/events?maxResults=15&key=APIKey-here")
+
     let output = UITextView()
     
     
@@ -55,11 +56,14 @@ class EventsViewController: UIViewController {
     
     // When the view appears, ensure that the Google Calendar API service is authorized
     // and perform API calls
+    
+    //this is how u display the stuff that shows the signin
     override func viewDidAppear(animated: Bool) {
         if let authorizer = service.authorizer,
             canAuth = authorizer.canAuthorize where canAuth {
             fetchEvents()
         } else {
+            //code that presents the auth controller
             presentViewController(
                 createAuthController(),
                 animated: true,

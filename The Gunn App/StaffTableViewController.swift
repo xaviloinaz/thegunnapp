@@ -32,7 +32,7 @@ class StaffTableViewController: UITableViewController {
     
     func loadSampleMeals() {
         
-            stringOfStaffs =
+        
         
         
         
