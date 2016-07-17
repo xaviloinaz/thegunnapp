@@ -9,3 +9,11 @@
 import Foundation
 import UIKit
 
+class Event{
+    var date : String? = ""
+    var startTime : String? = ""
+    var endTime : String? = ""
+    var summary : String? = ""
+    var location : String? = ""
+    var day : String! = ""
+}
