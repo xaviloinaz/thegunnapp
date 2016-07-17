@@ -18,8 +18,8 @@ class EventsViewController: UIViewController {
     // resetting the iOS simulator or uninstall the app.
     private let scopes = [kGTLAuthScopeCalendarReadonly]
     private let kKeychainItemName = "Google Calendar API"
-    private let kClientID = "999725457631-j71getcvrp65q372a1mfnc7cqajisuh1.apps.googleusercontent.com"
-
+//    private let kClientID = "999725457631-j71getcvrp65q372a1mfnc7cqajisuh1.apps.googleusercontent.com"
+    private let kClientID = "68302956867-mulu2q103u9jg7faua2mi3gka1g0k07d.apps.googleusercontent.com"
     private let service = GTLServiceCalendar()
    
     
@@ -51,6 +51,56 @@ class EventsViewController: UIViewController {
             service.authorizer = auth
         }
         
+        downloadAndParseJSON()
+        
+    }
+    
+    func downloadAndParseJSON() {
+        let requestURL: NSURL = NSURL(string: "https://www.googleapis.com/calendar/v3/calendars/u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com/events?key=AIzaSyC_yZtpuIBpqT7PHKgzAPZrWIUGmOuccvI&maxResults=5000000&timeMin=2016-06-03T10:00:00-07:00&showDeleted=false&singleEvents=true&orderBy=startTime")!
+        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithRequest(urlRequest) {
+            (data, response, error) -> Void in
+            
+            let httpResponse = response as! NSHTTPURLResponse
+            let statusCode = httpResponse.statusCode
+            
+            if (statusCode == 200) {
+                print("Everyone is fine, file downloaded successfully.")
+                
+                do{
+                    
+                    let json = try NSJSONSerialization.JSONObjectWithData(data!, options:.AllowFragments)
+                    
+                    if let stations = json["stations"] as? [[String: AnyObject]] {
+                        
+                        for station in stations {
+                            
+                            if let name = station["stationName"] as? String {
+                                
+                                if let year = station["buildYear"] as? String {
+                                    print(name,year)
+                                }
+                                
+                            }
+                        }
+                        
+                    }
+                    
+                }catch {
+                    print("Error with Json: \(error)")
+                }
+            }
+        }
+        
+        task.resume()
+        
+    }
+    
+    func parseJSON() {
+        
+        
+        
     }
     
     // When the view appears, ensure that the Google Calendar API service is authorized
@@ -60,7 +110,7 @@ class EventsViewController: UIViewController {
             canAuth = authorizer.canAuthorize where canAuth {
             fetchEvents()
         } else {
-            presentViewController(
+                presentViewController(
                 createAuthController(),
                 animated: true,
                 completion: nil
@@ -125,6 +175,7 @@ class EventsViewController: UIViewController {
             finishedSelector: "viewController:finishedWithAuth:error:"
         )
     }
+    
     
     // Handle completion of the authorization process, and update the Google Calendar API
     // with the new credentials.
