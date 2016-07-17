@@ -234,7 +234,9 @@ class StaffTableViewController: UITableViewController {
             
         }
         
-        cell.staffName.text = staff.name
+//        cell.staffName.text = staff.name
+        
+        cell.staffName.text = "bla"
         
         cell.staffDepartment.text = staff.department
         
