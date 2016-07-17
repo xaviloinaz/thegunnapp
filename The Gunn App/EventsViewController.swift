@@ -182,8 +182,8 @@ class EventsViewController: UITableViewController {
         
         
     }
-    
-//    
+}
+//
 //    // When the view appears, ensure that the Google Calendar API service is authorized
 //    // and perform API calls
 //    
@@ -295,6 +295,6 @@ class EventsViewController: UITableViewController {
 //    
 //}
 //
-}
+
 
 
