@@ -56,7 +56,7 @@ class EventsViewController: UITableViewController {
         
         downloadAndParseJSON()
         
-        print(eventNames.count)
+//        print(eventNames.count)
         
         
         
@@ -88,8 +88,8 @@ class EventsViewController: UITableViewController {
                                     self.eventNames.append(summary)
                                     
                                     self.eventDates.append(start)
-                                    print(self.eventNames.count)
-                                
+                                    print(self.events.count)
+
                                 }
                                 
                                 event?.summary = summary
@@ -130,9 +130,8 @@ class EventsViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-//        print(eventNames.count)
-        return eventNames.count
+
+        return events.count
         
     }
     
@@ -146,7 +145,7 @@ class EventsViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! EventsViewCell
         
-//        let event: Event
+        let event: Event
         
         cell.summary.text = "bla"
         
