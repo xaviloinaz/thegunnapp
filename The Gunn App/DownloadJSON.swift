@@ -33,24 +33,23 @@ class DownloadJSON {
     
     
     
-    func dateString(date:String?) -> String{
-//        var date = Array(arrayLiteral: str!)
-        let year = date![0...3]
-        let month = date![5...6]
-        let day = date![8...9]
+    func dateString(str:String?) -> String{
         var datestr = ""
-        datestr += month
-        datestr += "/"
-        datestr += day
-        datestr += "/" + year;
+        if(str!.characters.count > 24){
+//            print(str!.characters.count)
+            let year = str![0...3]
+            let month = str![5...6]
+            let day = str![8...9]
+            
+            datestr += month + "/" + day + "/" + year
         
-        
+        }
         
         return datestr
-        
     }
     
     func timeString(date: String?) -> String{
+//        let time = date![11...15]
         let time = date![11...15]
         return time
         
