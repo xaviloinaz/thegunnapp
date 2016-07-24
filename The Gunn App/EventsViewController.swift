@@ -31,7 +31,7 @@ class EventsViewController: UITableViewController {
     var eventDates = [String]()
     var events = [Event]()
     var stations = [String]()
-    
+    var ev: DownloadJSON?
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -159,7 +159,14 @@ class EventsViewController: UITableViewController {
 //        let sumthin = stations[indexPath.row]
         let text = event.summary!
         cell.summary.text = String(text)
-        cell.startingTime.text = event.startTime!
+        if((event.startTime) != ""){
+            cell.dayAndDate.text = ev!.dateString(event.startTime!)
+            cell.startingTime.text = ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
+        }else{
+            cell.dayAndDate.text = ""
+            cell.startingTime.text = ""
+        }
+        
         
         
         return cell

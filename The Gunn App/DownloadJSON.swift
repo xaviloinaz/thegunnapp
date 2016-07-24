@@ -85,6 +85,31 @@ class DownloadJSON {
         
         datestr += "/" + year;
         
+        let formatter  = NSDateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        if let todayDate = formatter.dateFromString(today) {
+            let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+            let myComponents = myCalendar.components(.Weekday, fromDate: todayDate)
+            let weekDay = myComponents.weekday
+            return weekDay
+        } else {
+            return nil
+        }
+    }
+    
+    func dateString(str:String?) -> String{
+        var datestr = ""
+        if(str!.characters.count > 24){
+//            print(str!.characters.count)
+            let year = str![0...3]
+            let month = str![5...6]
+            let day = str![8...9]
+            
+//            datestr += month + "/" + day + "/" + year
+            var week = year + "-" + month + "-" + day
+            var dayNum = getDayOfWeek(week)!
+            datestr = intToDayString(dayNum)! + ", " + month + "/" + day + "/" + year
+        }
         
         
         
