@@ -12,6 +12,7 @@ import UIKit
 class ScheduleViewCell: UITableViewCell {
     
     
+    @IBOutlet weak var period: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -12,8 +12,9 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
     @IBOutlet weak var scheduleTable: UITableView!
+    var events = [Event]()
+//    var days
     
-
     
     
     
@@ -23,6 +24,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         // Do any additional setup after loading the view, typically from a nib.
         scheduleTable.delegate = self
         scheduleTable.dataSource = self
+        let json = DownloadJSON()
+        events = json.downloadAndParseJSON()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,14 +38,16 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        code
+        return events.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ScheduleViewCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("ScheduleViewCell", forIndexPath: indexPath) as! ScheduleViewCell
         
         let row = indexPath.row
-        cell.textLabel?.text = swiftBlogs[row]
+        let theEvent = events[row]
+        cell.period.text = "3"
+        
         
         return cell
     }
