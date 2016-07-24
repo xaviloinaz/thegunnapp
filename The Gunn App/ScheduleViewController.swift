@@ -8,13 +8,21 @@
 
 import UIKit
 
-class ScheduleViewController: UIViewController {
+class ScheduleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    
+    @IBOutlet weak var scheduleTable: UITableView!
+    
 
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
         // Do any additional setup after loading the view, typically from a nib.
-        navigationController!.navigationBar.barTintColor = UIColor.redColor()
+        scheduleTable.delegate = self
+        scheduleTable.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,8 +30,22 @@ class ScheduleViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        code
+    }
     
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("ScheduleViewCell", forIndexPath: indexPath)
+        
+        let row = indexPath.row
+        cell.textLabel?.text = swiftBlogs[row]
+        
+        return cell
+    }
     
     
     
@@ -33,40 +55,6 @@ class ScheduleViewController: UIViewController {
     
     
     
-    
-    
-/*
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
-        return 1
-        
-    }
-    
-    
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return 2
-    }
-    
-    
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        
-        
-        let cellIdentifier = "ScheduleViewCell"
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ScheduleViewCell
-        
-        cell.title.text = "bla"
-        
-        return cell
-        
-        
-        
-    }
-*/
 
 }
 

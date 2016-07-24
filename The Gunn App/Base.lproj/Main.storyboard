@@ -416,16 +416,36 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="GIf-fI-fcc"/>
                                 </items>
                             </toolbar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BlZ-Wn-idR">
-                                <rect key="frame" x="5" y="108" width="591" height="443"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="zN9-Bf-jY7">
+                                <rect key="frame" x="15" y="114" width="570" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="zIh-TU-yaa"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X many minutes are remaining until ______" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILP-NK-KTy">
+                                <rect key="frame" x="200" y="131" width="199.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E2S-fM-1A5">
+                                <rect key="frame" x="0.0" y="153" width="600" height="398"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="EhB-1Y-ciy" customClass="ScheduleViewCell" customModule="TheGunnApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="591" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleViewCell" id="YRT-Zk-2O0">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EhB-1Y-ciy" id="awT-rR-Uoe">
-                                            <rect key="frame" x="0.0" y="0.0" width="591" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YRT-Zk-2O0" id="Yn9-Tq-cy9">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6j-uY-SWl">
+                                                    <rect key="frame" x="51" y="0.0" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -433,25 +453,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BlZ-Wn-idR" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="0RA-uC-1DN"/>
+                            <constraint firstItem="zN9-Bf-jY7" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="6Km-RB-bmM"/>
                             <constraint firstItem="cIP-N4-g6A" firstAttribute="top" secondItem="dOa-vl-rU8" secondAttribute="bottom" id="6vH-4f-NqB"/>
                             <constraint firstItem="cIP-N4-g6A" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="9Qm-lA-xkT"/>
-                            <constraint firstItem="BlZ-Wn-idR" firstAttribute="leading" secondItem="iDu-G0-PUx" secondAttribute="leadingMargin" priority="500" constant="-15" id="LQZ-t7-X3G"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="BlZ-Wn-idR" secondAttribute="trailing" priority="500" constant="-16" id="Y0V-iF-LNP"/>
-                            <constraint firstItem="BlZ-Wn-idR" firstAttribute="top" secondItem="cIP-N4-g6A" secondAttribute="bottom" id="YIk-rm-kT5"/>
-                            <constraint firstItem="oyK-aZ-GHK" firstAttribute="top" secondItem="BlZ-Wn-idR" secondAttribute="bottom" id="Yl5-3v-1tP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="BlZ-Wn-idR" secondAttribute="trailing" id="fH6-qr-0zM"/>
-                            <constraint firstItem="BlZ-Wn-idR" firstAttribute="leading" secondItem="iDu-G0-PUx" secondAttribute="leadingMargin" id="sJY-EZ-nAd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zN9-Bf-jY7" secondAttribute="trailing" constant="-5" id="Ci5-gh-GPo"/>
+                            <constraint firstItem="ILP-NK-KTy" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="CzM-4e-Jxh"/>
+                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="ILP-NK-KTy" secondAttribute="bottom" constant="18" id="Nqt-J5-vJM"/>
+                            <constraint firstItem="zN9-Bf-jY7" firstAttribute="leading" secondItem="iDu-G0-PUx" secondAttribute="leadingMargin" constant="-5" id="OR2-pV-OSb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E2S-fM-1A5" secondAttribute="trailing" constant="-16" id="RMc-FJ-Tri"/>
+                            <constraint firstItem="zN9-Bf-jY7" firstAttribute="top" secondItem="cIP-N4-g6A" secondAttribute="bottom" constant="6" id="V3c-Yx-aOA"/>
+                            <constraint firstItem="ILP-NK-KTy" firstAttribute="top" secondItem="zN9-Bf-jY7" secondAttribute="bottom" constant="5" id="jjc-7B-O99"/>
+                            <constraint firstItem="zN9-Bf-jY7" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="ox4-ef-xze"/>
+                            <constraint firstItem="E2S-fM-1A5" firstAttribute="leading" secondItem="iDu-G0-PUx" secondAttribute="leadingMargin" constant="-15" id="sWi-9D-VUr"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="0RA-uC-1DN"/>
-                                <exclude reference="fH6-qr-0zM"/>
-                                <exclude reference="sJY-EZ-nAd"/>
+                                <exclude reference="ox4-ef-xze"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Schedule" id="bba-JH-8LZ"/>
+                    <connections>
+                        <outlet property="scheduleTable" destination="E2S-fM-1A5" id="cl1-LQ-bu4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lK4-za-Pr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
