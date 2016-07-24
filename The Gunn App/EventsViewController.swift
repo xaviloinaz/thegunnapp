@@ -31,7 +31,7 @@ class EventsViewController: UITableViewController {
     var eventDates = [String]()
     var events = [Event]()
     var stations = [String]()
-    
+    var ev: DownloadJSON?
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -44,11 +44,11 @@ class EventsViewController: UITableViewController {
         super.viewDidLoad()
 //        downloadAndParseJSON()
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
-        var ev = DownloadJSON()
-        events = ev.downloadAndParseJSON();
+        ev = DownloadJSON()
+        events = ev!.downloadAndParseJSON();
         for index in 0...events.count-1 {
             print(events[index].summary!)
-            print(ev.dateString(events[index].startTime))
+            print(ev!.timeString(events[index].startTime))
         }
 //        output.frame = view.bounds
 //        output.editable = false
@@ -331,7 +331,7 @@ class EventsViewController: UITableViewController {
 //        let sumthin = stations[indexPath.row]
         let text = event.summary!
         cell.summary.text = String(text)
-        cell.startingTime.text = event.startTime!
+        cell.startingTime.text = ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
         
         
         return cell

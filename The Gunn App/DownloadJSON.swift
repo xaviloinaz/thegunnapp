@@ -48,9 +48,16 @@ class DownloadJSON {
         return datestr
     }
     
-    func timeString(date: String?) -> String{
-//        let time = date![11...15]
-        let time = date![11...15]
+    func timeString(str: String?) -> String{
+        var time = ""
+        if(str!.characters.count > 24){
+            time += str![11...15]
+            if (time[0] == "0"){
+                time = time[1...time.characters.count-1]
+            }
+        }
+        
+        
         return time
         
     }
