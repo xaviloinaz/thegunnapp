@@ -44,6 +44,11 @@ class EventsViewController: UITableViewController {
         super.viewDidLoad()
 //        downloadAndParseJSON()
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
+        var ev = DownloadJSON()
+        events = ev.downloadAndParseJSON();
+        for index in 0...events.count-1 {
+            print(events[index].summary!)
+        }
 //        output.frame = view.bounds
 //        output.editable = false
 //        output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
@@ -316,14 +321,16 @@ class EventsViewController: UITableViewController {
         
         // Configure the cell...
         
-//        let event = events[indexPath.row]
+        let event = events[indexPath.row]
         
 //        cell.summary.text = event.summary
 //        cell.dayAndDate.text = String(event.day) + ", " + String(event.date)
 //        cell.startingTime.text = event.startTime
         
-        let sumthin = stations[indexPath.row]
-        cell.summary.text = String(sumthin)
+//        let sumthin = stations[indexPath.row]
+        let text = event.summary!
+        cell.summary.text = String(text)
+        cell.startingTime.text = event.startTime!
         
         
         return cell

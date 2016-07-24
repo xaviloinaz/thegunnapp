@@ -28,6 +28,7 @@
 		47D7D4851D17465300BC1F5D /* StaffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4841D17465300BC1F5D /* StaffTableViewCell.swift */; };
 		47D7D4871D174DB500BC1F5D /* StaffTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4861D174DB500BC1F5D /* StaffTableViewController.swift */; };
 		47D7D48B1D174F4C00BC1F5D /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D48A1D174F4C00BC1F5D /* Staff.swift */; };
+		E710DB061D456756000B0508 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = E710DB051D456756000B0508 /* events.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		47D7D48A1D174F4C00BC1F5D /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
 		938100FDE7F78A8239592CDB /* Pods-TheGunnApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGunnApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheGunnApp/Pods-TheGunnApp.release.xcconfig"; sourceTree = "<group>"; };
 		C5DD0517FCF6BA736214175E /* Pods_TheGunnApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheGunnApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E710DB051D456756000B0508 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				47D00AEE1D3C3B9A004B5E8F /* EventsViewCell.swift */,
 				47D00AF21D3C4C85004B5E8F /* DownloadJSON.swift */,
 				47D00AF01D3C3F2F004B5E8F /* Event.swift */,
+				E710DB051D456756000B0508 /* events.json */,
 				4759AEF91D2270E300BB502B /* PortalViewController.swift */,
 				47D7D4141D04D24A00BC1F5D /* Main.storyboard */,
 				47D057821D370C6700A3ACCB /* MapViewController.swift */,
@@ -298,6 +301,7 @@
 			files = (
 				47D00AED1D3AE2CD004B5E8F /* GTMOAuth2ViewTouch.xib in Resources */,
 				47D7D41B1D04D24A00BC1F5D /* LaunchScreen.storyboard in Resources */,
+				E710DB061D456756000B0508 /* events.json in Resources */,
 				47D7D4181D04D24A00BC1F5D /* Assets.xcassets in Resources */,
 				47D7D4161D04D24A00BC1F5D /* Main.storyboard in Resources */,
 			);
