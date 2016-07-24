@@ -33,6 +33,45 @@ class DownloadJSON {
     
     
     
+    func intToDayString(day: Int?) -> String? {
+        if(day! == 1){
+            return "Sunday"
+        }
+        if(day! == 2){
+            return "Monday"
+        }
+        if(day! == 3){
+            return "Tuesday"
+        }
+        if(day! == 4){
+            return "Wednesday"
+        }
+        if(day! == 5){
+            return "Thursday"
+        }
+        if(day! == 6){
+            return "Friday"
+        }
+        if(day! == 7){
+            return "Saturday"
+        }
+        return ""
+    }
+    
+    func getDayOfWeek(today:String)->Int? {
+        
+        let formatter  = NSDateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        if let todayDate = formatter.dateFromString(today) {
+            let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+            let myComponents = myCalendar.components(.Weekday, fromDate: todayDate)
+            let weekDay = myComponents.weekday
+            return weekDay
+        } else {
+            return nil
+        }
+    }
+    
     func dateString(str:String?) -> String{
         var datestr = ""
         if(str!.characters.count > 24){
@@ -41,9 +80,12 @@ class DownloadJSON {
             let month = str![5...6]
             let day = str![8...9]
             
-            datestr += month + "/" + day + "/" + year
-        
+//            datestr += month + "/" + day + "/" + year
+            var week = year + "-" + month + "-" + day
+            var dayNum = getDayOfWeek(week)!
+            datestr = intToDayString(dayNum)! + ", " + month + "/" + day + "/" + year
         }
+        
         
         return datestr
     }

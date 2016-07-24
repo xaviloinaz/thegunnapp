@@ -331,7 +331,14 @@ class EventsViewController: UITableViewController {
 //        let sumthin = stations[indexPath.row]
         let text = event.summary!
         cell.summary.text = String(text)
-        cell.startingTime.text = ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
+        if((event.startTime) != ""){
+            cell.dayAndDate.text = ev!.dateString(event.startTime!)
+            cell.startingTime.text = ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
+        }else{
+            cell.dayAndDate.text = ""
+            cell.startingTime.text = ""
+        }
+        
         
         
         return cell
