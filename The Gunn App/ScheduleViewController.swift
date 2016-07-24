@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ScheduleViewController: UITableViewController {
+class ScheduleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController!.navigationBar.barTintColor = UIColor.redColor()
         // Do any additional setup after loading the view, typically from a nib.
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
     }
@@ -20,7 +21,52 @@ class ScheduleViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    
+    
+    
 
+    
+    
+    
+    
+    
+    
+    
+/*
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        
+        return 1
+        
+    }
+    
+    
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 2
+    }
+    
+    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        
+        
+        let cellIdentifier = "ScheduleViewCell"
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ScheduleViewCell
+        
+        cell.title.text = "bla"
+        
+        return cell
+        
+        
+        
+    }
+*/
 
 }
 

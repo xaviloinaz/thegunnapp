@@ -209,7 +209,6 @@ class StaffTableViewController: UITableViewController {
         }
         
         return staffs.count
-        
     }
     
     
@@ -236,7 +235,7 @@ class StaffTableViewController: UITableViewController {
         
 //        cell.staffName.text = staff.name
         
-        cell.staffName.text = "bla"
+        cell.staffName.text = staff.name
         
         cell.staffDepartment.text = staff.department
         

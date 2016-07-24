@@ -1,18 +1,16 @@
 //
-//  EventsViewCell.swift
+//  ScheduleViewCell.swift
 //  TheGunnApp
 //
 //  Created by Xavi Loinaz on 7/17/16.
 //  Copyright © 2016 Xavi Loinaz. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class EventsViewCell: UITableViewCell {
+class ScheduleViewCell: UITableViewCell {
     
-    @IBOutlet weak var dayAndDate: UILabel!
-    @IBOutlet weak var startingTime: UILabel!
-    @IBOutlet weak var summary: UILabel!
     
     
     override func awakeFromNib() {
@@ -25,7 +23,6 @@ class EventsViewCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
-    
     
 }
 

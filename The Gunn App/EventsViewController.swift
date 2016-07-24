@@ -12,6 +12,7 @@ import UIKit
 
 
 class EventsViewController: UITableViewController {
+    
     @IBOutlet weak var navigationBar: UINavigationItem!
     
     // If modifying these scopes, delete your previously saved credentials by
@@ -39,13 +40,14 @@ class EventsViewController: UITableViewController {
     // and initialize the Google Calendar API service
     override func viewDidLoad() {
         super.viewDidLoad()
+        downloadAndParseJSON()
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
-        output.frame = view.bounds
-        output.editable = false
-        output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
-        output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
+//        output.frame = view.bounds
+//        output.editable = false
+//        output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
+//        output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
         
-        view.addSubview(output);
+//        view.addSubview(output);
         
         if let auth = GTMOAuth2ViewControllerTouch.authForGoogleFromKeychainForName(
             kKeychainItemName,
@@ -54,16 +56,21 @@ class EventsViewController: UITableViewController {
             service.authorizer = auth
         }
         
-        downloadAndParseJSON()
+//        let downloadJSON = DownloadJSON()
+//        events = downloadJSON.downloadAndParseJSON()
         
-//        print(eventNames.count)
+        
+
         
         
         
     }
     
+    
+    
+    
     func downloadAndParseJSON() {
-        let requestURL: NSURL = NSURL(string: "https://www.googleapis.com/calendar/v3/calendars/u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com/events?key=AIzaSyC_yZtpuIBpqT7PHKgzAPZrWIUGmOuccvI&maxResults=5000000&timeMin=2016-06-03T10:00:00-07:00&showDeleted=false&singleEvents=true&orderBy=startTime")!
+        let requestURL: NSURL = NSURL(string: "https://www.googleapis.com/calendar/v3/calendars/u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com/events?key=AIzaSyC_yZtpuIBpqT7PHKgzAPZrWIUGmOuccvI&maxResults=500000&timeMin=2016-06-03T10:00:00-07:00&showDeleted=false&singleEvents=true&orderBy=startTime")!
         let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(urlRequest) {
@@ -82,19 +89,21 @@ class EventsViewController: UITableViewController {
                     if let items = json["items"] as? [[String: AnyObject]] {
                         
                         for item in items {
-                            var event : Event? = Event()
+                            let event : Event? = Event()
                             if let summary = item["summary"] as? String {
                                 if let start = item["start"]!["date"] as? String {
                                     self.eventNames.append(summary)
                                     
                                     self.eventDates.append(start)
                                     print(self.events.count)
-
+                                    
                                 }
                                 
                                 event?.summary = summary
                                 
+                                
                                 self.events.append(event!)
+                                print("Woohoo")
                             }
                         }
                         
@@ -103,14 +112,14 @@ class EventsViewController: UITableViewController {
                 }catch {
                     print("Error with Json: \(error)")
                 }
+                
+                
             }
         }
         
         task.resume()
-        
+
     }
-    
-    
     
     
     
@@ -131,32 +140,48 @@ class EventsViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return events.count
-        
+        // return events.count
+        return 5
     }
     
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        
-        
         let cellIdentifier = "EventsViewCell"
         
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! EventsViewCell
         
-        let event: Event
+        
+        
+//        let cell = tableView.dequeueReusableCellWithIdentifier("EventsViewCell", forIndexPath: indexPath) as! EventsViewCell
+        
+        // Configure the cell...
+//        let event = events[indexPath.row]
+        
+//        cell.summary.text = event.summary
+//        cell.dayAndDate.text = String(event.day) + ", " + String(event.date)
+//        cell.startingTime.text = event.startTime
+        
+        
+        return cell
+        
+/*
+        let cellIdentifier = "EventsViewCell"
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! EventsViewCell
+        
+//        let event: Event
         
         cell.summary.text = "bla"
         
         return cell
         
+    
         
-        
-        
-        
-        
-        
+*/
+    }
+}
         /*
          
          // Table view cells are reused and should be dequeued using a cell identifier.
@@ -185,10 +210,8 @@ class EventsViewController: UITableViewController {
          
          */
         
-        
-        
-    }
-}
+    
+
 //
 //    // When the view appears, ensure that the Google Calendar API service is authorized
 //    // and perform API calls
