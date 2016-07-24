@@ -5,6 +5,7 @@
 //  Created by Xavi Loinaz on 6/5/16.
 //  Copyright © 2016 Xavi Loinaz. All rights reserved.
 //
+import Foundation
 import GoogleAPIClient
 import GTMOAuth2
 import UIKit
@@ -29,6 +30,7 @@ class EventsViewController: UITableViewController {
     var eventNames = [String]()
     var eventDates = [String]()
     var events = [Event]()
+    var stations = [String]()
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -40,40 +42,187 @@ class EventsViewController: UITableViewController {
     // and initialize the Google Calendar API service
     override func viewDidLoad() {
         super.viewDidLoad()
-        downloadAndParseJSON()
+//        downloadAndParseJSON()
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
 //        output.frame = view.bounds
 //        output.editable = false
 //        output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
 //        output.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
         
-//        view.addSubview(output);
+//        view.addSubview(output)
         
-        if let auth = GTMOAuth2ViewControllerTouch.authForGoogleFromKeychainForName(
-            kKeychainItemName,
-            clientID: kClientID,
-            clientSecret: nil) {
-            service.authorizer = auth
+        
+        
+        
+        
+        // Do any additional setup after loading the view, typically from a nib.
+        
+
+        
+        
+/*
+        let requestURL: NSURL = NSURL(string: "http://www.learnswiftonline.com/Samples/subway.json")!
+        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithRequest(urlRequest)
+        
+        func yolo(data, response, error) -> Void {
+            
+            
+            
+            let httpResponse = response as! NSHTTPURLResponse
+            let statusCode = httpResponse.statusCode
+            
+            if (statusCode == 200) {
+                print("Everyone is fine, file downloaded successfully.")
+                
+                do{
+                    
+                    let json = try NSJSONSerialization.JSONObjectWithData(data!, options:.AllowFragments)
+                    
+                    if let stations = json["stations"] as? [[String: AnyObject]] {
+                        
+                        for station in stations {
+                            
+                            if let name = station["stationName"] as? String {
+                                
+                                if let year = station["buildYear"] as? String {
+                                    print(name,year)
+                                }
+                                
+                            }
+                        }
+                        
+                    }
+                    
+                }catch {
+                    print("Error with Json: \(error)")
+                }
+                
+            }
         }
+        
+        yolo(stuff)
+*/
+/*
+        let requestURL: NSURL = NSURL(string: "http://www.learnswiftonline.com/Samples/subway.json")!
+        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
+        let session = NSURLSession.sharedSession()
+        var json: [String?]
+        do {
+            json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions())
+        } catch {
+            print(error)
+        }
+        
+        if let stations = json["stations"] as! String {
+            
+            for station in stations {
+                
+                if let name = station["stationName"] as? String {
+            
+                    if let year = station["buildYear"] as? String {
+                        
+                        print(name,year)
+                    }
+                }
+            }
+        
+            
+        }
+*/
+        
+        
+        
+        
+        
+        let requestURL: NSURL = NSURL(string: "http://www.learnswiftonline.com/Samples/subway.json")!
+        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithRequest(urlRequest)
+            
+//            let httpResponse = response as! NSHTTPURLResponse
+//            let statusCode = httpResponse.statusCode
+            
+//            if (statusCode == 200) {
+                print("Everyone is fine, file downloaded successfully.")
+                
+//                do{
+                    /*
+                    //let json = try NSJSONSerialization.JSONObjectWithData(data!, options:.AllowFragments)
+                    
+                    let stations = json["stations"] as! [[String: AnyObject]]
+                        
+                        for station in stations {
+                            
+                            let name = station["stationName"] as! String
+                                
+                                let year = station["buildYear"] as! String
+                                    print(name,year)
+                            
+                                
+                            
+                        
+                        
+                    }
+                    */
+                    stations.append("first")
+                    stations.append("second")
+                    stations.append("third")
+                    stations.append("fourth")
+                    stations.append("fifth")
+//                } catch {
+//                    print("Error with Json")
+//                }
+                
+            }
+    
+//        task.resume()
+
+
+        
+        
+        
+        
+        
+        
+//        if let auth = GTMOAuth2ViewControllerTouch.authForGoogleFromKeychainForName(
+//            kKeychainItemName,
+//            clientID: kClientID,
+//            clientSecret: nil) {
+//           service.authorizer = auth
+//        }
         
 //        let downloadJSON = DownloadJSON()
 //        events = downloadJSON.downloadAndParseJSON()
+
         
+//        stations.append("first one")
+//        stations.append("second one")
+//        stations.append("third one")
         
 
         
         
         
-    }
+        
+        
+
     
     
     
     
-    func downloadAndParseJSON() {
+/*    func downloadAndParseJSON() {
         let requestURL: NSURL = NSURL(string: "https://www.googleapis.com/calendar/v3/calendars/u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com/events?key=AIzaSyC_yZtpuIBpqT7PHKgzAPZrWIUGmOuccvI&maxResults=500000&timeMin=2016-06-03T10:00:00-07:00&showDeleted=false&singleEvents=true&orderBy=startTime")!
         let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
         let session = NSURLSession.sharedSession()
-        let task = session.dataTaskWithRequest(urlRequest) {
+        let task = session.dataTaskWithRequest(urlRequest)
+         
+     
+     
+     
+     
+            {
             (data, response, error) -> Void in
             
             let httpResponse = response as! NSHTTPURLResponse
@@ -120,7 +269,7 @@ class EventsViewController: UITableViewController {
         task.resume()
 
     }
-    
+*/
     
     
     
@@ -132,6 +281,7 @@ class EventsViewController: UITableViewController {
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
+//        downloadAndParseJSON()
         return 1
         
     }
@@ -139,7 +289,7 @@ class EventsViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+//        downloadAndParseJSON()
         // return events.count
         return 5
     }
@@ -147,6 +297,14 @@ class EventsViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        downloadAndParseJSON()
+        
+        
+        
+        
+        
+        
+        
         
         let cellIdentifier = "EventsViewCell"
         
@@ -157,15 +315,20 @@ class EventsViewController: UITableViewController {
 //        let cell = tableView.dequeueReusableCellWithIdentifier("EventsViewCell", forIndexPath: indexPath) as! EventsViewCell
         
         // Configure the cell...
+        
 //        let event = events[indexPath.row]
         
 //        cell.summary.text = event.summary
 //        cell.dayAndDate.text = String(event.day) + ", " + String(event.date)
 //        cell.startingTime.text = event.startTime
         
+        let sumthin = stations[indexPath.row]
+        cell.summary.text = String(sumthin)
+        
         
         return cell
-        
+
+
 /*
         let cellIdentifier = "EventsViewCell"
         
@@ -182,6 +345,8 @@ class EventsViewController: UITableViewController {
 */
     }
 }
+
+
         /*
          
          // Table view cells are reused and should be dequeued using a cell identifier.
