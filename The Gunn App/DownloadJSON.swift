@@ -10,18 +10,22 @@ import Foundation
 import UIKit
 
 extension String {
-    subscript(integerIndex: Int) -> Character {
-        let index = startIndex.advancedBy(integerIndex)
-        return self[index]
+    
+    subscript (i: Int) -> Character {
+        return self[self.startIndex.advancedBy(i)]
     }
     
-    subscript(integerRange: Range<Int>) -> String {
-        let start = startIndex.advancedBy(integerRange.startIndex)
-        let end = startIndex.advancedBy(integerRange.endIndex)
-        let range = start..<end
-        return self[range]
+    subscript (i: Int) -> String {
+        return String(self[i] as Character)
+    }
+    
+    subscript (r: Range<Int>) -> String {
+        let start = startIndex.advancedBy(r.startIndex)
+        let end = start.advancedBy(r.endIndex - r.startIndex)
+        return self[Range(start ..< end)]
     }
 }
+
 
 class DownloadJSON {
     
@@ -31,22 +35,24 @@ class DownloadJSON {
     
     func dateString(date:String?) -> String{
 //        var date = Array(arrayLiteral: str!)
-        var year = date![0...3]
-        var month = date![5...6]
-        var day = date![8...9]
+        let year = date![0...3]
+        let month = date![5...6]
+        let day = date![8...9]
         var datestr = ""
         datestr += month
         datestr += "/"
         datestr += day
         datestr += "/" + year;
         
+        
+        
         return datestr
         
     }
     
     func timeString(date: String?) -> String{
-        
-        
+        let time = date![11...15]
+        return time
         
     }
     

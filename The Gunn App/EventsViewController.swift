@@ -48,6 +48,7 @@ class EventsViewController: UITableViewController {
         events = ev.downloadAndParseJSON();
         for index in 0...events.count-1 {
             print(events[index].summary!)
+            print(ev.dateString(events[index].startTime))
         }
 //        output.frame = view.bounds
 //        output.editable = false
