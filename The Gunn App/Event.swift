@@ -17,4 +17,5 @@ class Event{
     var summary : String? = ""
     var location : String? = ""
     var day : String! = ""
+    var description: String! = ""
 }

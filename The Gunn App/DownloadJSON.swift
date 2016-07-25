@@ -122,9 +122,18 @@ class DownloadJSON {
         var time = ""
         if(str!.characters.count > 9){
             time += str![11...15]
+            
+            if(Int(time[0...1]) > 12){
+                time = String(Int(time[0...1])!-12) + time[2...4] + " PM"
+            }
+            else{
+                time += " AM"
+            }
             if (time[0] == "0"){
                 time = time[1...time.characters.count-1]
             }
+            
+            
         }
         
         
@@ -153,6 +162,7 @@ class DownloadJSON {
                 }
             }
         }
+//        print(curMonth + curDay + curYear)
         return false
     }
     
@@ -168,7 +178,7 @@ class DownloadJSON {
             
             if let events = json["items"] as? [[String: AnyObject]] {
                 for event in events {
-                    var eve : Event? = Event()
+                    let eve : Event? = Event()
                     if let startDate = event["start"]!["date"]! as? String {
                         eve!.startDate = startDate
                     }
@@ -186,6 +196,9 @@ class DownloadJSON {
                     }
                     if let location = event["location"] as? String {
                         eve!.location = location
+                    }
+                    if let description = event["description"] as? String {
+                        eve!.description = description
                     }
                     
                     if(eve!.startTime! != ""){

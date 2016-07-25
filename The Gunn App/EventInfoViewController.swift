@@ -17,6 +17,9 @@ class EventInfoViewController: UIViewController {
     @IBOutlet weak var startingTime: UILabel!
     @IBOutlet weak var location: UILabel!
     
+    @IBOutlet weak var desc: UILabel!
+  
+    
     var thisEvent = Event()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,22 +31,27 @@ class EventInfoViewController: UIViewController {
         summary.text = thisEvent.summary!
         if((thisEvent.startDate) != ""){
 //            print(event.startDate!)
-            date.text = ev.dateString(thisEvent.startDate!)
-            startingTime.hidden = true
+            date.text = "DATE:  " + ev.dateString(thisEvent.startDate!)
+            startingTime.text = "TIME:  All Day"
         }
         else if((thisEvent.startTime) != ""){
-           date.text = ev.dateString(thisEvent.startTime!)
-           startingTime.text = ev.timeString(thisEvent.startTime!) + " - " + ev.timeString(thisEvent.endTime)
+           date.text = "DATE:  " + ev.dateString(thisEvent.startTime!)
+           startingTime.text = "TIME:  " + ev.timeString(thisEvent.startTime!) + " - " + ev.timeString(thisEvent.endTime)
         }
         else{
             date.text = ""
             startingTime.text = ""
         }
         
-        location.text = thisEvent.location!
-        
+        if(thisEvent.location != ""){
+            location.text = "LOCATION: " + thisEvent.location!
+        }
+        else{
+            location.text = "LOCATION:  Unspecified"
+        }
 
-        status.text = "Status: Confirmed!"
+        status.text = "STATUS: Confirmed"
+        desc.text = "DESCRIPTION: " + thisEvent.description
         
     }
     

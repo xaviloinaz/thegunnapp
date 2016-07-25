@@ -475,12 +475,26 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJC-Tb-JhF">
+                                <rect key="frame" x="40" y="174" width="622" height="268"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Description">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="tO2-Eh-gcc"/>
                     <connections>
                         <outlet property="date" destination="Cxi-Gx-Aju" id="Zm8-Ra-iup"/>
+                        <outlet property="desc" destination="pJC-Tb-JhF" id="Jhw-NL-s6m"/>
                         <outlet property="location" destination="KJZ-En-e7N" id="PtF-gh-Z0U"/>
                         <outlet property="startingTime" destination="mqC-Tx-n1u" id="vhT-3O-kfw"/>
                         <outlet property="status" destination="Dc8-eJ-woy" id="RBj-Xb-aS2"/>
