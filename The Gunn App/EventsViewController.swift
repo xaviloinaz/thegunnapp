@@ -48,7 +48,9 @@ class EventsViewController: UITableViewController {
         events = ev!.downloadAndParseJSON();
         for index in 0...events.count-1 {
             print(events[index].summary!)
-            print(ev!.timeString(events[index].startTime))
+        
+            print(events[index].startDate)
+            print(ev!.dateString(events[index].startTime))
         }
 //        output.frame = view.bounds
 //        output.editable = false
@@ -331,10 +333,17 @@ class EventsViewController: UITableViewController {
 //        let sumthin = stations[indexPath.row]
         let text = event.summary!
         cell.summary.text = String(text)
-        if((event.startTime) != ""){
+        if((event.startDate) != ""){
+            print(event.startDate!)
+            cell.dayAndDate.text = ev!.dateString(event.startDate!)
+            cell.startingTime.hidden = true
+//                ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
+        }
+        else if((event.startTime) != ""){
             cell.dayAndDate.text = ev!.dateString(event.startTime!)
             cell.startingTime.text = ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
-        }else{
+        }
+        else{
             cell.dayAndDate.text = ""
             cell.startingTime.text = ""
         }
