@@ -368,6 +368,53 @@ class EventsViewController: UITableViewController {
         
 */
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        
+        let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
+        
+        
+        
+        var destViewController = segue.destinationViewController as! EventInfoViewController
+        
+        
+        
+        var thisEvent : Event
+        
+        
+        
+        //        destViewController.thisStaff = thisStaff
+        
+        thisEvent = events[indexPath.row]
+        destViewController.thisEvent = thisEvent
+        
+//        if searchController.active && searchController.searchBar.text != "" {
+//            
+//            thisStaff = filteredStaff[indexPath.row]
+//            
+//            destViewController.thisStaff = thisStaff
+//            
+//        } else {
+//            
+//            thisStaff = staffs[indexPath.row]
+//            
+//            destViewController.thisStaff = thisStaff
+//            
+//        }
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 
