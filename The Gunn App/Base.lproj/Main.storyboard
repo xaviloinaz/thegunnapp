@@ -355,7 +355,7 @@
                                     <outlet property="dayAndDate" destination="ceQ-Ne-tqr" id="b45-Sw-btb"/>
                                     <outlet property="startingTime" destination="f2O-5r-aoi" id="bra-Ro-Ikc"/>
                                     <outlet property="summary" destination="6NT-tc-TRw" id="9rk-Cc-SuW"/>
-                                    <segue destination="kyF-3T-Phk" kind="show" action="showDetailViewController:sender:" id="KwX-9w-qFb"/>
+                                    <segue destination="kyF-3T-Phk" kind="show" id="dsT-3o-5hM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -487,6 +487,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tO2-Eh-gcc"/>
                     <connections>
                         <outlet property="date" destination="Cxi-Gx-Aju" id="Zm8-Ra-iup"/>
                         <outlet property="location" destination="KJZ-En-e7N" id="PtF-gh-Z0U"/>
@@ -497,7 +498,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTU-Od-uhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3806" y="-1257"/>
+            <point key="canvasLocation" x="3538" y="-1037"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="sRU-C9-lqR">
