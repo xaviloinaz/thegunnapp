@@ -147,7 +147,7 @@
                                 <connections>
                                     <outlet property="staffDepartment" destination="bqA-RZ-ghB" id="uNn-39-sVF"/>
                                     <outlet property="staffName" destination="vbb-3P-XVn" id="f5d-US-6dZ"/>
-                                    <segue destination="wzk-Rn-msO" kind="show" id="p9n-1Y-ucu"/>
+                                    <segue destination="wzk-Rn-msO" kind="show" animates="NO" id="p9n-1Y-ucu"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -331,31 +331,22 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Event Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NT-tc-TRw">
                                             <rect key="frame" x="18" y="1" width="168" height="29"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Starting Time" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2O-5r-aoi">
-                                            <rect key="frame" x="347" y="30" width="82" height="16"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="ceQ-Ne-tqr" firstAttribute="leading" secondItem="6fT-ja-5Ts" secondAttribute="leadingMargin" constant="10" id="EaA-Zt-5JJ"/>
-                                        <constraint firstItem="f2O-5r-aoi" firstAttribute="leading" secondItem="6fT-ja-5Ts" secondAttribute="leadingMargin" constant="10" id="K0h-ol-kKx"/>
                                         <constraint firstItem="ceQ-Ne-tqr" firstAttribute="top" secondItem="6NT-tc-TRw" secondAttribute="bottom" id="cTj-EB-9Vo"/>
                                         <constraint firstItem="6NT-tc-TRw" firstAttribute="leading" secondItem="6fT-ja-5Ts" secondAttribute="leadingMargin" constant="10" id="eTj-mg-Cjv"/>
-                                        <constraint firstItem="f2O-5r-aoi" firstAttribute="top" secondItem="ceQ-Ne-tqr" secondAttribute="bottom" constant="-1" id="zr9-Cd-Qko"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.5"/>
                                 <connections>
                                     <outlet property="dayAndDate" destination="ceQ-Ne-tqr" id="b45-Sw-btb"/>
-                                    <outlet property="startingTime" destination="f2O-5r-aoi" id="bra-Ro-Ikc"/>
                                     <outlet property="summary" destination="6NT-tc-TRw" id="9rk-Cc-SuW"/>
-                                    <segue destination="kyF-3T-Phk" kind="show" id="dsT-3o-5hM"/>
+                                    <segue destination="kyF-3T-Phk" kind="show" animates="NO" id="dsT-3o-5hM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -383,20 +374,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrY-Rz-LRE">
-                                <rect key="frame" x="20" y="111" width="560" height="43"/>
+                                <rect key="frame" x="40" y="114" width="560" height="43"/>
                                 <accessibility key="accessibilityConfiguration" label="Summary"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Summary">
                                         <attributes>
                                             <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="28" name="HelveticaNeue"/>
+                                            <font key="NSFont" size="21" name="HelveticaNeue"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqC-Tx-n1u">
-                                <rect key="frame" x="20" y="191" width="291" height="35"/>
+                                <rect key="frame" x="40" y="196" width="291" height="35"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Starting Time">
                                         <attributes>
@@ -408,7 +399,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxi-Gx-Aju">
-                                <rect key="frame" x="20" y="162" width="211" height="35"/>
+                                <rect key="frame" x="40" y="165" width="211" height="35"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Date">
                                         <attributes>
@@ -421,7 +412,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dc8-eJ-woy">
-                                <rect key="frame" x="20" y="224" width="296" height="35"/>
+                                <rect key="frame" x="40" y="227" width="296" height="35"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Status">
                                         <attributes>
@@ -472,7 +463,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJZ-En-e7N">
-                                <rect key="frame" x="20" y="255" width="296" height="35"/>
+                                <rect key="frame" x="40" y="257" width="296" height="35"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Location">
                                         <attributes>

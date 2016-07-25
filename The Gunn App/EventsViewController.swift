@@ -299,7 +299,7 @@ class EventsViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        downloadAndParseJSON()
         // return events.count
-        return 5
+        return 300
     }
     
     
@@ -336,16 +336,16 @@ class EventsViewController: UITableViewController {
         if((event.startDate) != ""){
             print(event.startDate!)
             cell.dayAndDate.text = ev!.dateString(event.startDate!)
-            cell.startingTime.hidden = true
+//            cell.startingTime.hidden = true
 //                ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
         }
         else if((event.startTime) != ""){
             cell.dayAndDate.text = ev!.dateString(event.startTime!)
-            cell.startingTime.text = ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
+//            cell.startingTime.text = ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
         }
         else{
             cell.dayAndDate.text = ""
-            cell.startingTime.text = ""
+//            cell.startingTime.text = ""
         }
         
         

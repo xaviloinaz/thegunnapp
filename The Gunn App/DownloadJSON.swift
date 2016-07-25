@@ -90,6 +90,34 @@ class DownloadJSON {
         return datestr
     }
     
+    func yearString(str:String?) -> String{
+        var result = ""
+        if(str!.characters.count > 9){
+            
+            //            print(str!.characters.count)
+            let year = str![0...3]
+            result = year
+        }
+        return result
+    }
+    func monthString(str:String?) -> String{
+        var result = ""
+        if(str!.characters.count > 9){
+            let month = str![5...6]
+            result = month
+        }
+        return result
+    }
+    func dayString(str:String?) -> String{
+        var result = ""
+        if(str!.characters.count > 9){
+            let day = str![8...9]
+            result = day
+        }
+        return result
+    }
+    
+    
     func timeString(str: String?) -> String{
         var time = ""
         if(str!.characters.count > 9){
@@ -102,6 +130,30 @@ class DownloadJSON {
         
         return time
         
+    }
+    let date = NSDate()
+    let calendar = NSCalendar.currentCalendar()
+    func laterThanToday(str1: String?) -> Bool {
+       
+        let components = calendar.components([.Day , .Month , .Year], fromDate: date)
+        
+        let curYear = components.year
+        let curMonth = components.month
+        let curDay = components.day
+        if(Int(yearString(str1)) > curYear){
+            return true
+        }
+        else if(Int(yearString(str1)) == curYear){
+            if(Int(monthString(str1)) > curMonth){
+                return true
+            }
+            else if(Int(monthString(str1)) == curMonth){
+                if(Int(dayString(str1)) > curDay){
+                    return true
+                }
+            }
+        }
+        return false
     }
     
     
@@ -135,7 +187,18 @@ class DownloadJSON {
                     if let location = event["location"] as? String {
                         eve!.location = location
                     }
-                    self.events.append(eve!)
+                    
+                    if(eve!.startTime! != ""){
+                        if(laterThanToday(eve!.startTime!)){
+                            self.events.append(eve!)
+                        }
+                    }
+                    else if(eve!.startDate != ""){
+                        if(laterThanToday(eve!.startDate!)){
+                            self.events.append(eve!)
+                        }
+                    }
+                    
                 }
             }
         } catch {
