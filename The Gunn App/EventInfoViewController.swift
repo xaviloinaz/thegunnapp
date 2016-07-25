@@ -52,13 +52,13 @@ class EventInfoViewController: UIViewController {
             location.text = "Location  -  Unspecified"
         }
 
-        status.text = "Status  -  Confirmed"
-        desc.text = "DESCRIPTION: "
+//        status.text = "Status  -  Confirmed"
+//        desc.text = "DESCRIPTION: "
         if(thisEvent.description != ""){
-            descriptionText.text = thisEvent.description
+            descriptionText.text = "Description  -  " + thisEvent.description
         }
         else{
-            desc.hidden = true
+//            desc.hidden = true
             descriptionText.hidden = true
         }
         descriptionText.editable = false
