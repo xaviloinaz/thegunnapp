@@ -13,13 +13,15 @@ class EventInfoViewController: UIViewController {
    
     @IBOutlet weak var status: UILabel!
     @IBOutlet weak var date: UILabel!
-    @IBOutlet weak var summary: UILabel!
+//    @IBOutlet weak var summary: UILabel!
     @IBOutlet weak var startingTime: UILabel!
     @IBOutlet weak var location: UILabel!
     
     @IBOutlet weak var desc: UILabel!
   
+    @IBOutlet weak var descriptionText: UITextView!
     
+    @IBOutlet weak var summary: UITextView!
     var thisEvent = Event()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +33,12 @@ class EventInfoViewController: UIViewController {
         summary.text = thisEvent.summary!
         if((thisEvent.startDate) != ""){
 //            print(event.startDate!)
-            date.text = "DATE:  " + ev.dateString(thisEvent.startDate!)
-            startingTime.text = "TIME:  All Day"
+            date.text = "Date - " + ev.dateString(thisEvent.startDate!)
+            startingTime.text = "All Day"
         }
         else if((thisEvent.startTime) != ""){
-           date.text = "DATE:  " + ev.dateString(thisEvent.startTime!)
-           startingTime.text = "TIME:  " + ev.timeString(thisEvent.startTime!) + " - " + ev.timeString(thisEvent.endTime)
+           date.text = "Date - " + ev.dateString(thisEvent.startTime!)
+           startingTime.text = ev.timeString(thisEvent.startTime!) + " - " + ev.timeString(thisEvent.endTime)
         }
         else{
             date.text = ""
@@ -44,14 +46,23 @@ class EventInfoViewController: UIViewController {
         }
         
         if(thisEvent.location != ""){
-            location.text = "LOCATION: " + thisEvent.location!
+            location.text = "Location " + thisEvent.location!
         }
         else{
-            location.text = "LOCATION:  Unspecified"
+            location.text = "Location Unspecified"
         }
 
-        status.text = "STATUS: Confirmed"
-        desc.text = "DESCRIPTION: " + thisEvent.description
+        status.text = "Confirmed"
+        desc.text = "DESCRIPTION: "
+        if(thisEvent.description != ""){
+            descriptionText.text = thisEvent.description
+        }
+        else{
+            desc.hidden = true
+            descriptionText.hidden = true
+        }
+        descriptionText.editable = false
+        summary.editable = false
         
     }
     
