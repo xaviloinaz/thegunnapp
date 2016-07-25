@@ -33,12 +33,12 @@ class EventInfoViewController: UIViewController {
         summary.text = thisEvent.summary!
         if((thisEvent.startDate) != ""){
 //            print(event.startDate!)
-            date.text = "Date - " + ev.dateString(thisEvent.startDate!)
-            startingTime.text = "All Day"
+            date.text = "Date  -  " + ev.dateString(thisEvent.startDate!)
+            startingTime.text = "Time  -  All Day"
         }
         else if((thisEvent.startTime) != ""){
-           date.text = "Date - " + ev.dateString(thisEvent.startTime!)
-           startingTime.text = ev.timeString(thisEvent.startTime!) + " - " + ev.timeString(thisEvent.endTime)
+           date.text = "Date  -  " + ev.dateString(thisEvent.startTime!)
+           startingTime.text = "Time  -  " + ev.timeString(thisEvent.startTime!) + " - " + ev.timeString(thisEvent.endTime)
         }
         else{
             date.text = ""
@@ -46,13 +46,13 @@ class EventInfoViewController: UIViewController {
         }
         
         if(thisEvent.location != ""){
-            location.text = "Location " + thisEvent.location!
+            location.text = "Location  -  " + thisEvent.location!
         }
         else{
-            location.text = "Location Unspecified"
+            location.text = "Location  -  Unspecified"
         }
 
-        status.text = "Confirmed"
+        status.text = "Status  -  Confirmed"
         desc.text = "DESCRIPTION: "
         if(thisEvent.description != ""){
             descriptionText.text = thisEvent.description
