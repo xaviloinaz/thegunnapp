@@ -11,12 +11,15 @@ import UIKit
 class EventInfoViewController: UIViewController {
     
    
-    @IBOutlet weak var status: UILabel!
-    @IBOutlet weak var date: UILabel!
+//    @IBOutlet weak var status: UILabel!
+//    @IBOutlet weak var date: UILabel!
 //    @IBOutlet weak var summary: UILabel!
-    @IBOutlet weak var startingTime: UILabel!
-    @IBOutlet weak var location: UILabel!
-//    
+    @IBOutlet weak var date: UITextView!
+//    @IBOutlet weak var startingTime: UILabel!
+    @IBOutlet weak var startingTime: UITextView!
+//    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var location: UITextView!
+//
 //    @IBOutlet weak var desc: UILabel!
   
     @IBOutlet weak var desc: UITextView!
@@ -32,8 +35,10 @@ class EventInfoViewController: UIViewController {
         let ev = DownloadJSON()
         
         summary.text = thisEvent.summary!
+//       date.font = UIFont(name: "kannada", size: 106)
         if((thisEvent.startDate) != ""){
 //            print(event.startDate!)
+            
             date.text = "Date  -  " + ev.dateString(thisEvent.startDate!)
             startingTime.text = "Time  -  All Day"
         }
@@ -65,6 +70,9 @@ class EventInfoViewController: UIViewController {
         descriptionText.editable = false
         summary.editable = false
         desc.editable = false
+        date.editable = false
+        startingTime.editable = false
+        summary.scrollEnabled = false
     }
     
     override func didReceiveMemoryWarning() {
