@@ -16,9 +16,10 @@ class EventInfoViewController: UIViewController {
 //    @IBOutlet weak var summary: UILabel!
     @IBOutlet weak var startingTime: UILabel!
     @IBOutlet weak var location: UILabel!
-    
-    @IBOutlet weak var desc: UILabel!
+//    
+//    @IBOutlet weak var desc: UILabel!
   
+    @IBOutlet weak var desc: UITextView!
     @IBOutlet weak var descriptionText: UITextView!
     
     @IBOutlet weak var summary: UITextView!
@@ -40,7 +41,7 @@ class EventInfoViewController: UIViewController {
            date.text = "Date  -  " + ev.dateString(thisEvent.startTime!)
            startingTime.text = "Time  -  " + ev.timeString(thisEvent.startTime!) + " - " + ev.timeString(thisEvent.endTime)
         }
-        else{
+        else {
             date.text = ""
             startingTime.text = ""
         }
@@ -55,15 +56,15 @@ class EventInfoViewController: UIViewController {
 //        status.text = "Status  -  Confirmed"
 //        desc.text = "DESCRIPTION: "
         if(thisEvent.description != ""){
-            descriptionText.text = "Description  -  " + thisEvent.description
+            descriptionText.text = thisEvent.description
         }
         else{
-//            desc.hidden = true
+            desc.hidden = true
             descriptionText.hidden = true
         }
         descriptionText.editable = false
         summary.editable = false
-        
+        desc.editable = false
     }
     
     override func didReceiveMemoryWarning() {
