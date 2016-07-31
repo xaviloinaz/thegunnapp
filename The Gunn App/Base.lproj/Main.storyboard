@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -158,7 +158,7 @@
                                 <connections>
                                     <outlet property="staffDepartment" destination="bqA-RZ-ghB" id="uNn-39-sVF"/>
                                     <outlet property="staffName" destination="vbb-3P-XVn" id="f5d-US-6dZ"/>
-                                    <segue destination="wzk-Rn-msO" kind="show" id="p9n-1Y-ucu"/>
+                                    <segue destination="wzk-Rn-msO" kind="show" animates="NO" id="p9n-1Y-ucu"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -316,56 +316,48 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RxD-JJ-zf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2168" y="-906"/>
+            <point key="canvasLocation" x="1856" y="-1037"/>
         </scene>
         <!--Events-->
         <scene sceneID="Qgq-tP-tvb">
             <objects>
                 <tableViewController title="Events" id="DPa-68-Rf0" customClass="EventsViewController" customModule="TheGunnApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="G7e-AY-O9b">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="53" sectionHeaderHeight="28" sectionFooterHeight="28" id="G7e-AY-O9b">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventsViewCell" id="fgm-b4-vYv" customClass="EventsViewCell" customModule="TheGunnApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="70"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventsViewCell" rowHeight="53" id="fgm-b4-vYv" customClass="EventsViewCell" customModule="TheGunnApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="53"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fgm-b4-vYv" id="6fT-ja-5Ts">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="52.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Day, Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-Ne-tqr">
-                                            <rect key="frame" x="18" y="30" width="58" height="16"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Starting Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2O-5r-aoi">
-                                            <rect key="frame" x="18" y="45" width="82" height="16"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Event Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NT-tc-TRw">
-                                            <rect key="frame" x="18" y="1" width="168" height="29"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <rect key="frame" x="18" y="8" width="168" height="29"/>
+                                            <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Day, Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-Ne-tqr">
+                                            <rect key="frame" x="18" y="28" width="58" height="16"/>
+                                            <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="13"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="ceQ-Ne-tqr" firstAttribute="leading" secondItem="6fT-ja-5Ts" secondAttribute="leadingMargin" constant="10" id="EaA-Zt-5JJ"/>
-                                        <constraint firstItem="f2O-5r-aoi" firstAttribute="leading" secondItem="6fT-ja-5Ts" secondAttribute="leadingMargin" constant="10" id="K0h-ol-kKx"/>
                                         <constraint firstItem="ceQ-Ne-tqr" firstAttribute="top" secondItem="6NT-tc-TRw" secondAttribute="bottom" id="cTj-EB-9Vo"/>
                                         <constraint firstItem="6NT-tc-TRw" firstAttribute="leading" secondItem="6fT-ja-5Ts" secondAttribute="leadingMargin" constant="10" id="eTj-mg-Cjv"/>
-                                        <constraint firstItem="f2O-5r-aoi" firstAttribute="top" secondItem="ceQ-Ne-tqr" secondAttribute="bottom" constant="-1" id="zr9-Cd-Qko"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.5"/>
                                 <connections>
                                     <outlet property="dayAndDate" destination="ceQ-Ne-tqr" id="b45-Sw-btb"/>
-                                    <outlet property="startingTime" destination="f2O-5r-aoi" id="bra-Ro-Ikc"/>
                                     <outlet property="summary" destination="6NT-tc-TRw" id="9rk-Cc-SuW"/>
-                                    <segue destination="kyF-3T-Phk" kind="show" action="showDetailViewController:sender:" id="KwX-9w-qFb"/>
+                                    <segue destination="kyF-3T-Phk" kind="show" animates="NO" id="dsT-3o-5hM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -378,12 +370,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEw-lI-XAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3000" y="-1152"/>
+            <point key="canvasLocation" x="2670" y="-1310"/>
         </scene>
-        <!--View Controller-->
+        <!--Event Info View Controller-->
         <scene sceneID="gbJ-Ua-sLg">
             <objects>
-                <viewController id="kyF-3T-Phk" sceneMemberID="viewController">
+                <viewController id="kyF-3T-Phk" customClass="EventInfoViewController" customModule="TheGunnApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yCo-S7-Riq"/>
                         <viewControllerLayoutGuide type="bottom" id="Sy3-5x-KWW"/>
@@ -391,12 +383,80 @@
                     <view key="view" contentMode="scaleToFill" id="bbh-Ea-P1k">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Summary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MWu-Nd-EiK">
+                                <rect key="frame" x="20" y="89" width="340" height="77"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.71009898560209428" green="0.12894552915840957" blue="0.17979971146659421" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmW-gc-FKP">
+                                <rect key="frame" x="40" y="384" width="291" height="35"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDP-B9-icU">
+                                <rect key="frame" x="35" y="402" width="211" height="35"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFo-1q-spS">
+                                <rect key="frame" x="40" y="451" width="296" height="35"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWW-gw-ewW">
+                                <rect key="frame" x="65" y="395" width="296" height="35"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description  -" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Hy-Tp-wor">
+                                <rect key="frame" x="20" y="258" width="240" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="DateText" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hzO-Vb-zkC">
+                                <rect key="frame" x="20" y="164" width="301" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="StartingTime" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BrG-2a-oPl">
+                                <rect key="frame" x="20" y="195" width="311" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Location" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uIU-hd-VKi">
+                                <rect key="frame" x="21" y="223" width="315" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gwd-X0-1rU">
+                                <rect key="frame" x="20" y="284" width="301" height="271"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tO2-Eh-gcc"/>
+                    <connections>
+                        <outlet property="date" destination="hzO-Vb-zkC" id="AXe-z4-0Th"/>
+                        <outlet property="desc" destination="3Hy-Tp-wor" id="StL-Jc-vcC"/>
+                        <outlet property="descriptionText" destination="gwd-X0-1rU" id="yIp-Bz-X3U"/>
+                        <outlet property="location" destination="uIU-hd-VKi" id="LcZ-hx-ose"/>
+                        <outlet property="startingTime" destination="BrG-2a-oPl" id="bIO-rP-car"/>
+                        <outlet property="summary" destination="MWu-Nd-EiK" id="YS8-K0-TUo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTU-Od-uhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3786" y="-1257"/>
+            <point key="canvasLocation" x="3538" y="-1037"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="sRU-C9-lqR">

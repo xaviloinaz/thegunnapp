@@ -95,18 +95,80 @@ class DownloadJSON {
         return datestr
     }
     
+    func yearString(str:String?) -> String{
+        var result = ""
+        if(str!.characters.count > 9){
+            
+            //            print(str!.characters.count)
+            let year = str![0...3]
+            result = year
+        }
+        return result
+    }
+    func monthString(str:String?) -> String{
+        var result = ""
+        if(str!.characters.count > 9){
+            let month = str![5...6]
+            result = month
+        }
+        return result
+    }
+    func dayString(str:String?) -> String{
+        var result = ""
+        if(str!.characters.count > 9){
+            let day = str![8...9]
+            result = day
+        }
+        return result
+    }
+    
+    
     func timeString(str: String?) -> String{
         var time = ""
-        if(str!.characters.count > 24){
+        if(str!.characters.count > 9){
             time += str![11...15]
+            
+            if(Int(time[0...1]) > 12){
+                time = String(Int(time[0...1])!-12) + time[2...4] + " PM"
+            }
+            else{
+                time += " AM"
+            }
             if (time[0] == "0"){
                 time = time[1...time.characters.count-1]
             }
+            
+            
         }
         
         
         return time
         
+    }
+    let date = NSDate()
+    let calendar = NSCalendar.currentCalendar()
+    func laterThanToday(str1: String?) -> Bool {
+       
+        let components = calendar.components([.Day , .Month , .Year], fromDate: date)
+        
+        let curYear = components.year
+        let curMonth = components.month
+        let curDay = components.day
+        if(Int(yearString(str1)) > curYear){
+            return true
+        }
+        else if(Int(yearString(str1)) == curYear){
+            if(Int(monthString(str1)) > curMonth){
+                return true
+            }
+            else if(Int(monthString(str1)) == curMonth){
+                if(Int(dayString(str1)) > curDay){
+                    return true
+                }
+            }
+        }
+//        print(curMonth + curDay + curYear)
+        return false
     }
     
     
@@ -121,7 +183,7 @@ class DownloadJSON {
             
             if let events = json["items"] as? [[String: AnyObject]] {
                 for event in events {
-                    var eve : Event? = Event()
+                    let eve : Event? = Event()
                     if let startDate = event["start"]!["date"]! as? String {
                         eve!.startDate = startDate
                     }
