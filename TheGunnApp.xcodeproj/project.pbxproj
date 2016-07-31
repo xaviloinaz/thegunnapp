@@ -30,6 +30,7 @@
 		47D7D48B1D174F4C00BC1F5D /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D48A1D174F4C00BC1F5D /* Staff.swift */; };
 		E710DB061D456756000B0508 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = E710DB051D456756000B0508 /* events.json */; };
 		E710DB081D45BD82000B0508 /* EventInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E710DB071D45BD82000B0508 /* EventInfoViewController.swift */; };
+		E7A0601D1D4EA4D300E99F8D /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A0601C1D4EA4D300E99F8D /* Period.swift */; };
 		E7EF96751D47FAF5008540B3 /* kannada.ttc in Resources */ = {isa = PBXBuildFile; fileRef = E7EF96741D47FAF5008540B3 /* kannada.ttc */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		C5DD0517FCF6BA736214175E /* Pods_TheGunnApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheGunnApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E710DB051D456756000B0508 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		E710DB071D45BD82000B0508 /* EventInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInfoViewController.swift; sourceTree = "<group>"; };
+		E7A0601C1D4EA4D300E99F8D /* Period.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 		E7EF96741D47FAF5008540B3 /* kannada.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = kannada.ttc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 				47D7D4171D04D24A00BC1F5D /* Assets.xcassets */,
 				47D7D4191D04D24A00BC1F5D /* LaunchScreen.storyboard */,
 				47D7D41C1D04D24A00BC1F5D /* Info.plist */,
+				E7A0601C1D4EA4D300E99F8D /* Period.swift */,
 			);
 			name = TheGunnApp;
 			path = "The Gunn App";
@@ -393,6 +396,7 @@
 				47D00AEF1D3C3B9A004B5E8F /* EventsViewCell.swift in Sources */,
 				47D7D4851D17465300BC1F5D /* StaffTableViewCell.swift in Sources */,
 				47D057831D370C6700A3ACCB /* MapViewController.swift in Sources */,
+				E7A0601D1D4EA4D300E99F8D /* Period.swift in Sources */,
 				47D7D4111D04D24A00BC1F5D /* ScheduleViewController.swift in Sources */,
 				47D057811D34880100A3ACCB /* StaffInfoViewController.swift in Sources */,
 				47D00AF51D3C5960004B5E8F /* ScheduleViewCell.swift in Sources */,

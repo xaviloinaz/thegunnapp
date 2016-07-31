@@ -1,3 +1,4 @@
+
 //
 //  ScheduleViewCell.swift
 //  TheGunnApp
@@ -10,6 +11,10 @@ import Foundation
 import UIKit
 
 class ScheduleViewCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var period: UILabel!
+    @IBOutlet weak var periodTime: UILabel!
     
     
     
@@ -25,4 +30,6 @@ class ScheduleViewCell: UITableViewCell {
     }
     
 }
+
+
 
