@@ -13,6 +13,9 @@ class ScheduleViewCell: UITableViewCell {
     
     
     @IBOutlet weak var period: UILabel!
+    @IBOutlet weak var periodTime: UILabel!
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

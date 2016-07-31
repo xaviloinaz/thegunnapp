@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A1CFACEA874202BA5DF6A47 /* Pods_TheGunnApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DD0517FCF6BA736214175E /* Pods_TheGunnApp.framework */; };
 		4759AEFA1D2270E300BB502B /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4759AEF91D2270E300BB502B /* PortalViewController.swift */; };
+		479770391D45CA8200E7FD66 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479770381D45CA8200E7FD66 /* Period.swift */; };
 		47D00AED1D3AE2CD004B5E8F /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D00AEC1D3AE2CD004B5E8F /* GTMOAuth2ViewTouch.xib */; };
 		47D00AEF1D3C3B9A004B5E8F /* EventsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D00AEE1D3C3B9A004B5E8F /* EventsViewCell.swift */; };
 		47D00AF11D3C3F2F004B5E8F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D00AF01D3C3F2F004B5E8F /* Event.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		2FCC4CBF035602B60139EE94 /* Pods-TheGunnApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGunnApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheGunnApp/Pods-TheGunnApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4759AEF91D2270E300BB502B /* PortalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
+		479770381D45CA8200E7FD66 /* Period.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 		47D00AEC1D3AE2CD004B5E8F /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
 		47D00AEE1D3C3B9A004B5E8F /* EventsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewCell.swift; sourceTree = "<group>"; };
 		47D00AF01D3C3F2F004B5E8F /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				47D7D40E1D04D24A00BC1F5D /* AppDelegate.swift */,
 				47D7D4101D04D24A00BC1F5D /* ScheduleViewController.swift */,
 				47D00AF41D3C5960004B5E8F /* ScheduleViewCell.swift */,
+				479770381D45CA8200E7FD66 /* Period.swift */,
 				47D7D4121D04D24A00BC1F5D /* EventsViewController.swift */,
 				47D00AEE1D3C3B9A004B5E8F /* EventsViewCell.swift */,
 				47D00AF21D3C4C85004B5E8F /* DownloadJSON.swift */,
@@ -383,6 +386,7 @@
 				47D057831D370C6700A3ACCB /* MapViewController.swift in Sources */,
 				47D7D4111D04D24A00BC1F5D /* ScheduleViewController.swift in Sources */,
 				47D057811D34880100A3ACCB /* StaffInfoViewController.swift in Sources */,
+				479770391D45CA8200E7FD66 /* Period.swift in Sources */,
 				47D00AF51D3C5960004B5E8F /* ScheduleViewCell.swift in Sources */,
 				4759AEFA1D2270E300BB502B /* PortalViewController.swift in Sources */,
 				47D7D4871D174DB500BC1F5D /* StaffTableViewController.swift in Sources */,

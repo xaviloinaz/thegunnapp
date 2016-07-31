@@ -6,6 +6,7 @@
 //  Copyright © 2016 Xavi Loinaz. All rights reserved.
 //
 
+
 import Foundation
 import UIKit
 
@@ -17,4 +18,39 @@ class Event{
     var summary : String? = ""
     var location : String? = ""
     var day : String! = ""
+    var description : String? = ""
+    
+    
+    func getStartDate() -> String? {
+        return startDate
+    }
+    
+    func getEndDate() -> String? {
+        return endDate
+    }
+    
+    func getStartTime() -> String? {
+        return startTime
+    }
+    
+    func getEndTime() -> String? {
+        return endTime
+    }
+    
+    func getSummary() -> String? {
+        return summary
+    }
+    
+    func getLocation() -> String? {
+        return location
+    }
+    
+    func getDay() -> String! {
+        return day
+    }
+    
+    func getDescription() -> String? {
+        return description
+    }
+    
 }

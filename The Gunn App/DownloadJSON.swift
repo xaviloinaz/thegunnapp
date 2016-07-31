@@ -12,78 +12,58 @@
 
 
 import Foundation
-
 import UIKit
-
-
 
 extension String {
     
-    
-    
     subscript (i: Int) -> Character {
-        
         return self[self.startIndex.advancedBy(i)]
-        
     }
-    
-    
     
     subscript (i: Int) -> String {
-        
         return String(self[i] as Character)
-        
     }
-    
-    
     
     subscript (r: Range<Int>) -> String {
-        
         let start = startIndex.advancedBy(r.startIndex)
-        
         let end = start.advancedBy(r.endIndex - r.startIndex)
-        
         return self[Range(start ..< end)]
-        
     }
-    
 }
 
 
-
-
-
 class DownloadJSON {
-    
-    
     
     var events = [Event]()
     
     
     
+    func intToDayString(day: Int?) -> String? {
+        if(day! == 1){
+            return "Sunday"
+        }
+        if(day! == 2){
+            return "Monday"
+        }
+        if(day! == 3){
+            return "Tuesday"
+        }
+        if(day! == 4){
+            return "Wednesday"
+        }
+        if(day! == 5){
+            return "Thursday"
+        }
+        if(day! == 6){
+            return "Friday"
+        }
+        if(day! == 7){
+            return "Saturday"
+        }
+        return ""
+    }
     
-    
-    
-    
-    func dateString(date:String?) -> String{
-        
-        //        var date = Array(arrayLiteral: str!)
-        
-        let year = date![0...3]
-        
-        let month = date![5...6]
-        
-        let day = date![8...9]
-        
-        var datestr = ""
-        
-        datestr += month
-        
-        datestr += "/"
-        
-        datestr += day
-        
-        datestr += "/" + year;
+    func getDayOfWeek(today:String)->Int? {
         
         let formatter  = NSDateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -100,124 +80,78 @@ class DownloadJSON {
     func dateString(str:String?) -> String{
         var datestr = ""
         if(str!.characters.count > 24){
-//            print(str!.characters.count)
+            //            print(str!.characters.count)
             let year = str![0...3]
             let month = str![5...6]
             let day = str![8...9]
             
-//            datestr += month + "/" + day + "/" + year
+            //            datestr += month + "/" + day + "/" + year
             var week = year + "-" + month + "-" + day
             var dayNum = getDayOfWeek(week)!
             datestr = intToDayString(dayNum)! + ", " + month + "/" + day + "/" + year
         }
         
         
-        
-        
-        
-        
         return datestr
-        
-        
-        
     }
     
-    
-    
-    func timeString(date: String?) -> String{
+    func timeString(str: String?) -> String{
+        var time = ""
+        if(str!.characters.count > 24){
+            time += str![11...15]
+            if (time[0] == "0"){
+                time = time[1...time.characters.count-1]
+            }
+        }
         
-        let time = date![11...15]
         
         return time
         
-        
-        
     }
     
     
-    
-    
-    
     func downloadAndParseJSON()-> [Event]{
-        
         let eventsURL: NSURL = [#FileReference(fileReferenceLiteral: "events.json")#]
-        
         let data = NSData(contentsOfURL: eventsURL)!
         
         
         
-        
-        
-        
-        
         do {
-            
             let json = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
             
-            
-            
             if let events = json["items"] as? [[String: AnyObject]] {
-                
                 for event in events {
-                    
                     var eve : Event? = Event()
-                    
                     if let startDate = event["start"]!["date"]! as? String {
-                        
                         eve!.startDate = startDate
-                        
                     }
-                    
                     if let endDate = event["end"]!["date"]! as? String {
-                        
                         eve!.endDate = endDate
-                        
                     }
-                    
                     if let startTime = event["start"]!["dateTime"]! as? String {
-                        
                         eve!.startTime = startTime
-                        
                     }
-                    
                     if let endTime = event["end"]!["dateTime"]! as? String {
-                        
                         eve!.endTime = endTime
-                        
                     }
-                    
                     if let summary = event["summary"] as? String {
-                        
                         eve!.summary = summary
-                        
                     }
-                    
                     if let location = event["location"] as? String {
-                        
                         eve!.location = location
-                        
                     }
-                    
+                    if let description = event["description"] as? String {
+                        eve!.description = description
+                    }
                     self.events.append(eve!)
-                    
                 }
-                
             }
-            
         } catch {
-            
             print("error serializing JSON: \(error)")
-            
         }
-        
         print (events.count)
         
-        
-        
         return events
-        
-        
-        
         
         
 }
