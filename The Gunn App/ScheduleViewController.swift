@@ -1022,7 +1022,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         timeProgressBar.setProgress(progressBarValue, animated: false)
     
     }
-    
+    */
     
     func getDayOfWeek(today:String)->String? {
         
@@ -1051,7 +1051,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             return nil
         }
     }
-*/
+
     // END OF METHOD
     // END OF METHOD
     // END OF METHOD

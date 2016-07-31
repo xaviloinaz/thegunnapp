@@ -372,10 +372,10 @@
             </objects>
             <point key="canvasLocation" x="2670" y="-1310"/>
         </scene>
-        <!--View Controller-->
+        <!--Event Info View Controller-->
         <scene sceneID="gbJ-Ua-sLg">
             <objects>
-                <viewController id="kyF-3T-Phk" sceneMemberID="viewController">
+                <viewController id="kyF-3T-Phk" customClass="EventInfoViewController" customModule="TheGunnApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yCo-S7-Riq"/>
                         <viewControllerLayoutGuide type="bottom" id="Sy3-5x-KWW"/>
