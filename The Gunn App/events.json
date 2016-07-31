@@ -1615,7 +1615,7 @@
    "created": "2016-06-14T17:44:11.000Z",
    "updated": "2016-06-14T17:44:11.885Z",
    "summary": "4-day-week/assembly schedule (see below)",
-   "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nAssembly for 9th/10th graders in Spangenberg (10:05-10:45)\n11th/12th graders to Tutorial\nAssembly for 11th/12th graders in Spangenberg (10:55-11:25)\n9th/10th graders to Tutorial\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+   "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nAssembly for 9th/10th graders (10:05-10:45)\nAssembly for 11th/12th graders (10:55-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
    "creator": {
     "email": "melderon@pausd.org",
     "displayName": "Martha Elderon"
@@ -3131,7 +3131,7 @@
    "created": "2016-03-08T18:25:42.000Z",
    "updated": "2016-06-24T15:27:26.883Z",
    "summary": "PSAT and Grade-level Assemblies (see alternate schedule below)",
-   "description": "8:30-12:00 for all students\nNo afternoon classes\nStaff Meeting  (1-1:40pm)\nStaff Collaboration (1:50-3:45)\n",
+   "description": "PSAT/Assembly (8:30-12:00)\nStaff Meeting  (1-1:40pm)\nStaff Collaboration (1:50-3:45)\n",
    "creator": {
     "email": "melderon@pausd.org",
     "displayName": "Martha Elderon"

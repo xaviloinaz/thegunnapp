@@ -17,41 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GunnHighSchool" translatesAutoresizingMaskIntoConstraints="NO" id="707-SN-Uuh">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gunnlogo" translatesAutoresizingMaskIntoConstraints="NO" id="NEz-GV-C2y">
+                                <rect key="frame" x="180" y="184" width="212" height="213"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="383" id="3DR-uC-ebb"/>
-                                    <constraint firstAttribute="height" constant="104" id="fhE-FA-dYC"/>
+                                    <constraint firstAttribute="height" constant="213" id="M5c-Be-hzx"/>
+                                    <constraint firstAttribute="width" constant="213" id="oy8-Z9-O6L"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="3DR-uC-ebb"/>
-                                        <exclude reference="fhE-FA-dYC"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="54" y="121" width="493" height="158"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="3DR-uC-ebb"/>
-                                        <include reference="fhE-FA-dYC"/>
-                                    </mask>
-                                </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.47843137254901957" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                         <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="707-SN-Uuh"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact">
-                            <mask key="subviews">
-                                <include reference="707-SN-Uuh"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstItem="NEz-GV-C2y" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7Mj-Qa-O64"/>
+                            <constraint firstItem="NEz-GV-C2y" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cf2-Z6-AnZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -60,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="GunnHighSchool" width="1958" height="554"/>
+        <image name="gunnlogo" width="240" height="240"/>
     </resources>
 </document>
