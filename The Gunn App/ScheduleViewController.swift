@@ -708,7 +708,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     // END OF METHOD
     // END OF METHOD
     // END OF METHOD
-    
+   /*
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
