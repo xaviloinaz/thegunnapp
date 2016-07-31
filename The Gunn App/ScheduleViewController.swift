@@ -76,8 +76,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         let year = components.year
         let month = 9//components.month
         let day = 7//components.day
-        let hour = //components.hour
-        let minute = components.minute
+        let hour = 11//components.hour
+        let minute = 34//components.minute
         print(hour)
         print(minute)
         
