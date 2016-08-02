@@ -102,37 +102,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBY-Tf-5ub">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Al8-40-ErU">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Gunn Campus Map 09-27-15" translatesAutoresizingMaskIntoConstraints="NO" id="epA-Hu-d9o">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Gunn Campus Map 09-27-15" translatesAutoresizingMaskIntoConstraints="NO" id="J9R-AK-qDY">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="epA-Hu-d9o" firstAttribute="leading" secondItem="qBY-Tf-5ub" secondAttribute="leading" constant="-10" id="PlS-KZ-KGe"/>
-                                    <constraint firstAttribute="bottom" secondItem="epA-Hu-d9o" secondAttribute="bottom" id="f5m-65-rJ1"/>
-                                    <constraint firstItem="epA-Hu-d9o" firstAttribute="top" secondItem="qBY-Tf-5ub" secondAttribute="top" id="jLb-ho-Ig7"/>
-                                    <constraint firstAttribute="trailing" secondItem="epA-Hu-d9o" secondAttribute="trailing" constant="-10" id="uTP-Ua-tVD"/>
+                                    <constraint firstAttribute="trailing" secondItem="J9R-AK-qDY" secondAttribute="trailing" id="1xM-Tu-8vs"/>
+                                    <constraint firstItem="J9R-AK-qDY" firstAttribute="top" secondItem="Al8-40-ErU" secondAttribute="top" id="2Qk-Rq-3xL"/>
+                                    <constraint firstItem="J9R-AK-qDY" firstAttribute="leading" secondItem="Al8-40-ErU" secondAttribute="leading" id="4yL-XI-Gnc"/>
+                                    <constraint firstAttribute="bottom" secondItem="J9R-AK-qDY" secondAttribute="bottom" id="Ufu-mq-B7B"/>
+                                    <constraint firstItem="J9R-AK-qDY" firstAttribute="centerX" secondItem="Al8-40-ErU" secondAttribute="centerX" id="u8I-5S-sDO"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="u8I-5S-sDO"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="ht1-yG-0xa" id="OjV-9K-a07"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qBY-Tf-5ub" firstAttribute="top" secondItem="Sze-zc-RpX" secondAttribute="bottom" id="T65-RK-oJJ"/>
-                            <constraint firstItem="1CY-KQ-ViY" firstAttribute="top" secondItem="qBY-Tf-5ub" secondAttribute="bottom" id="YEW-ga-7te"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qBY-Tf-5ub" secondAttribute="trailing" constant="-10" id="gNC-fL-1qh"/>
-                            <constraint firstItem="qBY-Tf-5ub" firstAttribute="leading" secondItem="7Of-34-tv9" secondAttribute="leadingMargin" constant="-10" id="j9l-cz-TTJ"/>
+                            <constraint firstItem="Al8-40-ErU" firstAttribute="leading" secondItem="7Of-34-tv9" secondAttribute="leading" id="Hf9-g8-hR6"/>
+                            <constraint firstItem="Al8-40-ErU" firstAttribute="top" secondItem="Sze-zc-RpX" secondAttribute="bottom" id="IkU-ko-WpD"/>
+                            <constraint firstItem="Al8-40-ErU" firstAttribute="bottom" secondItem="1CY-KQ-ViY" secondAttribute="top" id="OVh-PZ-J9R"/>
+                            <constraint firstAttribute="trailing" secondItem="Al8-40-ErU" secondAttribute="trailing" id="tny-qk-xVR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="SIe-bt-0wQ"/>
                     <connections>
-                        <outlet property="mapBottomConstraint" destination="f5m-65-rJ1" id="AA0-76-NcL"/>
-                        <outlet property="mapImage" destination="epA-Hu-d9o" id="CwB-D6-mCB"/>
-                        <outlet property="mapLeadingConstraint" destination="PlS-KZ-KGe" id="tbf-US-hXB"/>
-                        <outlet property="mapTopConstraint" destination="jLb-ho-Ig7" id="Agu-gB-ZPS"/>
-                        <outlet property="mapTrailingConstraint" destination="uTP-Ua-tVD" id="Z1j-xL-O9A"/>
-                        <outlet property="scrollView" destination="qBY-Tf-5ub" id="mor-aI-aXp"/>
+                        <outlet property="gunnMap" destination="J9R-AK-qDY" id="cZv-6Z-zhV"/>
+                        <outlet property="scrollView" destination="Al8-40-ErU" id="TWd-ko-GwU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Sq-CG-gh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
