@@ -78,7 +78,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             minutesRemaining.hidden = false
             timeProgressBar.hidden = false
             dayAndDate.hidden = false
-            if accessed0 {
+/*            if accessed0 {
                 modConstraint01.priority = 999
                 modConstraint02.priority = 999
             } else {
@@ -93,7 +93,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 modConstraint2.priority = 1
             }
             accessed0 = true
-            
+*/
         }
         if segmentedController.selectedSegmentIndex == 1 {
             whichSegControl = 1
@@ -103,7 +103,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             minutesRemaining.hidden = true
             timeProgressBar.hidden = true
             dayAndDate.hidden = false
-            if accessed1 {
+/*            if accessed1 {
                 modConstraint02.priority = 999
                 modConstraint12.priority = 999
                 
@@ -119,7 +119,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 modConstraint2.priority = 1
             }
             accessed1 = true
-
+*/
         }
         if segmentedController.selectedSegmentIndex == 2 {
             whichSegControl = 2
@@ -167,7 +167,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             minutesRemaining.hidden = true
             timeProgressBar.hidden = true
             dayAndDate.hidden = true
-            if accessed2 {
+/*            if accessed2 {
                 modConstraint2.priority = 999
             } else {
                 self.view.addConstraint(modConstraint2)
@@ -181,7 +181,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 modConstraint12.priority = 1
             }
             accessed2 = true
-
+*/
         }
     }
     
@@ -249,10 +249,10 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             
             let year = components.year
-            let month = components.month
-            let day = components.day
-            let hour = components.hour
-            let minute = components.minute
+            let month = 12//components.month
+            let day = 16//components.day
+            let hour = 11//components.hour
+            let minute = 17//components.minute
             
             var alternateScheduleDay = false
             
@@ -270,19 +270,31 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             for x in 0...events.count-1 {
                 for altDate in alternateScheduleDates {
-                    if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate {
+                    if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate && events[x].getSummary()!.lowercaseString.rangeOfString("schedule") != nil &&  events[x].getSummary()!.lowercaseString.rangeOfString("below") != nil{
                         alternateScheduleDay = true
                         theAltScheduleEvent = events[x]
                         print(theAltScheduleEvent.getStartDate())
                         print(theAltScheduleEvent.getSummary())
-                        break
+                        //break
                     }
                 }
-                break
+                //break
             }
             
             
-            if alternateScheduleDay { // The code below is for alternate schedules
+            
+            
+            
+            
+            if (month == 6 && day > 2) || (month == 7) || (month == 8 && day < 15) { // The code below is for summer
+                
+                dayAndDate.text = String(getDayOfWeek(todayDate)!) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
+                minutesRemaining.text = "School's out!"
+                timeProgressBar.setProgress(0, animated: false)
+                
+                
+                
+            } else if alternateScheduleDay { // The code below is for alternate schedules
                 
                 let scheduleRawString = theAltScheduleEvent.getDescription()
 
@@ -581,19 +593,27 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             for x in 0...events.count-1 {
                 for altDate in alternateScheduleDates {
-                    if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate {
+                    if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate && events[x].getSummary()!.lowercaseString.rangeOfString("schedule") != nil &&  events[x].getSummary()!.lowercaseString.rangeOfString("below") != nil{
                         alternateScheduleDay = true
                         theAltScheduleEvent = events[x]
                         print(theAltScheduleEvent.getStartDate())
                         print(theAltScheduleEvent.getSummary())
-                        break
+                        //break
                     }
                 }
-                break
+                //break
             }
             
-            print(alternateScheduleDay)
-            if alternateScheduleDay { // The code below is for alternate schedules
+            
+            
+            
+            if (month == 6 && day > 2) || (month == 7) || (month == 8 && day < 15) { // The code below is for summer
+                
+                dayAndDate.text = String(getDayOfWeek(todayDate)!) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
+                
+                
+                
+            } else if alternateScheduleDay { // The code below is for alternate schedules
                 
                 let scheduleRawString = theAltScheduleEvent.getDescription()
 
