@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -404,45 +404,65 @@
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description  -" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Hy-Tp-wor">
-                                <rect key="frame" x="20" y="258" width="240" height="34"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Description  -" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Hy-Tp-wor">
+                                <rect key="frame" x="20" y="258" width="103.5" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="DateText" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hzO-Vb-zkC">
-                                <rect key="frame" x="20" y="164" width="301" height="29"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="DateText" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hzO-Vb-zkC">
+                                <rect key="frame" x="20" y="164" width="70" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="StartingTime" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BrG-2a-oPl">
-                                <rect key="frame" x="20" y="195" width="311" height="29"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="StartingTime" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BrG-2a-oPl">
+                                <rect key="frame" x="20" y="195" width="98.5" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Location" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uIU-hd-VKi">
-                                <rect key="frame" x="21" y="223" width="315" height="29"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Location" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uIU-hd-VKi">
+                                <rect key="frame" x="21" y="223" width="69" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gwd-X0-1rU">
-                                <rect key="frame" x="20" y="284" width="301" height="271"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="Summary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MWu-Nd-EiK">
+                                <rect key="frame" x="20" y="107" width="104.5" height="42.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Summary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MWu-Nd-EiK">
-                                <rect key="frame" x="20" y="107" width="340" height="59"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gwd-X0-1rU">
+                                <rect key="frame" x="20" y="283" width="89" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.71009898560209428" green="0.12894552915840957" blue="0.17979971146659421" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="hzO-Vb-zkC" secondAttribute="leading" id="1ec-aW-6vT"/>
+                            <constraint firstItem="uIU-hd-VKi" firstAttribute="top" secondItem="BrG-2a-oPl" secondAttribute="bottom" constant="-6" id="81C-HC-rqM"/>
+                            <constraint firstItem="3Hy-Tp-wor" firstAttribute="top" secondItem="uIU-hd-VKi" secondAttribute="bottom" constant="1" id="8Nn-uu-AKD"/>
+                            <constraint firstItem="gwd-X0-1rU" firstAttribute="top" secondItem="3Hy-Tp-wor" secondAttribute="bottom" constant="-9" id="E8X-hJ-ckT"/>
+                            <constraint firstItem="BrG-2a-oPl" firstAttribute="top" secondItem="hzO-Vb-zkC" secondAttribute="bottom" constant="-3" id="J3p-nA-6gi"/>
+                            <constraint firstItem="3Hy-Tp-wor" firstAttribute="leading" secondItem="gwd-X0-1rU" secondAttribute="leading" id="Owe-D6-1PS"/>
+                            <constraint firstItem="MWu-Nd-EiK" firstAttribute="top" secondItem="yCo-S7-Riq" secondAttribute="bottom" constant="43" id="S8N-Tc-W5Y"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="3Hy-Tp-wor" secondAttribute="leading" id="V1u-EG-8pN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="BrG-2a-oPl" secondAttribute="leading" id="auq-H1-7rS"/>
+                            <constraint firstItem="hzO-Vb-zkC" firstAttribute="top" secondItem="MWu-Nd-EiK" secondAttribute="bottom" constant="14.5" id="k9m-ga-A4F"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="MWu-Nd-EiK" secondAttribute="leading" id="pni-d1-LQL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gwd-X0-1rU" secondAttribute="leading" id="q8B-PD-3XL"/>
+                            <constraint firstItem="uIU-hd-VKi" firstAttribute="leading" secondItem="bbh-Ea-P1k" secondAttribute="leadingMargin" constant="1" id="sT4-qk-RWK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Owe-D6-1PS"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="tO2-Eh-gcc"/>
                     <connections>

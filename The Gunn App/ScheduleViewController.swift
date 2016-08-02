@@ -42,7 +42,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         var accessed0 = false
         var accessed1 = false
         var accessed2 = false
-/*        let modConstraint01 = NSLayoutConstraint(item: self.scheduleTable,
+        let modConstraint01 = NSLayoutConstraint(item: self.scheduleTable,
                                                  attribute: .Top,
                                                  relatedBy: .Equal,
                                                  toItem: self.minutesRemaining,
@@ -77,7 +77,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                                                 attribute: .Bottom,
                                                 multiplier: 1.0,
                                                 constant: 7.0)
-*/
+
         if segmentedController.selectedSegmentIndex == 0 {
             whichSegControl = 0
             scheduleForCurrentDay.removeAll()
@@ -86,7 +86,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             minutesRemaining.hidden = false
             timeProgressBar.hidden = false
             dayAndDate.hidden = false
-/*            if accessed0 {
+            if accessed0 {
                 modConstraint01.priority = 999
                 modConstraint02.priority = 999
             } else {
@@ -101,7 +101,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 modConstraint2.priority = 1
             }
             accessed0 = true
-*/            
+            
         }
         if segmentedController.selectedSegmentIndex == 1 {
             whichSegControl = 1
@@ -111,7 +111,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             minutesRemaining.hidden = true
             timeProgressBar.hidden = true
             dayAndDate.hidden = false
-/*            if accessed1 {
+            if accessed1 {
                 modConstraint02.priority = 999
                 modConstraint12.priority = 999
                 
@@ -127,7 +127,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 modConstraint2.priority = 1
             }
             accessed1 = true
-*/
+
             for subview in view.subviews as [UIView] {
                 print(subview)
                 for constraint in subview.constraints as [NSLayoutConstraint] {
@@ -185,7 +185,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             minutesRemaining.hidden = true
             timeProgressBar.hidden = true
             dayAndDate.hidden = true
-/*            if accessed2 {
+            if accessed2 {
                 modConstraint2.priority = 999
             } else {
                 self.view.addConstraint(modConstraint2)
@@ -199,7 +199,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 modConstraint12.priority = 1
             }
             accessed2 = true
-*/
+
             /*            for subview in view.subviews as [UIView] {
              print("HAI")
              print(subview)
