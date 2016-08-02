@@ -425,7 +425,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scrollEnabled="NO" editable="NO" text="Summary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MWu-Nd-EiK">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="Summary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MWu-Nd-EiK">
                                 <rect key="frame" x="20" y="107" width="104.5" height="42.5"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -474,16 +474,33 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="1ec-aW-6vT"/>
+                                <exclude reference="aJw-jR-0yk"/>
                                 <exclude reference="k9m-ga-A4F"/>
+                                <exclude reference="sLV-4g-c2U"/>
+                                <exclude reference="smU-Ov-JQ6"/>
+                                <exclude reference="0sx-ya-ZZP"/>
+                                <exclude reference="5zA-mY-U7P"/>
                                 <exclude reference="J3p-nA-6gi"/>
+                                <exclude reference="Nni-2i-MrF"/>
                                 <exclude reference="auq-H1-7rS"/>
                                 <exclude reference="81C-HC-rqM"/>
+                                <exclude reference="cJ7-u7-ITs"/>
                                 <exclude reference="sT4-qk-RWK"/>
+                                <exclude reference="skN-zh-eJC"/>
+                                <exclude reference="uwF-uw-SDS"/>
                                 <exclude reference="8Nn-uu-AKD"/>
                                 <exclude reference="Owe-D6-1PS"/>
                                 <exclude reference="V1u-EG-8pN"/>
+                                <exclude reference="bHa-L4-vhc"/>
+                                <exclude reference="ioY-jo-Bmf"/>
+                                <exclude reference="u3q-6k-mMJ"/>
+                                <exclude reference="1Pb-wv-7Gb"/>
                                 <exclude reference="E8X-hJ-ckT"/>
+                                <exclude reference="V91-vn-AFw"/>
                                 <exclude reference="q8B-PD-3XL"/>
+                                <exclude reference="vYJ-2w-2vU"/>
+                                <exclude reference="yVi-lk-9qV"/>
+                                <exclude reference="OOb-Js-Ech"/>
                             </mask>
                         </variation>
                     </view>
