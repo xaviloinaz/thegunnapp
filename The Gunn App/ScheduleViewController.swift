@@ -28,11 +28,10 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         viewDidLoad()
     }
     
-    
+    @IBOutlet weak var distanceToTableShort: NSLayoutConstraint!
     
     @IBOutlet weak var distanceToTableLong: NSLayoutConstraint!
     
-    @IBOutlet weak var distanceToTableShort: NSLayoutConstraint!
     
     @IBAction func switchSegments(sender: AnyObject) {
         var accessed0 = false

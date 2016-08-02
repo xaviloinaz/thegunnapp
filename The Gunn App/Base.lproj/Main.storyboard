@@ -530,19 +530,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="zN9-Bf-jY7">
-                                <rect key="frame" x="15" y="120" width="570" height="12"/>
+                                <rect key="frame" x="15" y="128" width="570" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="zIh-TU-yaa"/>
                                 </constraints>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="X minutes are remaining until ______" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILP-NK-KTy">
-                                <rect key="frame" x="201" y="140" width="199.5" height="12"/>
+                                <rect key="frame" x="208" y="146" width="186" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thursday, September 25, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-dM-Osx">
-                                <rect key="frame" x="80" y="102" width="236" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday, September 25, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-dM-Osx">
+                                <rect key="frame" x="195" y="104.5" width="210.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -608,7 +608,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iSb-dM-Osx" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="0NP-r6-S6X"/>
-                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" constant="44" id="0v1-NX-XzC"/>
+                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" priority="999" constant="44" id="0v1-NX-XzC"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="6Km-RB-bmM"/>
                             <constraint firstItem="CMH-wE-kfE" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="7FT-3J-QeF"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" priority="750" constant="6" id="AIG-KA-aJp"/>
@@ -620,7 +620,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="E2S-fM-1A5" secondAttribute="trailing" constant="-16" id="RMc-FJ-Tri"/>
                             <constraint firstItem="iSb-dM-Osx" firstAttribute="top" secondItem="CMH-wE-kfE" secondAttribute="bottom" priority="750" constant="7" id="YSd-8h-FBi"/>
                             <constraint firstItem="oyK-aZ-GHK" firstAttribute="top" secondItem="E2S-fM-1A5" secondAttribute="bottom" id="bEo-9K-FYX"/>
-                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="CMH-wE-kfE" secondAttribute="bottom" constant="68" id="dTI-7n-PoL"/>
+                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="CMH-wE-kfE" secondAttribute="bottom" priority="999" constant="68" id="dTI-7n-PoL"/>
                             <constraint firstItem="ILP-NK-KTy" firstAttribute="top" secondItem="zN9-Bf-jY7" secondAttribute="bottom" priority="750" constant="5" id="jjc-7B-O99"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="ox4-ef-xze"/>
                             <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="ILP-NK-KTy" secondAttribute="bottom" priority="750" constant="7" id="pNy-hM-VRt"/>
@@ -642,8 +642,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="dayAndDate" destination="iSb-dM-Osx" id="wYg-Of-RQ6"/>
-                        <outlet property="distanceToTableLong" destination="dTI-7n-PoL" id="HPL-cQ-rQK"/>
-                        <outlet property="distanceToTableShort" destination="0v1-NX-XzC" id="VUY-r3-4oc"/>
+                        <outlet property="distanceToTableLong" destination="dTI-7n-PoL" id="my1-W8-Gv8"/>
+                        <outlet property="distanceToTableShort" destination="0v1-NX-XzC" id="8Ke-JJ-vq8"/>
                         <outlet property="minutesRemaining" destination="ILP-NK-KTy" id="Z3H-ec-xNa"/>
                         <outlet property="scheduleTable" destination="E2S-fM-1A5" id="cl1-LQ-bu4"/>
                         <outlet property="segmentedController" destination="CMH-wE-kfE" id="OMC-rv-YPp"/>
