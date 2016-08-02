@@ -79,7 +79,7 @@ class DownloadJSON {
     
     func dateString(str:String?) -> String{
         var datestr = ""
-        if(str!.characters.count > 24){
+        if(str!.characters.count > 9){
             //            print(str!.characters.count)
             let year = str![0...3]
             let month = str![5...6]
