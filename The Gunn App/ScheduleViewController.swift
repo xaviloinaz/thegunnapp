@@ -48,27 +48,28 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                                                  attribute: .Bottom,
                                                  multiplier: 1.0,
                                                  constant: 7.0)
-        /*        let modConstraint11 = NSLayoutConstraint(item: self.dayAndDate,
-         attribute: .Top,
-         relatedBy: .Equal,
-         toItem: self.segmentedController,
-         attribute: .Bottom,
-         multiplier: 1.0,
-         constant: 7.0)
-         */        let modConstraint12 = NSLayoutConstraint(item: self.scheduleTable,
-                                                            attribute: .Top,
-                                                            relatedBy: .Equal,
-                                                            toItem: self.dayAndDate,
-                                                            attribute: .Bottom,
-                                                            multiplier: 1.0,
-                                                            constant: 10.0)
+
+/*        let modConstraint11 = NSLayoutConstraint(item: self.dayAndDate,
+                                                 attribute: .Top,
+                                                 relatedBy: .Equal,
+                                                 toItem: self.segmentedController,
+                                                 attribute: .Bottom,
+                                                 multiplier: 1.0,
+                                                 constant: 7.0)
+*/        let modConstraint12 = NSLayoutConstraint(item: self.scheduleTable,
+                                                 attribute: .Top,
+                                                 relatedBy: .Equal,
+                                                 toItem: self.dayAndDate,
+                                                 attribute: .Bottom,
+                                                 multiplier: 1.0,
+                                                 constant: 6.0)
         let modConstraint2 = NSLayoutConstraint(item: scheduleTable,
                                                 attribute: .Top,
                                                 relatedBy: .Equal,
                                                 toItem: self.segmentedController,
                                                 attribute: .Bottom,
                                                 multiplier: 1.0,
-                                                constant: 7.0)
+                                                constant: 4.0)
 
         if segmentedController.selectedSegmentIndex == 0 {
             whichSegControl = 0
@@ -78,12 +79,16 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             minutesRemaining.hidden = false
             timeProgressBar.hidden = false
             dayAndDate.hidden = false
-/*            if accessed0 {
-                modConstraint01.priority = 999
-                modConstraint02.priority = 999
+            var theModConstraint01 = NSLayoutConstraint()
+            var theModConstraint02 = NSLayoutConstraint()
+            if accessed0 {
+                theModConstraint01.priority = 999
+                theModConstraint02.priority = 999
             } else {
                 self.view.addConstraint(modConstraint01)
                 self.view.addConstraint(modConstraint02)
+                self.view.addConstraint(theModConstraint01)
+                self.view.addConstraint(theModConstraint02)
             }
             if accessed1 {
                 // modConstraint11.priority = 1
@@ -93,7 +98,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 modConstraint2.priority = 1
             }
             accessed0 = true
-*/
+
         }
         if segmentedController.selectedSegmentIndex == 1 {
             whichSegControl = 1
@@ -103,7 +108,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             minutesRemaining.hidden = true
             timeProgressBar.hidden = true
             dayAndDate.hidden = false
-/*            if accessed1 {
+            if accessed1 {
                 modConstraint02.priority = 999
                 modConstraint12.priority = 999
                 
@@ -119,7 +124,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 modConstraint2.priority = 1
             }
             accessed1 = true
-*/
+
         }
         if segmentedController.selectedSegmentIndex == 2 {
             whichSegControl = 2
@@ -167,7 +172,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             minutesRemaining.hidden = true
             timeProgressBar.hidden = true
             dayAndDate.hidden = true
-/*            if accessed2 {
+            if accessed2 {
                 modConstraint2.priority = 999
             } else {
                 self.view.addConstraint(modConstraint2)
@@ -181,7 +186,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 modConstraint12.priority = 1
             }
             accessed2 = true
-*/
+
         }
     }
     
@@ -248,9 +253,9 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             let components = calendar.components([.Day , .Month , .Year, .Hour , .Minute], fromDate: date)
             
             
-            let year = 2017//components.year
-            let month = 1//components.month
-            let day = 2//components.day
+            let year = components.year
+            let month = 12//components.month
+            let day = 15//components.day
             let hour = components.hour
             let minute = components.minute
             
@@ -579,9 +584,9 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             let components = calendar.components([.Day , .Month , .Year, .Hour , .Minute], fromDate: tomorrow!)
             
             
-            let year = 2017//components.year
-            let month = 1//components.month
-            let day = 3//components.day
+            let year = components.year
+            let month = 12//components.month
+            let day = 16//components.day
             let hour = components.hour
             let minute = components.minute
             
