@@ -334,15 +334,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="52.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Event Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NT-tc-TRw">
-                                            <rect key="frame" x="18" y="8" width="168" height="29"/>
-                                            <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="20"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Day, Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-Ne-tqr">
                                             <rect key="frame" x="18" y="28" width="58" height="16"/>
                                             <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Event Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NT-tc-TRw">
+                                            <rect key="frame" x="18" y="12" width="168" height="29"/>
+                                            <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="20"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -357,7 +357,7 @@
                                 <connections>
                                     <outlet property="dayAndDate" destination="ceQ-Ne-tqr" id="b45-Sw-btb"/>
                                     <outlet property="summary" destination="6NT-tc-TRw" id="9rk-Cc-SuW"/>
-                                    <segue destination="kyF-3T-Phk" kind="show" animates="NO" id="dsT-3o-5hM"/>
+                                    <segue destination="kyF-3T-Phk" kind="show" id="Icz-kn-kht"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -446,17 +446,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="tO2-Eh-gcc"/>
                     <connections>
-                        <outlet property="date" destination="hzO-Vb-zkC" id="AXe-z4-0Th"/>
-                        <outlet property="desc" destination="3Hy-Tp-wor" id="StL-Jc-vcC"/>
-                        <outlet property="descriptionText" destination="gwd-X0-1rU" id="yIp-Bz-X3U"/>
-                        <outlet property="location" destination="uIU-hd-VKi" id="LcZ-hx-ose"/>
-                        <outlet property="startingTime" destination="BrG-2a-oPl" id="bIO-rP-car"/>
-                        <outlet property="summary" destination="MWu-Nd-EiK" id="YS8-K0-TUo"/>
+                        <outlet property="date" destination="hzO-Vb-zkC" id="sRb-2u-sgL"/>
+                        <outlet property="desc" destination="3Hy-Tp-wor" id="Bnn-2S-MOZ"/>
+                        <outlet property="descriptionText" destination="gwd-X0-1rU" id="vjE-aV-Ypm"/>
+                        <outlet property="location" destination="uIU-hd-VKi" id="JFv-8O-F0g"/>
+                        <outlet property="startingTime" destination="BrG-2a-oPl" id="cnj-vB-iDp"/>
+                        <outlet property="summary" destination="MWu-Nd-EiK" id="zgb-ds-aEz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTU-Od-uhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3538" y="-1037"/>
+            <point key="canvasLocation" x="3564" y="-1117"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="sRU-C9-lqR">

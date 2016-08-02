@@ -23,13 +23,13 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     var alternateScheduleDates : [String] = []
     var scheduleForCurrentDay : [Period] = []
     
-    @IBOutlet weak var scheduleTable: UITableView!
-    @IBOutlet weak var dayAndDate: UILabel!
-    @IBOutlet weak var minutesRemaining: UILabel!
-    @IBOutlet weak var timeProgressBar: UIProgressView!
-    @IBOutlet weak var segmentedController: UISegmentedControl!
-    @IBOutlet weak var refreshButton: UIButton!
-    @IBOutlet weak var refreshLabel: UILabel!
+//    @IBOutlet weak var scheduleTable: UITableView!
+//    @IBOutlet weak var dayAndDate: UILabel!
+//    @IBOutlet weak var minutesRemaining: UILabel!
+//    @IBOutlet weak var timeProgressBar: UIProgressView!
+//    @IBOutlet weak var segmentedController: UISegmentedControl!
+//    @IBOutlet weak var refreshButton: UIButton!
+//    @IBOutlet weak var refreshLabel: UILabel!
     
     @IBAction func updateInfo() {
         viewDidLoad()
@@ -372,28 +372,28 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         
     }
     
-    @IBAction func switchSegments(sender: AnyObject) {
-        if segmentedController.selectedSegmentIndex == 0 {
-            scheduleForCurrentDay = []
-            viewDidLoad()
-            minutesRemaining.hidden = false
-            timeProgressBar.hidden = false
-            refreshButton.hidden = false
-            refreshLabel.hidden = false
-        }
-        if segmentedController.selectedSegmentIndex == 1 {
+//    @IBAction func switchSegments(sender: AnyObject) {
+//        if segmentedController.selectedSegmentIndex == 0 {
 //            scheduleForCurrentDay = []
-//            loadNextDaySchedule()
-            minutesRemaining.hidden = true
-            timeProgressBar.hidden = true
-            refreshButton.hidden = true
-            refreshLabel.hidden = true
-        }
-        if segmentedController.selectedSegmentIndex == 2 {
-            
-        }
-    }
-    
+//            viewDidLoad()
+//            minutesRemaining.hidden = false
+//            timeProgressBar.hidden = false
+//            refreshButton.hidden = false
+//            refreshLabel.hidden = false
+//        }
+//        if segmentedController.selectedSegmentIndex == 1 {
+////            scheduleForCurrentDay = []
+////            loadNextDaySchedule()
+//            minutesRemaining.hidden = true
+//            timeProgressBar.hidden = true
+//            refreshButton.hidden = true
+//            refreshLabel.hidden = true
+//        }
+//        if segmentedController.selectedSegmentIndex == 2 {
+//            
+//        }
+//    }
+//    
     // START OF METHOD
     // START OF METHOD
     // START OF METHOD
