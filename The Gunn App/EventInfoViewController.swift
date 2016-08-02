@@ -40,8 +40,9 @@ class EventInfoViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //        navigationController!.navigationBar.barTintColor = UIColor.redColor()
         let ev = DownloadJSON()
-        
+        print(thisEvent)
         summary.text = thisEvent.summary!
+        print(thisEvent.summary!)
         //       date.font = UIFont(name: "kannada", size: 106)
         if((thisEvent.startDate) != ""){
             //            print(event.startDate!)
