@@ -1,4 +1,4 @@
-///
+//
 //  ScheduleViewController.swift
 //  The Gunn App
 //
@@ -225,13 +225,11 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         let json = DownloadJSON()
         let events = json.downloadAndParseJSON()
         for i in 0...events.count-1 {
-            if !(events[i].getSummary()?.isEmpty)! {
             if let summary = events[i].getSummary() {
                 if summary.lowercaseString.rangeOfString("schedule") != nil &&  summary.lowercaseString.rangeOfString("below") != nil && summary.lowercaseString.rangeOfString("back") == nil && summary.lowercaseString.rangeOfString("school") == nil && summary.lowercaseString.rangeOfString("night") == nil {
                     alternateScheduleDates.append(events[i].getStartDate()!)
-                    //                    print(String(events[i].getStartDate()))
+                                        print(String(events[i].getStartDate())) // right here
                 }
-            }
             }
         }
         
@@ -243,12 +241,10 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             
             let year = components.year
-            let month = components.month
-            let day = components.day
+            let month = 12//components.month
+            let day = 16//components.day
             let hour = components.hour
             let minute = components.minute
-            print(hour)
-            print(minute)
             
             var alternateScheduleDay = false
             
@@ -265,12 +261,18 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             var theAltScheduleEvent : Event = Event()
             
             for x in 0...events.count-1 {
-                if events[x].getStartDate() == todayDate {
-                    alternateScheduleDay = true
-                    theAltScheduleEvent = events[x]
-                    //                print(theAltScheduleEvent.getStartDate())
+                //print(events[x].getSummary())
+                //print(events[x].getStartDate())
+                for altDate in alternateScheduleDates {
+                    if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate {
+                        alternateScheduleDay = true
+                        theAltScheduleEvent = events[x]
+                        print(theAltScheduleEvent.getStartDate())
+                        print(theAltScheduleEvent.getDescription())
+                    }
                 }
             }
+            
             
             if alternateScheduleDay { // The code below is for alternate schedules
                 
@@ -319,13 +321,13 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                         //print(periodEndTimeSubstring)
                     }
                 }
-//                if !listOfPeriodsForDay.isEmpty {
+                if !listOfPeriodsForDay.isEmpty {
                     for c in 0...listOfPeriodsForDay.count-1 {
                         scheduleForCurrentDay.append(Period(name: listOfPeriodsForDay[c], startTime: listOfStartTimesForDay[c], endTime: listOfEndTimesForDay[c]))
                     }
-//                } else {
-//                    print("uh oh, something bad happened")
-//                }
+                } else {
+                    print("uh oh, something bad happened")
+                }
 
                 
                 
