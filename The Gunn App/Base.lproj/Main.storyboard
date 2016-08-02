@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -102,17 +102,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Gunn Campus Map 09-27-15" translatesAutoresizingMaskIntoConstraints="NO" id="Ds0-eb-Icx">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fev-YD-Psw">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                            </imageView>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Ds0-eb-Icx" firstAttribute="leading" secondItem="7Of-34-tv9" secondAttribute="leadingMargin" constant="-8" id="JJT-4P-5iS"/>
-                            <constraint firstItem="1CY-KQ-ViY" firstAttribute="top" secondItem="Ds0-eb-Icx" secondAttribute="bottom" id="d2g-Oa-QHe"/>
-                            <constraint firstItem="Ds0-eb-Icx" firstAttribute="top" secondItem="Sze-zc-RpX" secondAttribute="bottom" id="eWq-3i-lAC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ds0-eb-Icx" secondAttribute="trailing" constant="-8" id="oRE-Oy-99U"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="SIe-bt-0wQ"/>
                 </viewController>
@@ -729,7 +723,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Gunn Campus Map 09-27-15" width="720" height="960"/>
         <image name="PAUSDbadge250 copy" width="227" height="229"/>
         <image name="calendar" width="29" height="30"/>
         <image name="home" width="30" height="30"/>
