@@ -32,6 +32,9 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var distanceToTableLong: NSLayoutConstraint!
     
+    @IBOutlet weak var dayAndDateToProgBar: NSLayoutConstraint!
+    
+    
     
     @IBAction func switchSegments(sender: AnyObject) {
         var accessed0 = false
@@ -86,7 +89,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             distanceToTableLong.priority = 999
             distanceToTableShort.priority = 999
             distanceToTableLong.constant = 68
-            distanceToTableShort.constant = 44
+            distanceToTableShort.constant = 40
+            //dayAndDateToProgBar.priority = 999
 /*            var theModConstraint01 = NSLayoutConstraint()
             var theModConstraint02 = NSLayoutConstraint()
             if accessed0 {
@@ -119,6 +123,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             distanceToTableLong.priority = 1
             distanceToTableShort.priority = 999
             distanceToTableShort.constant = 6
+            //dayAndDateToProgBar.priority = 750
 /*            if accessed1 {
                 modConstraint02.priority = 999
                 modConstraint12.priority = 999
@@ -186,6 +191,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             distanceToTableLong.priority = 999
             distanceToTableShort.priority = 1
             distanceToTableLong.constant = 4
+            //dayAndDateToProgBar.priority = 750
 /*            if accessed2 {
                 modConstraint2.priority = 999
             } else {
@@ -268,8 +274,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             
             let year = components.year
-            let month = 12//components.month
-            let day = 15//components.day
+            let month = components.month
+            let day = components.day
             let hour = components.hour
             let minute = components.minute
             
@@ -599,8 +605,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             
             let year = components.year
-            let month = 12//components.month
-            let day = 16//components.day
+            let month = components.month
+            let day = components.day
             let hour = components.hour
             let minute = components.minute
             
