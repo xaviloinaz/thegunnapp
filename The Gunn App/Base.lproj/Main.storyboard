@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -482,8 +482,25 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="43" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E2S-fM-1A5">
-                                <rect key="frame" x="5" y="241" width="591" height="310"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thursday, September 25, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-dM-Osx">
+                                <rect key="frame" x="80" y="102" width="236" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CMH-wE-kfE">
+                                <rect key="frame" x="189" y="72" width="222" height="29"/>
+                                <segments>
+                                    <segment title="Today"/>
+                                    <segment title="Tomorrow"/>
+                                    <segment title="Weekly"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchSegments:" destination="Tnd-0i-gzu" eventType="valueChanged" id="bi9-sk-O7L"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="43" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E2S-fM-1A5">
+                                <rect key="frame" x="5" y="167.5" width="591" height="383.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleViewCell" id="YRT-Zk-2O0" customClass="ScheduleViewCell" customModule="TheGunnApp" customModuleProvider="target">
@@ -528,46 +545,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thursday, September 25, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-dM-Osx">
-                                <rect key="frame" x="80" y="102" width="236" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="779-lE-lo3">
-                                <rect key="frame" x="275" y="160" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="XBe-EJ-2Xu"/>
-                                    <constraint firstAttribute="width" constant="50" id="ail-Mq-g7J"/>
-                                    <constraint firstAttribute="height" constant="50" id="oj4-lH-Vox"/>
-                                </constraints>
-                                <state key="normal" image="refesh_504red-1"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="ail-Mq-g7J"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="updateInfo" destination="Tnd-0i-gzu" eventType="touchUpInside" id="Fyh-hb-GaE"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Refresh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCF-HD-HYt">
-                                <rect key="frame" x="287" y="180" width="27" height="8.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CMH-wE-kfE">
-                                <rect key="frame" x="189" y="72" width="222" height="29"/>
-                                <segments>
-                                    <segment title="Today"/>
-                                    <segment title="Tomorrow"/>
-                                    <segment title="Weekly"/>
-                                </segments>
-                                <connections>
-                                    <action selector="switchSegments:" destination="Tnd-0i-gzu" eventType="valueChanged" id="bi9-sk-O7L"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -577,20 +554,16 @@
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" constant="6" id="AIG-KA-aJp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zN9-Bf-jY7" secondAttribute="trailing" constant="-5" id="Ci5-gh-GPo"/>
                             <constraint firstItem="ILP-NK-KTy" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="CzM-4e-Jxh"/>
-                            <constraint firstItem="dCF-HD-HYt" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="IJ4-QO-37i"/>
                             <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="ILP-NK-KTy" secondAttribute="bottom" constant="80" id="Nqt-J5-vJM"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="leading" secondItem="iDu-G0-PUx" secondAttribute="leadingMargin" constant="-5" id="OR2-pV-OSb"/>
                             <constraint firstItem="CMH-wE-kfE" firstAttribute="top" secondItem="dOa-vl-rU8" secondAttribute="bottom" constant="7" id="OiR-aB-Ow1"/>
-                            <constraint firstItem="779-lE-lo3" firstAttribute="top" secondItem="ILP-NK-KTy" secondAttribute="bottom" constant="7" id="Pao-RO-ze2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E2S-fM-1A5" secondAttribute="trailing" constant="-16" id="RMc-FJ-Tri"/>
                             <constraint firstItem="iSb-dM-Osx" firstAttribute="top" secondItem="CMH-wE-kfE" secondAttribute="bottom" constant="7" id="YSd-8h-FBi"/>
-                            <constraint firstItem="dCF-HD-HYt" firstAttribute="top" secondItem="779-lE-lo3" secondAttribute="bottom" constant="-30" id="aLA-VC-nhb"/>
                             <constraint firstItem="oyK-aZ-GHK" firstAttribute="top" secondItem="E2S-fM-1A5" secondAttribute="bottom" id="bEo-9K-FYX"/>
                             <constraint firstItem="ILP-NK-KTy" firstAttribute="top" secondItem="zN9-Bf-jY7" secondAttribute="bottom" constant="5" id="jjc-7B-O99"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="ox4-ef-xze"/>
+                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="ILP-NK-KTy" secondAttribute="bottom" constant="7" id="pNy-hM-VRt"/>
                             <constraint firstItem="E2S-fM-1A5" firstAttribute="leading" secondItem="iDu-G0-PUx" secondAttribute="leadingMargin" constant="-15" id="sWi-9D-VUr"/>
-                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="779-lE-lo3" secondAttribute="bottom" constant="2" id="yXb-A8-35W"/>
-                            <constraint firstItem="779-lE-lo3" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="ygS-Sf-GI3"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -599,12 +572,16 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Schedule" id="bba-JH-8LZ"/>
+                    <navigationItem key="navigationItem" title="Schedule" id="bba-JH-8LZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="20f-Sh-RAI">
+                            <connections>
+                                <action selector="updateInfo:" destination="Tnd-0i-gzu" id="E8H-7n-fwW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dayAndDate" destination="iSb-dM-Osx" id="wYg-Of-RQ6"/>
                         <outlet property="minutesRemaining" destination="ILP-NK-KTy" id="Z3H-ec-xNa"/>
-                        <outlet property="refreshButton" destination="779-lE-lo3" id="P7L-e3-qPr"/>
-                        <outlet property="refreshLabel" destination="dCF-HD-HYt" id="uQk-Wm-mxD"/>
                         <outlet property="scheduleTable" destination="E2S-fM-1A5" id="cl1-LQ-bu4"/>
                         <outlet property="segmentedController" destination="CMH-wE-kfE" id="OMC-rv-YPp"/>
                         <outlet property="timeProgressBar" destination="zN9-Bf-jY7" id="Ri6-7A-qKe"/>
@@ -698,7 +675,6 @@
         <image name="home" width="30" height="30"/>
         <image name="map-pin" width="30" height="30"/>
         <image name="phone-book" width="30" height="30"/>
-        <image name="refesh_504red-1" width="375" height="375"/>
         <image name="text-list" width="30" height="30"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
