@@ -248,11 +248,11 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             let components = calendar.components([.Day , .Month , .Year, .Hour , .Minute], fromDate: date)
             
             
-            let year = components.year
-            let month = 12//components.month
-            let day = 16//components.day
-            let hour = 11//components.hour
-            let minute = 17//components.minute
+            let year = 2017//components.year
+            let month = 1//components.month
+            let day = 2//components.day
+            let hour = components.hour
+            let minute = components.minute
             
             var alternateScheduleDay = false
             
@@ -282,15 +282,24 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             }
             
             
+            var holiday = false
             
+            for e in events {
+                if e.getStartDate() == todayDate {
+                    if e.getSummary()!.rangeOfString("HOLIDAY") != nil || e.getSummary()!.rangeOfString("WINTER BREAK") != nil || e.getSummary()!.rangeOfString("STAFF DEVELOPMENT DAY") != nil || e.getSummary()!.rangeOfString("SPRING BREAK") != nil || e.getSummary()!.lowercaseString.rangeOfString("teacher work day") != nil {
+                        holiday = true
+                    }
+                }
+            }
+
             
-            
-            
-            if (month == 6 && day > 2) || (month == 7) || (month == 8 && day < 15) { // The code below is for summer
+            if (month == 6 && day > 2) || (month == 7) || (month == 8 && day < 15) || holiday { // The code below is for summer and holidays
                 
                 dayAndDate.text = String(getDayOfWeek(todayDate)!) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
                 minutesRemaining.text = "School's out!"
                 timeProgressBar.setProgress(0, animated: false)
+                
+                adjustTextSize(dayAndDate)
                 
                 
                 
@@ -570,9 +579,9 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             let components = calendar.components([.Day , .Month , .Year, .Hour , .Minute], fromDate: tomorrow!)
             
             
-            let year = components.year
-            let month = components.month
-            let day = components.day
+            let year = 2017//components.year
+            let month = 1//components.month
+            let day = 3//components.day
             let hour = components.hour
             let minute = components.minute
             
@@ -607,11 +616,24 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             
             
-            if (month == 6 && day > 2) || (month == 7) || (month == 8 && day < 15) { // The code below is for summer
+            var holiday = false
+            
+            for e in events {
+                if e.getStartDate() == todayDate {
+                    if e.getSummary()!.rangeOfString("HOLIDAY") != nil || e.getSummary()!.rangeOfString("WINTER BREAK") != nil || e.getSummary()!.rangeOfString("STAFF DEVELOPMENT DAY") != nil || e.getSummary()!.rangeOfString("SPRING BREAK") != nil || e.getSummary()!.lowercaseString.rangeOfString("teacher work day") != nil {
+                        holiday = true
+                    }
+                }
+            }
+            
+            
+            if (month == 6 && day > 2) || (month == 7) || (month == 8 && day < 15) || holiday { // The code below is for summer and holidays
                 
                 dayAndDate.text = String(getDayOfWeek(todayDate)!) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
+                minutesRemaining.text = "School's out!"
+                timeProgressBar.setProgress(0, animated: false)
                 
-                
+                adjustTextSize(dayAndDate)
                 
             } else if alternateScheduleDay { // The code below is for alternate schedules
                 
@@ -814,7 +836,25 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
     
-    
+    func adjustTextSize(label: UILabel) {
+        if label.text!.characters.count <= 36 {
+            dayAndDate.font = UIFont.systemFontOfSize(18)
+        } else if label.text!.characters.count <= 38 {
+            dayAndDate.font = UIFont.systemFontOfSize(17)
+        } else if label.text!.characters.count <= 40 {
+            dayAndDate.font = UIFont.systemFontOfSize(16)
+        } else if label.text!.characters.count <= 42 {
+            dayAndDate.font = UIFont.systemFontOfSize(15)
+        } else if label.text!.characters.count <= 45 {
+            dayAndDate.font = UIFont.systemFontOfSize(14)
+        } else if label.text!.characters.count <= 47 {
+            dayAndDate.font = UIFont.systemFontOfSize(13)
+        } else if label.text!.characters.count <= 50 {
+            dayAndDate.font = UIFont.systemFontOfSize(12)
+        } else {
+            dayAndDate.font = UIFont.systemFontOfSize(11)
+        }
+    }
     
     
     
