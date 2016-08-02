@@ -558,7 +558,7 @@
                                     <action selector="switchSegments:" destination="Tnd-0i-gzu" eventType="valueChanged" id="bi9-sk-O7L"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="43" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E2S-fM-1A5">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="43" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E2S-fM-1A5">
                                 <rect key="frame" x="5" y="167.5" width="591" height="383.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -608,20 +608,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iSb-dM-Osx" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="0NP-r6-S6X"/>
+                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" constant="44" id="0v1-NX-XzC"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="6Km-RB-bmM"/>
                             <constraint firstItem="CMH-wE-kfE" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="7FT-3J-QeF"/>
-                            <constraint firstItem="zN9-Bf-jY7" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" constant="6" id="AIG-KA-aJp"/>
+                            <constraint firstItem="zN9-Bf-jY7" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" priority="750" constant="6" id="AIG-KA-aJp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zN9-Bf-jY7" secondAttribute="trailing" constant="-5" id="Ci5-gh-GPo"/>
                             <constraint firstItem="ILP-NK-KTy" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="CzM-4e-Jxh"/>
                             <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="ILP-NK-KTy" secondAttribute="bottom" constant="80" id="Nqt-J5-vJM"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="leading" secondItem="iDu-G0-PUx" secondAttribute="leadingMargin" constant="-5" id="OR2-pV-OSb"/>
-                            <constraint firstItem="CMH-wE-kfE" firstAttribute="top" secondItem="dOa-vl-rU8" secondAttribute="bottom" constant="7" id="OiR-aB-Ow1"/>
+                            <constraint firstItem="CMH-wE-kfE" firstAttribute="top" secondItem="dOa-vl-rU8" secondAttribute="bottom" priority="750" constant="7" id="OiR-aB-Ow1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E2S-fM-1A5" secondAttribute="trailing" constant="-16" id="RMc-FJ-Tri"/>
-                            <constraint firstItem="iSb-dM-Osx" firstAttribute="top" secondItem="CMH-wE-kfE" secondAttribute="bottom" constant="7" id="YSd-8h-FBi"/>
+                            <constraint firstItem="iSb-dM-Osx" firstAttribute="top" secondItem="CMH-wE-kfE" secondAttribute="bottom" priority="750" constant="7" id="YSd-8h-FBi"/>
                             <constraint firstItem="oyK-aZ-GHK" firstAttribute="top" secondItem="E2S-fM-1A5" secondAttribute="bottom" id="bEo-9K-FYX"/>
-                            <constraint firstItem="ILP-NK-KTy" firstAttribute="top" secondItem="zN9-Bf-jY7" secondAttribute="bottom" constant="5" id="jjc-7B-O99"/>
+                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="CMH-wE-kfE" secondAttribute="bottom" constant="68" id="dTI-7n-PoL"/>
+                            <constraint firstItem="ILP-NK-KTy" firstAttribute="top" secondItem="zN9-Bf-jY7" secondAttribute="bottom" priority="750" constant="5" id="jjc-7B-O99"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="ox4-ef-xze"/>
-                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="ILP-NK-KTy" secondAttribute="bottom" constant="7" id="pNy-hM-VRt"/>
+                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="ILP-NK-KTy" secondAttribute="bottom" priority="750" constant="7" id="pNy-hM-VRt"/>
                             <constraint firstItem="E2S-fM-1A5" firstAttribute="leading" secondItem="iDu-G0-PUx" secondAttribute="leadingMargin" constant="-15" id="sWi-9D-VUr"/>
                         </constraints>
                         <variation key="default">
@@ -640,6 +642,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="dayAndDate" destination="iSb-dM-Osx" id="wYg-Of-RQ6"/>
+                        <outlet property="distanceToTableLong" destination="dTI-7n-PoL" id="HPL-cQ-rQK"/>
+                        <outlet property="distanceToTableShort" destination="0v1-NX-XzC" id="VUY-r3-4oc"/>
                         <outlet property="minutesRemaining" destination="ILP-NK-KTy" id="Z3H-ec-xNa"/>
                         <outlet property="scheduleTable" destination="E2S-fM-1A5" id="cl1-LQ-bu4"/>
                         <outlet property="segmentedController" destination="CMH-wE-kfE" id="OMC-rv-YPp"/>
