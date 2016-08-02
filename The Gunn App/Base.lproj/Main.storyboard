@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -411,7 +411,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="DateText" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hzO-Vb-zkC">
-                                <rect key="frame" x="20" y="164" width="70" height="34"/>
+                                <rect key="frame" x="20" y="164" width="241" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -460,7 +460,17 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="1ec-aW-6vT"/>
+                                <exclude reference="k9m-ga-A4F"/>
+                                <exclude reference="J3p-nA-6gi"/>
+                                <exclude reference="auq-H1-7rS"/>
+                                <exclude reference="81C-HC-rqM"/>
+                                <exclude reference="sT4-qk-RWK"/>
+                                <exclude reference="8Nn-uu-AKD"/>
                                 <exclude reference="Owe-D6-1PS"/>
+                                <exclude reference="V1u-EG-8pN"/>
+                                <exclude reference="E8X-hJ-ckT"/>
+                                <exclude reference="q8B-PD-3XL"/>
                             </mask>
                         </variation>
                     </view>
