@@ -542,7 +542,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday, September 25, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-dM-Osx">
-                                <rect key="frame" x="195" y="106" width="210.5" height="20.5"/>
+                                <rect key="frame" x="195" y="105.5" width="210.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -608,7 +608,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iSb-dM-Osx" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="0NP-r6-S6X"/>
-                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" priority="999" constant="40" id="0v1-NX-XzC"/>
+                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" priority="999" constant="43" id="0v1-NX-XzC"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="6Km-RB-bmM"/>
                             <constraint firstItem="CMH-wE-kfE" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="7FT-3J-QeF"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" priority="750" constant="7" id="AIG-KA-aJp"/>

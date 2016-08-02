@@ -89,7 +89,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             distanceToTableLong.priority = 999
             distanceToTableShort.priority = 999
             distanceToTableLong.constant = 68
-            distanceToTableShort.constant = 40
+            distanceToTableShort.constant = 43
             //dayAndDateToProgBar.priority = 999
 /*            var theModConstraint01 = NSLayoutConstraint()
             var theModConstraint02 = NSLayoutConstraint()
@@ -273,11 +273,11 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             let components = calendar.components([.Day , .Month , .Year, .Hour , .Minute], fromDate: date)
             
             
-            let year = components.year
-            let month = components.month
-            let day = components.day
-            let hour = components.hour
-            let minute = components.minute
+            let year = 2017//components.year
+            let month = 2//components.month
+            let day = 23//components.day
+            let hour = 11//components.hour
+            let minute = 42//components.minute
             
             var alternateScheduleDay = false
             
@@ -384,9 +384,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     
                     dayAndDate.text = displayedText
                     
-                    if displayedText.characters.count <= 36 {
-                        dayAndDate.font = UIFont.systemFontOfSize(18)
-                    } else if displayedText.characters.count <= 38 {
+                    if displayedText.characters.count <= 38 {
                         dayAndDate.font = UIFont.systemFontOfSize(17)
                     } else if displayedText.characters.count <= 40 {
                         dayAndDate.font = UIFont.systemFontOfSize(16)
@@ -414,9 +412,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     
                     dayAndDate.text = displayedText
                     
-                    if displayedText.characters.count <= 36 {
-                        dayAndDate.font = UIFont.systemFontOfSize(18)
-                    } else if displayedText.characters.count <= 38 {
+                    if displayedText.characters.count <= 38 {
                         dayAndDate.font = UIFont.systemFontOfSize(17)
                     } else if displayedText.characters.count <= 40 {
                         dayAndDate.font = UIFont.systemFontOfSize(16)
@@ -481,9 +477,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     } else {
                         displayedText = String(dayOfWeek) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
                         dayAndDate.text = displayedText
-                        if displayedText.characters.count <= 36 {
-                            dayAndDate.font = UIFont.systemFontOfSize(18)
-                        } else if displayedText.characters.count <= 38 {
+                        if displayedText.characters.count <= 38 {
                             dayAndDate.font = UIFont.systemFontOfSize(17)
                         } else if displayedText.characters.count <= 40 {
                             dayAndDate.font = UIFont.systemFontOfSize(16)
@@ -604,9 +598,9 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             let components = calendar.components([.Day , .Month , .Year, .Hour , .Minute], fromDate: tomorrow!)
             
             
-            let year = components.year
-            let month = components.month
-            let day = components.day
+            let year = 2017//components.year
+            let month = 2//components.month
+            let day = 24//components.day
             let hour = components.hour
             let minute = components.minute
             
@@ -720,9 +714,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     
                     dayAndDate.text = displayedText
                     
-                    if displayedText.characters.count <= 36 {
-                        dayAndDate.font = UIFont.systemFontOfSize(18)
-                    } else if displayedText.characters.count <= 38 {
+                    if displayedText.characters.count <= 38 {
                         dayAndDate.font = UIFont.systemFontOfSize(17)
                     } else if displayedText.characters.count <= 40 {
                         dayAndDate.font = UIFont.systemFontOfSize(16)
@@ -750,9 +742,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     
                     dayAndDate.text = displayedText
                     
-                    if displayedText.characters.count <= 36 {
-                        dayAndDate.font = UIFont.systemFontOfSize(18)
-                    } else if displayedText.characters.count <= 38 {
+                    if displayedText.characters.count <= 38 {
                         dayAndDate.font = UIFont.systemFontOfSize(17)
                     } else if displayedText.characters.count <= 40 {
                         dayAndDate.font = UIFont.systemFontOfSize(16)
@@ -817,9 +807,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     } else {
                         displayedText = String(dayOfWeek) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
                         dayAndDate.text = displayedText
-                        if displayedText.characters.count <= 36 {
-                            dayAndDate.font = UIFont.systemFontOfSize(18)
-                        } else if displayedText.characters.count <= 38 {
+                        if displayedText.characters.count <= 38 {
                             dayAndDate.font = UIFont.systemFontOfSize(17)
                         } else if displayedText.characters.count <= 40 {
                             dayAndDate.font = UIFont.systemFontOfSize(16)
@@ -862,9 +850,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
     func adjustTextSize(label: UILabel) {
-        if label.text!.characters.count <= 36 {
-            dayAndDate.font = UIFont.systemFontOfSize(18)
-        } else if label.text!.characters.count <= 38 {
+        if label.text!.characters.count <= 38 {
             dayAndDate.font = UIFont.systemFontOfSize(17)
         } else if label.text!.characters.count <= 40 {
             dayAndDate.font = UIFont.systemFontOfSize(16)

@@ -2590,7 +2590,7 @@
    "created": "2016-06-14T19:33:44.000Z",
    "updated": "2016-06-14T19:33:44.168Z",
    "summary": "4-day-week schedule (see below)",
-   "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nE period (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+   "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
    "creator": {
     "email": "melderon@pausd.org",
     "displayName": "Martha Elderon"
@@ -3356,7 +3356,7 @@
    "created": "2016-06-14T19:36:54.000Z",
    "updated": "2016-06-14T19:36:54.070Z",
    "summary": "4-day-week schedule (see below)",
-   "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nE period (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+   "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
    "creator": {
     "email": "melderon@pausd.org",
     "displayName": "Martha Elderon"
@@ -7646,7 +7646,7 @@
    "created": "2016-03-09T19:49:49.000Z",
    "updated": "2016-06-14T20:03:13.043Z",
    "summary": "4-day-week schedule (see below)",
-   "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nE period (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+   "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
    "creator": {
     "email": "melderon@pausd.org",
     "displayName": "Martha Elderon"
