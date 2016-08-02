@@ -273,11 +273,11 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             let components = calendar.components([.Day , .Month , .Year, .Hour , .Minute], fromDate: date)
             
             
-            let year = 2017//components.year
-            let month = 2//components.month
-            let day = 23//components.day
-            let hour = 11//components.hour
-            let minute = 42//components.minute
+            let year = components.year
+            let month = components.month
+            let day = components.day
+            let hour = components.hour
+            let minute = components.minute
             
             var alternateScheduleDay = false
             
@@ -598,9 +598,9 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             let components = calendar.components([.Day , .Month , .Year, .Hour , .Minute], fromDate: tomorrow!)
             
             
-            let year = 2017//components.year
-            let month = 2//components.month
-            let day = 24//components.day
+            let year = components.year
+            let month = components.month
+            let day = components.day
             let hour = components.hour
             let minute = components.minute
             
