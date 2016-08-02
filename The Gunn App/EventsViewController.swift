@@ -38,6 +38,7 @@ class EventsViewController: UITableViewController {
     }
     
     
+    
     // When the view loads, create necessary subviews
     // and initialize the Google Calendar API service
     override func viewDidLoad() {
@@ -45,10 +46,10 @@ class EventsViewController: UITableViewController {
         //        downloadAndParseJSON()
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
         ev = DownloadJSON()
-        events = ev!.downloadAndParseJSON();
+        events = ev!.downloadAndParseJSON()
         for index in 0...events.count-1 {
             print(events[index].summary!)
-        
+            
             print(events[index].startDate)
             print(ev!.dateString(events[index].startTime))
         }
@@ -335,16 +336,16 @@ class EventsViewController: UITableViewController {
         if((event.startDate) != ""){
             print(event.startDate!)
             cell.dayAndDate.text = ev!.dateString(event.startDate!)
-//            cell.startingTime.hidden = true
-//                ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
+            //            cell.startingTime.hidden = true
+            //                ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
         }
         else if((event.startTime) != ""){
             cell.dayAndDate.text = ev!.dateString(event.startTime!)
-//            cell.startingTime.text = ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
+            //            cell.startingTime.text = ev!.timeString(event.startTime!) + " - " + ev!.timeString(event.endTime)
         }
         else{
             cell.dayAndDate.text = ""
-//            cell.startingTime.text = ""
+            //            cell.startingTime.text = ""
         }
         
         
@@ -367,7 +368,47 @@ class EventsViewController: UITableViewController {
          
          */
     }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        
+        var indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
+        
+        
+        
+        var destViewController = segue.destinationViewController as! EventInfoViewController
+        
+        
+        
+        var thisEvent : Event = events[indexPath.row]
+        
+        
+        
+        //        destViewController.thisStaff = thisStaff
+        
+        
+        
+        //        if searchController.active && searchController.searchBar.text != "" {
+        
+        //            thisStaff = filteredStaff[indexPath.row]
+        
+        destViewController.thisEvent = thisEvent
+        
+        //        } else {
+        
+        //            thisStaff = staffs[indexPath.row]
+        
+        
+        //        }
+        
+        
+        
+    }
 }
+
+
 
 
 /*
@@ -512,3 +553,4 @@ class EventsViewController: UITableViewController {
 //
 //}
 //
+
