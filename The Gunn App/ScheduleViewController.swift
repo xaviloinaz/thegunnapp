@@ -225,11 +225,13 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         let json = DownloadJSON()
         let events = json.downloadAndParseJSON()
         for i in 0...events.count-1 {
+            if !(events[i].getSummary()?.isEmpty)! {
             if let summary = events[i].getSummary() {
                 if summary.lowercaseString.rangeOfString("schedule") != nil &&  summary.lowercaseString.rangeOfString("below") != nil && summary.lowercaseString.rangeOfString("back") == nil && summary.lowercaseString.rangeOfString("school") == nil && summary.lowercaseString.rangeOfString("night") == nil {
                     alternateScheduleDates.append(events[i].getStartDate()!)
                     //                    print(String(events[i].getStartDate()))
                 }
+            }
             }
         }
         
@@ -241,8 +243,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             
             let year = components.year
-            let month = 9//components.month
-            let day = 7//components.day
+            let month = components.month
+            let day = components.day
             let hour = components.hour
             let minute = components.minute
             print(hour)
@@ -317,14 +319,14 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                         //print(periodEndTimeSubstring)
                     }
                 }
-                if !listOfPeriodsForDay.isEmpty {
+//                if !listOfPeriodsForDay.isEmpty {
                     for c in 0...listOfPeriodsForDay.count-1 {
                         scheduleForCurrentDay.append(Period(name: listOfPeriodsForDay[c], startTime: listOfStartTimesForDay[c], endTime: listOfEndTimesForDay[c]))
                     }
-                } else {
-                    print("uh oh, something bad happened")
-                }
-                
+//                } else {
+//                    print("uh oh, something bad happened")
+//                }
+
                 
                 
                 if let dayOfWeek = getDayOfWeek(todayDate){
