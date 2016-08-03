@@ -10,7 +10,6 @@
 		3A1CFACEA874202BA5DF6A47 /* Pods_TheGunnApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DD0517FCF6BA736214175E /* Pods_TheGunnApp.framework */; };
 		4759AEFA1D2270E300BB502B /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4759AEF91D2270E300BB502B /* PortalViewController.swift */; };
 		479770391D45CA8200E7FD66 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479770381D45CA8200E7FD66 /* Period.swift */; };
-		4797703F1D4EAC7C00E7FD66 /* EventInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797703E1D4EAC7C00E7FD66 /* EventInfoViewController.swift */; };
 		47D00AED1D3AE2CD004B5E8F /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D00AEC1D3AE2CD004B5E8F /* GTMOAuth2ViewTouch.xib */; };
 		47D00AEF1D3C3B9A004B5E8F /* EventsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D00AEE1D3C3B9A004B5E8F /* EventsViewCell.swift */; };
 		47D00AF11D3C3F2F004B5E8F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D00AF01D3C3F2F004B5E8F /* Event.swift */; };
@@ -272,6 +271,7 @@
 				TargetAttributes = {
 					47D7D40A1D04D24A00BC1F5D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FTVQ9SW68U;
 					};
 					47D7D4201D04D24A00BC1F5D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -543,10 +543,13 @@
 			baseConfigurationReference = 2FCC4CBF035602B60139EE94 /* Pods-TheGunnApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "The Gunn App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-App";
 				PRODUCT_NAME = TheGunnApp;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -556,11 +559,14 @@
 			baseConfigurationReference = 938100FDE7F78A8239592CDB /* Pods-TheGunnApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_OPTIMIZATION_LEVEL = 2;
 				INFOPLIST_FILE = "The Gunn App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-App";
 				PRODUCT_NAME = TheGunnApp;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Release;
