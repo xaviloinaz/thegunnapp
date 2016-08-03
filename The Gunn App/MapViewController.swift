@@ -9,17 +9,31 @@
 import Foundation
 import UIKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, UIScrollViewDelegate {
 
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+
+    @IBOutlet weak var gunnMap: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
         // Do any additional setup after loading the view, typically from a nib.
+        self.scrollView.minimumZoomScale = 0.45
+        self.scrollView.maximumZoomScale = 2.0
+        self.scrollView.zoomScale = 0.45
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+        return self.gunnMap
+    }
+    
+    
 }

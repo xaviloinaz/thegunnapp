@@ -102,13 +102,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fev-YD-Psw">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Al8-40-ErU">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Gunn Campus Map 09-27-15" translatesAutoresizingMaskIntoConstraints="NO" id="J9R-AK-qDY">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="J9R-AK-qDY" secondAttribute="trailing" id="1xM-Tu-8vs"/>
+                                    <constraint firstItem="J9R-AK-qDY" firstAttribute="top" secondItem="Al8-40-ErU" secondAttribute="top" id="2Qk-Rq-3xL"/>
+                                    <constraint firstItem="J9R-AK-qDY" firstAttribute="leading" secondItem="Al8-40-ErU" secondAttribute="leading" id="4yL-XI-Gnc"/>
+                                    <constraint firstAttribute="bottom" secondItem="J9R-AK-qDY" secondAttribute="bottom" id="Ufu-mq-B7B"/>
+                                    <constraint firstItem="J9R-AK-qDY" firstAttribute="centerX" secondItem="Al8-40-ErU" secondAttribute="centerX" id="u8I-5S-sDO"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="u8I-5S-sDO"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="ht1-yG-0xa" id="OjV-9K-a07"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Al8-40-ErU" firstAttribute="leading" secondItem="7Of-34-tv9" secondAttribute="leading" id="Hf9-g8-hR6"/>
+                            <constraint firstItem="Al8-40-ErU" firstAttribute="top" secondItem="Sze-zc-RpX" secondAttribute="bottom" id="IkU-ko-WpD"/>
+                            <constraint firstItem="Al8-40-ErU" firstAttribute="bottom" secondItem="1CY-KQ-ViY" secondAttribute="top" id="OVh-PZ-J9R"/>
+                            <constraint firstAttribute="trailing" secondItem="Al8-40-ErU" secondAttribute="trailing" id="tny-qk-xVR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="SIe-bt-0wQ"/>
+                    <connections>
+                        <outlet property="gunnMap" destination="J9R-AK-qDY" id="cZv-6Z-zhV"/>
+                        <outlet property="scrollView" destination="Al8-40-ErU" id="TWd-ko-GwU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Sq-CG-gh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,7 +182,7 @@
                                 <connections>
                                     <outlet property="staffDepartment" destination="bqA-RZ-ghB" id="uNn-39-sVF"/>
                                     <outlet property="staffName" destination="vbb-3P-XVn" id="f5d-US-6dZ"/>
-                                    <segue destination="wzk-Rn-msO" kind="show" animates="NO" id="p9n-1Y-ucu"/>
+                                    <segue destination="wzk-Rn-msO" kind="show" id="p9n-1Y-ucu"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -223,6 +253,11 @@
                                 <state key="normal" title="Go to Website">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6C5-az-X8X"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="goToWebsite" destination="wzk-Rn-msO" eventType="touchUpInside" id="5pT-bC-K3O"/>
                                 </connections>
@@ -523,20 +558,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="zN9-Bf-jY7">
-                                <rect key="frame" x="15" y="120" width="570" height="12"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="zN9-Bf-jY7">
+                                <rect key="frame" x="15" y="128" width="570" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="zIh-TU-yaa"/>
                                 </constraints>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="X minutes are remaining until ______" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILP-NK-KTy">
-                                <rect key="frame" x="201" y="140" width="199.5" height="12"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="X minutes are remaining until ______" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILP-NK-KTy">
+                                <rect key="frame" x="208" y="146" width="186" height="9.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thursday, September 25, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-dM-Osx">
-                                <rect key="frame" x="80" y="102" width="236" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday, September 25, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-dM-Osx">
+                                <rect key="frame" x="195" y="105.5" width="210.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -552,7 +587,7 @@
                                     <action selector="switchSegments:" destination="Tnd-0i-gzu" eventType="valueChanged" id="bi9-sk-O7L"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="43" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E2S-fM-1A5">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="43" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E2S-fM-1A5">
                                 <rect key="frame" x="5" y="167.5" width="591" height="383.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -602,20 +637,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iSb-dM-Osx" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="0NP-r6-S6X"/>
+                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" priority="999" constant="43" id="0v1-NX-XzC"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="6Km-RB-bmM"/>
                             <constraint firstItem="CMH-wE-kfE" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="7FT-3J-QeF"/>
-                            <constraint firstItem="zN9-Bf-jY7" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" constant="6" id="AIG-KA-aJp"/>
+                            <constraint firstItem="zN9-Bf-jY7" firstAttribute="top" secondItem="iSb-dM-Osx" secondAttribute="bottom" priority="750" constant="7" id="AIG-KA-aJp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zN9-Bf-jY7" secondAttribute="trailing" constant="-5" id="Ci5-gh-GPo"/>
                             <constraint firstItem="ILP-NK-KTy" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="CzM-4e-Jxh"/>
                             <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="ILP-NK-KTy" secondAttribute="bottom" constant="80" id="Nqt-J5-vJM"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="leading" secondItem="iDu-G0-PUx" secondAttribute="leadingMargin" constant="-5" id="OR2-pV-OSb"/>
-                            <constraint firstItem="CMH-wE-kfE" firstAttribute="top" secondItem="dOa-vl-rU8" secondAttribute="bottom" constant="7" id="OiR-aB-Ow1"/>
+                            <constraint firstItem="CMH-wE-kfE" firstAttribute="top" secondItem="dOa-vl-rU8" secondAttribute="bottom" priority="750" constant="7" id="OiR-aB-Ow1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E2S-fM-1A5" secondAttribute="trailing" constant="-16" id="RMc-FJ-Tri"/>
-                            <constraint firstItem="iSb-dM-Osx" firstAttribute="top" secondItem="CMH-wE-kfE" secondAttribute="bottom" constant="7" id="YSd-8h-FBi"/>
+                            <constraint firstItem="iSb-dM-Osx" firstAttribute="top" secondItem="CMH-wE-kfE" secondAttribute="bottom" priority="750" constant="7" id="YSd-8h-FBi"/>
                             <constraint firstItem="oyK-aZ-GHK" firstAttribute="top" secondItem="E2S-fM-1A5" secondAttribute="bottom" id="bEo-9K-FYX"/>
-                            <constraint firstItem="ILP-NK-KTy" firstAttribute="top" secondItem="zN9-Bf-jY7" secondAttribute="bottom" constant="5" id="jjc-7B-O99"/>
+                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="CMH-wE-kfE" secondAttribute="bottom" priority="999" constant="68" id="dTI-7n-PoL"/>
+                            <constraint firstItem="ILP-NK-KTy" firstAttribute="top" secondItem="zN9-Bf-jY7" secondAttribute="bottom" priority="750" constant="5" id="jjc-7B-O99"/>
                             <constraint firstItem="zN9-Bf-jY7" firstAttribute="centerX" secondItem="iDu-G0-PUx" secondAttribute="centerX" id="ox4-ef-xze"/>
-                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="ILP-NK-KTy" secondAttribute="bottom" constant="7" id="pNy-hM-VRt"/>
+                            <constraint firstItem="E2S-fM-1A5" firstAttribute="top" secondItem="ILP-NK-KTy" secondAttribute="bottom" priority="750" constant="7" id="pNy-hM-VRt"/>
                             <constraint firstItem="E2S-fM-1A5" firstAttribute="leading" secondItem="iDu-G0-PUx" secondAttribute="leadingMargin" constant="-15" id="sWi-9D-VUr"/>
                         </constraints>
                         <variation key="default">
@@ -634,6 +671,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="dayAndDate" destination="iSb-dM-Osx" id="wYg-Of-RQ6"/>
+                        <outlet property="dayAndDateToProgBar" destination="AIG-KA-aJp" id="OWs-vk-V3F"/>
+                        <outlet property="distanceToTableLong" destination="dTI-7n-PoL" id="my1-W8-Gv8"/>
+                        <outlet property="distanceToTableShort" destination="0v1-NX-XzC" id="8Ke-JJ-vq8"/>
                         <outlet property="minutesRemaining" destination="ILP-NK-KTy" id="Z3H-ec-xNa"/>
                         <outlet property="scheduleTable" destination="E2S-fM-1A5" id="cl1-LQ-bu4"/>
                         <outlet property="segmentedController" destination="CMH-wE-kfE" id="OMC-rv-YPp"/>
@@ -722,6 +762,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Gunn Campus Map 09-27-15" width="720" height="960"/>
         <image name="PAUSDbadge250 copy" width="227" height="229"/>
         <image name="calendar" width="29" height="30"/>
         <image name="home" width="30" height="30"/>

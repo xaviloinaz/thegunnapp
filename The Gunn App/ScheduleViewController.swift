@@ -1,4 +1,4 @@
-///
+//
 //  ScheduleViewController.swift
 //  The Gunn App
 //
@@ -23,18 +23,16 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     var scheduleForCurrentDay : [Period] = []
     var whichSegControl : Int = 0
     
-    //    @IBOutlet weak var scheduleTable: UITableView!
-    //    @IBOutlet weak var dayAndDate: UILabel!
-    //    @IBOutlet weak var minutesRemaining: UILabel!
-    //    @IBOutlet weak var timeProgressBar: UIProgressView!
-    //    @IBOutlet weak var segmentedController: UISegmentedControl!
-    //    @IBOutlet weak var refreshButton: UIButton!
-    //    @IBOutlet weak var refreshLabel: UILabel!
-    
 
     @IBAction func updateInfo(sender: AnyObject) {
         viewDidLoad()
     }
+    
+    @IBOutlet weak var distanceToTableShort: NSLayoutConstraint!
+    
+    @IBOutlet weak var distanceToTableLong: NSLayoutConstraint!
+    
+    @IBOutlet weak var dayAndDateToProgBar: NSLayoutConstraint!
     
     
     
@@ -42,7 +40,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         var accessed0 = false
         var accessed1 = false
         var accessed2 = false
-        let modConstraint01 = NSLayoutConstraint(item: self.scheduleTable,
+/*        let modConstraint01 = NSLayoutConstraint(item: self.scheduleTable,
                                                  attribute: .Top,
                                                  relatedBy: .Equal,
                                                  toItem: self.minutesRemaining,
@@ -56,28 +54,30 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                                                  attribute: .Bottom,
                                                  multiplier: 1.0,
                                                  constant: 7.0)
-        /*        let modConstraint11 = NSLayoutConstraint(item: self.dayAndDate,
-         attribute: .Top,
-         relatedBy: .Equal,
-         toItem: self.segmentedController,
-         attribute: .Bottom,
-         multiplier: 1.0,
-         constant: 7.0)
-         */        let modConstraint12 = NSLayoutConstraint(item: self.scheduleTable,
-                                                            attribute: .Top,
-                                                            relatedBy: .Equal,
-                                                            toItem: self.dayAndDate,
-                                                            attribute: .Bottom,
-                                                            multiplier: 1.0,
-                                                            constant: 10.0)
+
+/*        let modConstraint11 = NSLayoutConstraint(item: self.dayAndDate,
+                                                 attribute: .Top,
+                                                 relatedBy: .Equal,
+                                                 toItem: self.segmentedController,
+                                                 attribute: .Bottom,
+                                                 multiplier: 1.0,
+                                                 constant: 7.0)
+*/        let modConstraint12 = NSLayoutConstraint(item: self.scheduleTable,
+                                                 attribute: .Top,
+                                                 relatedBy: .Equal,
+                                                 toItem: self.dayAndDate,
+                                                 attribute: .Bottom,
+                                                 multiplier: 1.0,
+                                                 constant: 6.0)
         let modConstraint2 = NSLayoutConstraint(item: scheduleTable,
                                                 attribute: .Top,
                                                 relatedBy: .Equal,
                                                 toItem: self.segmentedController,
                                                 attribute: .Bottom,
                                                 multiplier: 1.0,
-                                                constant: 7.0)
-
+                                                constant: 4.0)
+*/
+ 
         if segmentedController.selectedSegmentIndex == 0 {
             whichSegControl = 0
             scheduleForCurrentDay.removeAll()
@@ -86,12 +86,21 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             minutesRemaining.hidden = false
             timeProgressBar.hidden = false
             dayAndDate.hidden = false
+            distanceToTableLong.priority = 999
+            distanceToTableShort.priority = 999
+            distanceToTableLong.constant = 68
+            distanceToTableShort.constant = 43
+            //dayAndDateToProgBar.priority = 999
+/*            var theModConstraint01 = NSLayoutConstraint()
+            var theModConstraint02 = NSLayoutConstraint()
             if accessed0 {
-                modConstraint01.priority = 999
-                modConstraint02.priority = 999
+                theModConstraint01.priority = 999
+                theModConstraint02.priority = 999
             } else {
-                self.view.addConstraint(modConstraint01)
-                self.view.addConstraint(modConstraint02)
+                theModConstraint01 = modConstraint01
+                theModConstraint02 = modConstraint02
+                self.view.addConstraint(theModConstraint01)
+                self.view.addConstraint(theModConstraint02)
             }
             if accessed1 {
                 // modConstraint11.priority = 1
@@ -101,7 +110,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 modConstraint2.priority = 1
             }
             accessed0 = true
-            
+*/
         }
         if segmentedController.selectedSegmentIndex == 1 {
             whichSegControl = 1
@@ -111,7 +120,11 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             minutesRemaining.hidden = true
             timeProgressBar.hidden = true
             dayAndDate.hidden = false
-            if accessed1 {
+            distanceToTableLong.priority = 1
+            distanceToTableShort.priority = 999
+            distanceToTableShort.constant = 6
+            //dayAndDateToProgBar.priority = 750
+/*            if accessed1 {
                 modConstraint02.priority = 999
                 modConstraint12.priority = 999
                 
@@ -127,17 +140,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 modConstraint2.priority = 1
             }
             accessed1 = true
-
-            for subview in view.subviews as [UIView] {
-                print(subview)
-                for constraint in subview.constraints as [NSLayoutConstraint] {
-                    print(constraint)
-                    if constraint.identifier == "distanceToTableViewShort" {
-                        constraint.constant = 10
-                        print("LET'S GET THIS MONEY!")
-                    }
-                }
-            }
+*/
         }
         if segmentedController.selectedSegmentIndex == 2 {
             whichSegControl = 2
@@ -185,7 +188,11 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             minutesRemaining.hidden = true
             timeProgressBar.hidden = true
             dayAndDate.hidden = true
-            if accessed2 {
+            distanceToTableLong.priority = 999
+            distanceToTableShort.priority = 1
+            distanceToTableLong.constant = 4
+            //dayAndDateToProgBar.priority = 750
+/*            if accessed2 {
                 modConstraint2.priority = 999
             } else {
                 self.view.addConstraint(modConstraint2)
@@ -199,21 +206,47 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 modConstraint12.priority = 1
             }
             accessed2 = true
-
-            /*            for subview in view.subviews as [UIView] {
-             print("HAI")
-             print(subview)
-             for constraint in subview.constraints as [NSLayoutConstraint] {
-             constraint.identifier = "identifier"
-             print(constraint)
-             if constraint.identifier == "distanceToTableView" {
-             constraint.constant = 10
-             print("LET'S GET THIS MONEY!")
-             }
-             }
-             }*/
+*/
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     override func viewDidLoad() {
@@ -225,13 +258,11 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         let json = DownloadJSON()
         let events = json.downloadAndParseJSON()
         for i in 0...events.count-1 {
-            if !(events[i].getSummary()?.isEmpty)! {
             if let summary = events[i].getSummary() {
                 if summary.lowercaseString.rangeOfString("schedule") != nil &&  summary.lowercaseString.rangeOfString("below") != nil && summary.lowercaseString.rangeOfString("back") == nil && summary.lowercaseString.rangeOfString("school") == nil && summary.lowercaseString.rangeOfString("night") == nil {
                     alternateScheduleDates.append(events[i].getStartDate()!)
-                    //                    print(String(events[i].getStartDate()))
+                    
                 }
-            }
             }
         }
         
@@ -247,8 +278,6 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             let day = components.day
             let hour = components.hour
             let minute = components.minute
-            print(hour)
-            print(minute)
             
             var alternateScheduleDay = false
             
@@ -265,27 +294,45 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             var theAltScheduleEvent : Event = Event()
             
             for x in 0...events.count-1 {
-                if events[x].getStartDate() == todayDate {
-                    alternateScheduleDay = true
-                    theAltScheduleEvent = events[x]
-                    //                print(theAltScheduleEvent.getStartDate())
+                for altDate in alternateScheduleDates {
+                    if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate && events[x].getSummary()!.lowercaseString.rangeOfString("schedule") != nil &&  events[x].getSummary()!.lowercaseString.rangeOfString("below") != nil{
+                        alternateScheduleDay = true
+                        theAltScheduleEvent = events[x]
+                        print(theAltScheduleEvent.getStartDate())
+                        print(theAltScheduleEvent.getSummary())
+                        //break
+                    }
                 }
+                //break
             }
             
-            if alternateScheduleDay { // The code below is for alternate schedules
+            
+            var holiday = false
+            
+            for e in events {
+                if e.getStartDate() == todayDate {
+                    if e.getSummary()!.rangeOfString("HOLIDAY") != nil || e.getSummary()!.rangeOfString("WINTER BREAK") != nil || e.getSummary()!.rangeOfString("STAFF DEVELOPMENT DAY") != nil || e.getSummary()!.rangeOfString("SPRING BREAK") != nil || e.getSummary()!.lowercaseString.rangeOfString("teacher work day") != nil {
+                        holiday = true
+                    }
+                }
+            }
+
+            
+            if (month == 6 && day > 2) || (month == 7) || (month == 8 && day < 15) || holiday { // The code below is for summer and holidays
+                
+                dayAndDate.text = String(getDayOfWeek(todayDate)!) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
+                minutesRemaining.text = "School's out!"
+                timeProgressBar.setProgress(0, animated: false)
+                
+                adjustTextSize(dayAndDate)
+                
+                
+                
+            } else if alternateScheduleDay { // The code below is for alternate schedules
                 
                 let scheduleRawString = theAltScheduleEvent.getDescription()
-                //            print(scheduleRawString)
+
                 var arrayOfPeriodStrings = scheduleRawString!.componentsSeparatedByString("\n")
-                //            var max = arrayOfPeriodStrings.count-1
-                /*            for var a in 0...max {
-                 if arrayOfPeriodStrings[a].isEmpty {
-                 arrayOfPeriodStrings.removeAtIndex(a)
-                 a -= 1
-                 max -= 1
-                 }
-                 }
-                 */
                 
                 var listOfPeriodsForDay : [String] = []
                 var listOfStartTimesForDay : [String] = []
@@ -309,24 +356,21 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                         let endIndex2 = Int(String(b.characters.indexOf("-")!))!
                         let periodStartTimeSubstring = b[startIndex2...endIndex2-1]
                         listOfStartTimesForDay.append(periodStartTimeSubstring)
-                        //print(periodStartTimeSubstring)
                         
                         // Gets array of period end times for the day's schedule
                         let startIndex3 = Int(String(b.characters.indexOf("-")!))! + 1
                         let endIndex3 = Int(String(b.characters.indexOf(")")!))!
                         let periodEndTimeSubstring = b[startIndex3...endIndex3-1]
                         listOfEndTimesForDay.append(periodEndTimeSubstring)
-                        //print(periodEndTimeSubstring)
                     }
                 }
-//                if !listOfPeriodsForDay.isEmpty {
+                if !listOfPeriodsForDay.isEmpty {
                     for c in 0...listOfPeriodsForDay.count-1 {
                         scheduleForCurrentDay.append(Period(name: listOfPeriodsForDay[c], startTime: listOfStartTimesForDay[c], endTime: listOfEndTimesForDay[c]))
                     }
-//                } else {
-//                    print("uh oh, something bad happened")
-//                }
-
+                } else {
+                    dayAndDate.text = String(getDayOfWeek(todayDate)!) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
+                }
                 
                 
                 if let dayOfWeek = getDayOfWeek(todayDate){
@@ -340,9 +384,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     
                     dayAndDate.text = displayedText
                     
-                    if displayedText.characters.count <= 36 {
-                        dayAndDate.font = UIFont.systemFontOfSize(18)
-                    } else if displayedText.characters.count <= 38 {
+                    if displayedText.characters.count <= 38 {
                         dayAndDate.font = UIFont.systemFontOfSize(17)
                     } else if displayedText.characters.count <= 40 {
                         dayAndDate.font = UIFont.systemFontOfSize(16)
@@ -370,9 +412,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     
                     dayAndDate.text = displayedText
                     
-                    if displayedText.characters.count <= 36 {
-                        dayAndDate.font = UIFont.systemFontOfSize(18)
-                    } else if displayedText.characters.count <= 38 {
+                    if displayedText.characters.count <= 38 {
                         dayAndDate.font = UIFont.systemFontOfSize(17)
                     } else if displayedText.characters.count <= 40 {
                         dayAndDate.font = UIFont.systemFontOfSize(16)
@@ -437,9 +477,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     } else {
                         displayedText = String(dayOfWeek) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
                         dayAndDate.text = displayedText
-                        if displayedText.characters.count <= 36 {
-                            dayAndDate.font = UIFont.systemFontOfSize(18)
-                        } else if displayedText.characters.count <= 38 {
+                        if displayedText.characters.count <= 38 {
                             dayAndDate.font = UIFont.systemFontOfSize(17)
                         } else if displayedText.characters.count <= 40 {
                             dayAndDate.font = UIFont.systemFontOfSize(16)
@@ -543,6 +581,16 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             }
             
             timeProgressBar.setProgress(progressBarValue, animated: false)
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         } else if (whichSegControl == 1) {
             let calendar = NSCalendar.currentCalendar()
             let date = NSDate()
@@ -551,8 +599,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             
             let year = components.year
-            let month = 9//components.month
-            let day = 8//components.day
+            let month = components.month
+            let day = components.day
             let hour = components.hour
             let minute = components.minute
             
@@ -572,28 +620,45 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             var theAltScheduleEvent : Event = Event()
             
             for x in 0...events.count-1 {
-                print(events[x].getStartDate())
-                if events[x].getStartDate() == todayDate {
-                    alternateScheduleDay = true
-                    theAltScheduleEvent = events[x]
-                    print(theAltScheduleEvent.getStartDate())
+                for altDate in alternateScheduleDates {
+                    if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate && events[x].getSummary()!.lowercaseString.rangeOfString("schedule") != nil &&  events[x].getSummary()!.lowercaseString.rangeOfString("below") != nil{
+                        alternateScheduleDay = true
+                        theAltScheduleEvent = events[x]
+                        print(theAltScheduleEvent.getStartDate())
+                        print(theAltScheduleEvent.getSummary())
+                        //break
+                    }
+                }
+                //break
+            }
+            
+            
+            
+            
+            var holiday = false
+            
+            for e in events {
+                if e.getStartDate() == todayDate {
+                    if e.getSummary()!.rangeOfString("HOLIDAY") != nil || e.getSummary()!.rangeOfString("WINTER BREAK") != nil || e.getSummary()!.rangeOfString("STAFF DEVELOPMENT DAY") != nil || e.getSummary()!.rangeOfString("SPRING BREAK") != nil || e.getSummary()!.lowercaseString.rangeOfString("teacher work day") != nil {
+                        holiday = true
+                    }
                 }
             }
-            print(alternateScheduleDay)
-            if alternateScheduleDay { // The code below is for alternate schedules
+            
+            
+            if (month == 6 && day > 2) || (month == 7) || (month == 8 && day < 15) || holiday { // The code below is for summer and holidays
+                
+                dayAndDate.text = String(getDayOfWeek(todayDate)!) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
+                minutesRemaining.text = "School's out!"
+                timeProgressBar.setProgress(0, animated: false)
+                
+                adjustTextSize(dayAndDate)
+                
+            } else if alternateScheduleDay { // The code below is for alternate schedules
                 
                 let scheduleRawString = theAltScheduleEvent.getDescription()
-                //            print(scheduleRawString)
+
                 var arrayOfPeriodStrings = scheduleRawString!.componentsSeparatedByString("\n")
-                //            var max = arrayOfPeriodStrings.count-1
-                /*            for var a in 0...max {
-                 if arrayOfPeriodStrings[a].isEmpty {
-                 arrayOfPeriodStrings.removeAtIndex(a)
-                 a -= 1
-                 max -= 1
-                 }
-                 }
-                 */
                 
                 var listOfPeriodsForDay : [String] = []
                 var listOfStartTimesForDay : [String] = []
@@ -610,34 +675,30 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                         if periodSubstring.lowercaseString.rangeOfString("staff") == nil && periodSubstring.lowercaseString.rangeOfString("dept") == nil {
                             listOfPeriodsForDay.append(periodSubstring)
                         }
-                        print(periodSubstring)
                         
                         // Gets array of period start times for the day's schedule
                         let startIndex2 = Int(String(b.characters.indexOf("(")!))! + 1
                         let endIndex2 = Int(String(b.characters.indexOf("-")!))!
                         let periodStartTimeSubstring = b[startIndex2...endIndex2-1]
                         listOfStartTimesForDay.append(periodStartTimeSubstring)
-                        print(periodStartTimeSubstring)
                         
                         // Gets array of period end times for the day's schedule
                         let startIndex3 = Int(String(b.characters.indexOf("-")!))! + 1
                         let endIndex3 = Int(String(b.characters.indexOf(")")!))!
                         let periodEndTimeSubstring = b[startIndex3...endIndex3-1]
                         listOfEndTimesForDay.append(periodEndTimeSubstring)
-                        print(periodEndTimeSubstring)
                     }
                 }
                 
-                for c in 0...listOfPeriodsForDay.count-1 {
-                    scheduleForCurrentDay.append(Period(name: listOfPeriodsForDay[c], startTime: listOfStartTimesForDay[c], endTime: listOfEndTimesForDay[c]))
+                if !listOfPeriodsForDay.isEmpty {
+                    for c in 0...listOfPeriodsForDay.count-1 {
+                        scheduleForCurrentDay.append(Period(name: listOfPeriodsForDay[c], startTime: listOfStartTimesForDay[c], endTime: listOfEndTimesForDay[c]))
+                    }
+                } else {
+                    dayAndDate.text = String(getDayOfWeek(todayDate)!) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
                 }
                 
                 
-                print("choo")
-                print("choo")
-                for x in scheduleForCurrentDay {
-                    print(x.getName())
-                }
                 
                 
                 
@@ -653,9 +714,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     
                     dayAndDate.text = displayedText
                     
-                    if displayedText.characters.count <= 36 {
-                        dayAndDate.font = UIFont.systemFontOfSize(18)
-                    } else if displayedText.characters.count <= 38 {
+                    if displayedText.characters.count <= 38 {
                         dayAndDate.font = UIFont.systemFontOfSize(17)
                     } else if displayedText.characters.count <= 40 {
                         dayAndDate.font = UIFont.systemFontOfSize(16)
@@ -683,9 +742,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     
                     dayAndDate.text = displayedText
                     
-                    if displayedText.characters.count <= 36 {
-                        dayAndDate.font = UIFont.systemFontOfSize(18)
-                    } else if displayedText.characters.count <= 38 {
+                    if displayedText.characters.count <= 38 {
                         dayAndDate.font = UIFont.systemFontOfSize(17)
                     } else if displayedText.characters.count <= 40 {
                         dayAndDate.font = UIFont.systemFontOfSize(16)
@@ -750,9 +807,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     } else {
                         displayedText = String(dayOfWeek) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
                         dayAndDate.text = displayedText
-                        if displayedText.characters.count <= 36 {
-                            dayAndDate.font = UIFont.systemFontOfSize(18)
-                        } else if displayedText.characters.count <= 38 {
+                        if displayedText.characters.count <= 38 {
                             dayAndDate.font = UIFont.systemFontOfSize(17)
                         } else if displayedText.characters.count <= 40 {
                             dayAndDate.font = UIFont.systemFontOfSize(16)
@@ -780,7 +835,39 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
     
-    //    */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    func adjustTextSize(label: UILabel) {
+        if label.text!.characters.count <= 38 {
+            dayAndDate.font = UIFont.systemFontOfSize(17)
+        } else if label.text!.characters.count <= 40 {
+            dayAndDate.font = UIFont.systemFontOfSize(16)
+        } else if label.text!.characters.count <= 42 {
+            dayAndDate.font = UIFont.systemFontOfSize(15)
+        } else if label.text!.characters.count <= 45 {
+            dayAndDate.font = UIFont.systemFontOfSize(14)
+        } else if label.text!.characters.count <= 47 {
+            dayAndDate.font = UIFont.systemFontOfSize(13)
+        } else if label.text!.characters.count <= 50 {
+            dayAndDate.font = UIFont.systemFontOfSize(12)
+        } else {
+            dayAndDate.font = UIFont.systemFontOfSize(11)
+        }
+    }
+    
+    
     
     func getDayOfWeek(today:String)->String? {
         
@@ -810,9 +897,6 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
-    // END OF METHOD
-    // END OF METHOD
-    // END OF METHOD
     
     func monthConverter(num: Int) -> String {
         if num == 1 {
