@@ -25,6 +25,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.zoomScale = 0.45
         //scrollView.contentSize = CGSizeMake(view.frame.size.height, 1.0)
         scrollView.contentSize = CGSizeMake(scrollView.contentSize.width,scrollView.frame.size.height)
+        scrollView.contentInset = UIEdgeInsetsZero
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,6 +38,21 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         return self.gunnMap
     }
     
+    private func updateMinZoomScaleForSize(size: CGSize) {
+        let widthScale = size.width / gunnMap.bounds.width
+        let heightScale = size.height / gunnMap.bounds.height
+        let minScale = min(widthScale, heightScale)
+        
+        scrollView.minimumZoomScale = minScale
+        
+        scrollView.zoomScale = minScale
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        updateMinZoomScaleForSize(view.bounds.size)
+    }
 
     
     
