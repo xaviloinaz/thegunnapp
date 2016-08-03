@@ -454,7 +454,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="Summary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MWu-Nd-EiK">
-                                <rect key="frame" x="20" y="107" width="104.5" height="42.5"/>
+                                <rect key="frame" x="20" y="107" width="341" height="59"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
