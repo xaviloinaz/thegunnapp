@@ -448,19 +448,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gwd-X0-1rU">
-                                <rect key="frame" x="20" y="283" width="387" height="246"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="Summary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MWu-Nd-EiK">
-                                <rect key="frame" x="20" y="107" width="341" height="59"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Summary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MWu-Nd-EiK">
+                                <rect key="frame" x="20" y="107" width="387" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="341" id="tgV-FE-NfN"/>
+                                </constraints>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Location" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uIU-hd-VKi">
                                 <rect key="frame" x="21" y="223" width="340" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gwd-X0-1rU">
+                                <rect key="frame" x="20" y="279" width="387" height="246"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -475,10 +478,12 @@
                             <constraint firstItem="3Hy-Tp-wor" firstAttribute="top" secondItem="uIU-hd-VKi" secondAttribute="bottom" constant="1" id="8Nn-uu-AKD"/>
                             <constraint firstItem="gwd-X0-1rU" firstAttribute="top" secondItem="3Hy-Tp-wor" secondAttribute="bottom" id="E8X-hJ-ckT"/>
                             <constraint firstItem="BrG-2a-oPl" firstAttribute="top" secondItem="hzO-Vb-zkC" secondAttribute="bottom" id="J3p-nA-6gi"/>
+                            <constraint firstItem="hzO-Vb-zkC" firstAttribute="top" secondItem="MWu-Nd-EiK" secondAttribute="bottom" constant="8" id="JeL-q2-MP5"/>
                             <constraint firstAttribute="leadingMargin" secondItem="BrG-2a-oPl" secondAttribute="leading" id="Nni-2i-MrF"/>
                             <constraint firstItem="Sy3-5x-KWW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gwd-X0-1rU" secondAttribute="bottom" constant="20" id="OOb-Js-Ech"/>
                             <constraint firstItem="3Hy-Tp-wor" firstAttribute="leading" secondItem="gwd-X0-1rU" secondAttribute="leading" id="Owe-D6-1PS"/>
                             <constraint firstItem="MWu-Nd-EiK" firstAttribute="top" secondItem="yCo-S7-Riq" secondAttribute="bottom" constant="43" id="S8N-Tc-W5Y"/>
+                            <constraint firstItem="hzO-Vb-zkC" firstAttribute="top" secondItem="MWu-Nd-EiK" secondAttribute="bottom" constant="500" id="Ubq-qc-91g"/>
                             <constraint firstAttribute="leadingMargin" secondItem="3Hy-Tp-wor" secondAttribute="leading" constant="1" id="V1u-EG-8pN"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="gwd-X0-1rU" secondAttribute="trailing" constant="20" id="V91-vn-AFw"/>
                             <constraint firstAttribute="leadingMargin" secondItem="MWu-Nd-EiK" secondAttribute="leading" id="Vgw-vX-EHj"/>
@@ -502,6 +507,8 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="1ec-aW-6vT"/>
+                                <exclude reference="JeL-q2-MP5"/>
+                                <exclude reference="Ubq-qc-91g"/>
                                 <exclude reference="aJw-jR-0yk"/>
                                 <exclude reference="k9m-ga-A4F"/>
                                 <exclude reference="sLV-4g-c2U"/>

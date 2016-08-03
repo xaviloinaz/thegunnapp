@@ -47,6 +47,8 @@ class EventsViewController: UITableViewController {
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
         ev = DownloadJSON()
         events = ev!.downloadAndParseJSON()
+        
+        
         for index in 0...events.count-1 {
             print(events[index].summary!)
             

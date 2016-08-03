@@ -41,7 +41,29 @@ class EventInfoViewController: UIViewController {
         //        navigationController!.navigationBar.barTintColor = UIColor.redColor()
         let ev = DownloadJSON()
         print(thisEvent)
+        
+//        if thisEvent.summary!.characters.count <= 38 {
+//            summary.font = UIFont.systemFontOfSize(17)
+//        } else if thisEvent.summary!.characters.count <= 40 {
+//            summary.font = UIFont.systemFontOfSize(16)
+//        } else if thisEvent.summary!.characters.count <= 42 {
+//            summary.font = UIFont.systemFontOfSize(15)
+//        } else if thisEvent.summary!.characters.count <= 45 {
+//            summary.font = UIFont.systemFontOfSize(14)
+//        } else if thisEvent.summary!.characters.count <= 47 {
+//            summary.font = UIFont.systemFontOfSize(13)
+//        } else if thisEvent.summary!.characters.count <= 50 {
+//            summary.font = UIFont.systemFontOfSize(12)
+//        } else {
+//            summary.font = UIFont.systemFontOfSize(11)
+//        }
+        
+        
         summary.text = thisEvent.summary!
+        var frame: CGRect?
+        frame = summary.frame;
+        frame!.size.height = summary.contentSize.height;
+        summary.frame = frame!;
         print(thisEvent.summary!)
         //       date.font = UIFont(name: "kannada", size: 106)
         if((thisEvent.startDate) != ""){
