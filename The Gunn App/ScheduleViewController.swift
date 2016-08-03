@@ -250,8 +250,10 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
     override func viewDidLoad() {
+        //UINavigationBar.appearance().barTintColor = UIColor(red: 122.0/255.0, green: 46.0/255.0, blue: 46.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 255.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
         super.viewDidLoad()
-        navigationController!.navigationBar.barTintColor = UIColor.redColor()
+        //navigationController!.navigationBar.barTintColor = UIColor.redColor()
         // Do any additional setup after loading the view, typically from a nib.
         scheduleTable.delegate = self
         scheduleTable.dataSource = self
