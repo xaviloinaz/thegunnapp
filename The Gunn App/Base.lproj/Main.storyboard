@@ -444,12 +444,12 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="StartingTime" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BrG-2a-oPl">
-                                <rect key="frame" x="20" y="195" width="282.5" height="36"/>
+                                <rect key="frame" x="20" y="195" width="341" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gwd-X0-1rU">
-                                <rect key="frame" x="20" y="283" width="368" height="246"/>
+                                <rect key="frame" x="20" y="283" width="387" height="246"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -460,7 +460,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Location" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uIU-hd-VKi">
-                                <rect key="frame" x="21" y="223" width="302" height="43"/>
+                                <rect key="frame" x="21" y="223" width="340" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
