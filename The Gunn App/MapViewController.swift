@@ -23,6 +23,8 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.minimumZoomScale = 0.45
         self.scrollView.maximumZoomScale = 2.0
         self.scrollView.zoomScale = 0.45
+        //scrollView.contentSize = CGSizeMake(view.frame.size.height, 1.0)
+        scrollView.contentSize = CGSizeMake(scrollView.contentSize.width,scrollView.frame.size.height)
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,6 +36,8 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return self.gunnMap
     }
+    
+
     
     
 }

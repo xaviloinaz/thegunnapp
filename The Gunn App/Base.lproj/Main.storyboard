@@ -111,7 +111,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="J9R-AK-qDY" secondAttribute="trailing" id="1xM-Tu-8vs"/>
-                                    <constraint firstItem="J9R-AK-qDY" firstAttribute="top" secondItem="Al8-40-ErU" secondAttribute="top" id="2Qk-Rq-3xL"/>
+                                    <constraint firstItem="J9R-AK-qDY" firstAttribute="top" secondItem="Al8-40-ErU" secondAttribute="top" constant="-53" id="2Qk-Rq-3xL"/>
                                     <constraint firstItem="J9R-AK-qDY" firstAttribute="leading" secondItem="Al8-40-ErU" secondAttribute="leading" id="4yL-XI-Gnc"/>
                                     <constraint firstAttribute="bottom" secondItem="J9R-AK-qDY" secondAttribute="bottom" id="Ufu-mq-B7B"/>
                                     <constraint firstItem="J9R-AK-qDY" firstAttribute="centerX" secondItem="Al8-40-ErU" secondAttribute="centerX" id="u8I-5S-sDO"/>
