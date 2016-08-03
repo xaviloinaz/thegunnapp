@@ -20,8 +20,9 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         navigationController!.navigationBar.barTintColor = UIColor.redColor()
         // Do any additional setup after loading the view, typically from a nib.
-        self.scrollView.minimumZoomScale = 0.4
-        self.scrollView.maximumZoomScale = 6.0
+        self.scrollView.minimumZoomScale = 0.45
+        self.scrollView.maximumZoomScale = 2.0
+        self.scrollView.zoomScale = 0.45
     }
     
     override func didReceiveMemoryWarning() {
