@@ -42,9 +42,9 @@ class EventInfoViewController: UIViewController {
         let ev = DownloadJSON()
         print(thisEvent)
         
-        if thisEvent.summary!.characters.count <= 38 {
+        if thisEvent.summary!.characters.count <= 33 {
             summary.font = UIFont.systemFontOfSize(22)
-        } else if thisEvent.summary!.characters.count > 40 {
+        } else if thisEvent.summary!.characters.count > 34 {
             summary.font = UIFont.systemFontOfSize(18)
         }
 //        } else if thisEvent.summary!.characters.count <= 42 {
@@ -61,12 +61,13 @@ class EventInfoViewController: UIViewController {
         
         
         summary.text = thisEvent.summary!
-        let fixedWidth = summary.frame.size.width
-        summary.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.max))
-        let newSize = summary.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.max))
-        var newFrame = summary.frame
-        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
-        summary.frame = newFrame;
+//        let fixedWidth = summary.frame.size.width
+//        summary.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.max))
+//        let newSize = summary.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.max))
+//        var newFrame = summary.frame
+//        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
+//        summary.frame = newFrame;
+        
 //        var frame: CGRect?
 //        frame = summary.frame;
 //        frame!.size.height = summary.contentSize.height;
