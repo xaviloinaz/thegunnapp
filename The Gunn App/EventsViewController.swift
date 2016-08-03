@@ -334,7 +334,14 @@ class EventsViewController: UITableViewController {
         
         //        let sumthin = stations[indexPath.row]
         let text = event.summary!
+        
         cell.summary.text = String(text)
+        if (text.characters.count > 35){
+            cell.summary.font = UIFont.systemFontOfSize(18)
+        }
+        if(text.characters.count > 42){
+            cell.summary.font = UIFont.systemFontOfSize(14)
+        }
         if((event.startDate) != ""){
             print(event.startDate!)
             cell.dayAndDate.text = ev!.dateString(event.startDate!)
@@ -350,7 +357,12 @@ class EventsViewController: UITableViewController {
             //            cell.startingTime.text = ""
         }
         
-        
+        if cell.summary.text!.characters.count > 40 {
+            cell.summary.font = UIFont.systemFontOfSize(11)
+        } else {
+            cell.summary.font = UIFont.systemFontOfSize(17)
+        }
+
         
         return cell
         
