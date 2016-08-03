@@ -205,7 +205,18 @@ class DownloadJSON {
                     if let description = event["description"] as? String {
                         eve!.description = description
                     }
-                    self.events.append(eve!)
+
+                    if(eve!.startTime! != ""){
+                        if(laterThanToday(eve!.startTime!)){
+                            self.events.append(eve!)
+                        }
+                    }
+                    else if(eve!.startDate != ""){
+                        if(laterThanToday(eve!.startDate!)){
+                            self.events.append(eve!)
+                        }
+                    }
+
                 }
             }
         } catch {
