@@ -276,9 +276,9 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             
             let year = components.year
-            let month = components.month
-            let day = components.day
-            let hour = components.hour
+            let month = 8//components.month
+            let day = 3//components.day
+            let hour = 14//components.hour
             let minute = components.minute
             
             var alternateScheduleDay = false

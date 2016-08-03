@@ -557,7 +557,7 @@
             </objects>
             <point key="canvasLocation" x="3564" y="-1117"/>
         </scene>
-        <!--View Controller-->
+        <!--Credits-->
         <scene sceneID="106-5N-y97">
             <objects>
                 <viewController id="1v8-Tc-WTj" sceneMemberID="viewController">
@@ -668,6 +668,7 @@
                             <constraint firstItem="iMH-xN-7sA" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="zgk-zW-980"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Credits" id="Q94-AW-nt2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8P-wz-bWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
