@@ -162,7 +162,7 @@ class DownloadJSON {
                 return true
             }
             else if(Int(monthString(str1)) == curMonth){
-                if(Int(dayString(str1)) > curDay){
+                if(Int(dayString(str1)) >= curDay){
                     return true
                 }
             }
