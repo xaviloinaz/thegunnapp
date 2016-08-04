@@ -42,9 +42,10 @@ class EventsViewController: UITableViewController {
     // When the view loads, create necessary subviews
     // and initialize the Google Calendar API service
     override func viewDidLoad() {
+        var specialColor = UIColor(red: 255.0/255.0, green: 14.0/255.0, blue: 14.0/255.0, alpha: 1.0)
+        navigationController!.navigationBar.barTintColor = specialColor
         super.viewDidLoad()
         //        downloadAndParseJSON()
-        navigationController!.navigationBar.barTintColor = UIColor.redColor()
         ev = DownloadJSON()
         events = ev!.downloadAndParseJSON()
         

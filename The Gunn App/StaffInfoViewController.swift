@@ -25,6 +25,8 @@ class StaffInfoViewController: UIViewController,MFMailComposeViewControllerDeleg
     var thisStaff : Staff = Staff()
     
     override func viewDidLoad() {
+        var specialColor = UIColor(red: 255.0/255.0, green: 14.0/255.0, blue: 14.0/255.0, alpha: 1.0)
+        navigationController!.navigationBar.barTintColor = specialColor
         super.viewDidLoad()
         
 //        let instance = StaffTableViewController()
