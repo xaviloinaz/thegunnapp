@@ -52,6 +52,10 @@ class StaffInfoViewController: UIViewController,MFMailComposeViewControllerDeleg
             goToWebsiteButton.hidden = true
         }
         
+        if teacherName.text!.characters.count > 20 {
+            teacherName.font = UIFont.systemFontOfSize(24)
+        }
+        
         
     }
 
