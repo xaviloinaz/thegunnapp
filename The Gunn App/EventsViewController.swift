@@ -185,7 +185,7 @@ class EventsViewController: UITableViewController {
         }
         if cell.summary.text!.characters.count > 37 {
             cell.summary.font = UIFont.systemFontOfSize(11)
-        } else if cell.summary.text!.rangeOfString("STAFF DEVELOPMENT DAY") != nil{
+        } else if cell.summary.text!.rangeOfString("STAFF DEVELOPMENT DAY (no stud") != nil{
             cell.summary.font = UIFont.systemFontOfSize(11)
         }else {
             cell.summary.font = UIFont.systemFontOfSize(17)
