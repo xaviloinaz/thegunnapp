@@ -47,6 +47,7 @@ class EventInfoViewController: UIViewController {
         } else if thisEvent.summary!.characters.count > 34 {
             summary.font = UIFont.systemFontOfSize(18)
         }
+//        summary.adjustFontSizeToFitWidth = true
 //        } else if thisEvent.summary!.characters.count <= 42 {
 //            summary.font = UIFont.systemFontOfSize(15)
 //        } else if thisEvent.summary!.characters.count <= 45 {
