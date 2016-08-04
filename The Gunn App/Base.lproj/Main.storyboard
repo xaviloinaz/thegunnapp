@@ -557,7 +557,7 @@
             </objects>
             <point key="canvasLocation" x="3564" y="-1117"/>
         </scene>
-        <!--View Controller-->
+        <!--Credits-->
         <scene sceneID="106-5N-y97">
             <objects>
                 <viewController id="1v8-Tc-WTj" sceneMemberID="viewController">
@@ -668,6 +668,7 @@
                             <constraint firstItem="iMH-xN-7sA" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="zgk-zW-980"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Credits" id="Q94-AW-nt2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8P-wz-bWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -718,7 +719,7 @@
                                 <rect key="frame" x="5" y="167.5" width="591" height="383.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleViewCell" id="YRT-Zk-2O0" customClass="ScheduleViewCell" customModule="TheGunnApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleViewCell" id="YRT-Zk-2O0" customClass="ScheduleViewCell" customModule="TheGunnApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="591" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YRT-Zk-2O0" id="Yn9-Tq-cy9">
