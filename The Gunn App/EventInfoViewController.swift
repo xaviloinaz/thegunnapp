@@ -42,8 +42,7 @@ class EventInfoViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //        navigationController!.navigationBar.barTintColor = UIColor.redColor()
         let ev = DownloadJSON()
-        print(thisEvent)
-        print(thisEvent.summary!.characters.count)
+        
         
         if thisEvent.summary!.characters.count <= 33 {
             summary.font = UIFont.systemFontOfSize(22)
@@ -76,16 +75,13 @@ class EventInfoViewController: UIViewController {
 //        frame = summary.frame;
 //        frame!.size.height = summary.contentSize.height;
 //        summary.frame = frame!;
-        print(thisEvent.summary!)
         //       date.font = UIFont(name: "kannada", size: 106)
         if((thisEvent.startDate) != ""){
-            print("Start date" + ev.dateString(thisEvent.startDate!))
             
             date.text = "Date  -  " + ev.dateString(thisEvent.startDate!)
             startingTime.text = "Time  -  All Day"
         }
         else if((thisEvent.startTime) != ""){
-            print(thisEvent.startTime!)
 
             date.text = "Date  -  " + ev.dateString(thisEvent.startTime!)
             startingTime.text = "Time  -  " + ev.timeString(thisEvent.startTime!) + " - " + ev.timeString(thisEvent.endTime)
