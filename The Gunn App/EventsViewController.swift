@@ -149,13 +149,21 @@ class EventsViewController: UITableViewController {
         //        cell.startingTime.text = event.startTime
         
         //        let sumthin = stations[indexPath.row]
-        let text = event.summary!
+        var text = event.summary!
+        
+        
+        //while (text[text.characters.count-1] == " ") {
+        //    text = text.substringToIndex(text.endIndex.predecessor())
+        //}
         
         cell.summary.text = String(text)
-        if (text.characters.count > 35){
+        
+        
+        
+        if (text.characters.count > 31){
             cell.summary.font = UIFont.systemFontOfSize(18)
         }
-        if(text.characters.count > 42){
+        if(text.characters.count > 39){
             cell.summary.font = UIFont.systemFontOfSize(14)
         }
         if((event.startDate) != ""){
@@ -172,9 +180,11 @@ class EventsViewController: UITableViewController {
             //            cell.startingTime.text = ""
         }
         
-        if cell.summary.text!.characters.count > 40 {
+        if cell.summary.text!.characters.count > 37 {
             cell.summary.font = UIFont.systemFontOfSize(11)
-        } else {
+        } else if cell.summary.text!.rangeOfString("STAFF DEVELOPMENT DAY") != nil{
+            cell.summary.font = UIFont.systemFontOfSize(11)
+        }else {
             cell.summary.font = UIFont.systemFontOfSize(17)
         }
 
