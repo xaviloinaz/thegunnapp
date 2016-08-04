@@ -212,8 +212,6 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate && events[x].getSummary()!.lowercaseString.rangeOfString("schedule") != nil &&  events[x].getSummary()!.lowercaseString.rangeOfString("below") != nil{
                         alternateScheduleDay = true
                         theAltScheduleEvent = events[x]
-                        print(theAltScheduleEvent.getStartDate())
-                        print(theAltScheduleEvent.getSummary())
                         //break
                     }
                 }
@@ -263,7 +261,6 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                         if periodSubstring.lowercaseString.rangeOfString("staff") == nil && periodSubstring.lowercaseString.rangeOfString("dept") == nil {
                             listOfPeriodsForDay.append(periodSubstring)
                         }
-                        //print(periodSubstring)
                         
                         // Gets array of period start times for the day's schedule
                         let startIndex2 = Int(String(b.characters.indexOf("(")!))! + 1
@@ -538,8 +535,6 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate && events[x].getSummary()!.lowercaseString.rangeOfString("schedule") != nil &&  events[x].getSummary()!.lowercaseString.rangeOfString("below") != nil{
                         alternateScheduleDay = true
                         theAltScheduleEvent = events[x]
-                        print(theAltScheduleEvent.getStartDate())
-                        print(theAltScheduleEvent.getSummary())
                         //break
                     }
                 }
@@ -856,7 +851,6 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        print("IT JUST RAN")
         let cell = tableView.dequeueReusableCellWithIdentifier("ScheduleViewCell", forIndexPath: indexPath) as! ScheduleViewCell
         
         let row = indexPath.row
