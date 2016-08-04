@@ -40,8 +40,8 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
     }
     
     private func updateMinZoomScaleForSize(size: CGSize) {
-        let widthScale = size.width / gunnMap.bounds.width
-        let heightScale = size.height / gunnMap.bounds.height
+        let widthScale = size.width * 0.83 / gunnMap.bounds.width
+        let heightScale = size.height * 0.83 / gunnMap.bounds.height
         let minScale = min(widthScale, heightScale)
         
         scrollView.minimumZoomScale = minScale

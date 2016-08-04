@@ -103,7 +103,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Al8-40-ErU">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="537"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Gunn Campus Map 09-27-15" translatesAutoresizingMaskIntoConstraints="NO" id="J9R-AK-qDY">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="531"/>
@@ -132,7 +132,7 @@
                         <constraints>
                             <constraint firstItem="Al8-40-ErU" firstAttribute="leading" secondItem="7Of-34-tv9" secondAttribute="leading" id="Hf9-g8-hR6"/>
                             <constraint firstItem="Al8-40-ErU" firstAttribute="top" secondItem="Sze-zc-RpX" secondAttribute="bottom" id="IkU-ko-WpD"/>
-                            <constraint firstItem="Al8-40-ErU" firstAttribute="bottom" secondItem="1CY-KQ-ViY" secondAttribute="top" id="OVh-PZ-J9R"/>
+                            <constraint firstItem="Al8-40-ErU" firstAttribute="bottom" secondItem="1CY-KQ-ViY" secondAttribute="top" constant="50" id="OVh-PZ-J9R"/>
                             <constraint firstAttribute="trailing" secondItem="Al8-40-ErU" secondAttribute="trailing" id="tny-qk-xVR"/>
                         </constraints>
                     </view>
