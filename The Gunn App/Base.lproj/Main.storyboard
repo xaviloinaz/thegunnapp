@@ -461,9 +461,9 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Summary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MWu-Nd-EiK">
-                                <rect key="frame" x="20" y="107" width="197" height="49"/>
+                                <rect key="frame" x="20" y="107" width="291" height="49"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="341" id="tgV-FE-NfN"/>
+                                    <constraint firstAttribute="width" constant="290" id="tgV-FE-NfN"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
