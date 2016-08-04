@@ -180,6 +180,9 @@ class EventsViewController: UITableViewController {
             //            cell.startingTime.text = ""
         }
         
+        if cell.summary.text!.rangeOfString("PSAT & Grade-level Assemblies (see alternate schedule below)") != nil {
+            cell.summary.text = "PSAT & Grade-level Assemblies (see alternate sche..."
+        }
         if cell.summary.text!.characters.count > 37 {
             cell.summary.font = UIFont.systemFontOfSize(11)
         } else if cell.summary.text!.rangeOfString("STAFF DEVELOPMENT DAY") != nil{
