@@ -104,7 +104,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Al8-40-ErU">
                                 <rect key="frame" x="0.0" y="64" width="600" height="537"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="newgunnmap" translatesAutoresizingMaskIntoConstraints="NO" id="J9R-AK-qDY">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="thisisthemap" translatesAutoresizingMaskIntoConstraints="NO" id="J9R-AK-qDY">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="531"/>
                                     </imageView>
                                 </subviews>
@@ -898,9 +898,9 @@
         <image name="calendar" width="29" height="30"/>
         <image name="home" width="30" height="30"/>
         <image name="map-pin" width="30" height="30"/>
-        <image name="newgunnmap" width="720" height="960"/>
         <image name="phone-book" width="30" height="30"/>
         <image name="text-list" width="30" height="30"/>
+        <image name="thisisthemap" width="720" height="960"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
