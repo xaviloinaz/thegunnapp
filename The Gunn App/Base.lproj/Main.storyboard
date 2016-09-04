@@ -39,17 +39,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ike-um-8Rf">
-                                <rect key="frame" x="187" y="186" width="226" height="226"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="226" id="WRv-Yw-WBc"/>
-                                    <constraint firstAttribute="height" constant="226" id="rau-J4-smb"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="PAUSDbadge250 copy"/>
-                                <connections>
-                                    <action selector="myPAUSDButton" destination="HFb-1v-Q6L" eventType="touchUpInside" id="0A2-hu-ERX"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the button above to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zc0-zr-kog">
                                 <rect key="frame" x="204" y="436" width="192" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -62,6 +51,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbF-oy-ufA">
+                                <rect key="frame" x="180" y="84" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ike-um-8Rf">
+                                <rect key="frame" x="187" y="220" width="226" height="226"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="WRv-Yw-WBc"/>
+                                    <constraint firstAttribute="height" constant="226" id="rau-J4-smb"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="PAUSDbadge250 copy"/>
+                                <connections>
+                                    <action selector="myPAUSDButton" destination="HFb-1v-Q6L" eventType="touchUpInside" id="0A2-hu-ERX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -72,6 +75,8 @@
                             <constraint firstItem="ike-um-8Rf" firstAttribute="centerY" secondItem="CMN-mY-Yeb" secondAttribute="centerY" id="GGE-tC-Vhf"/>
                             <constraint firstItem="zc0-zr-kog" firstAttribute="centerX" secondItem="CMN-mY-Yeb" secondAttribute="centerX" id="NgU-q3-GhZ"/>
                             <constraint firstItem="ike-um-8Rf" firstAttribute="centerY" secondItem="CMN-mY-Yeb" secondAttribute="centerY" id="RTg-8Z-mwb"/>
+                            <constraint firstItem="ike-um-8Rf" firstAttribute="top" secondItem="bbF-oy-ufA" secondAttribute="bottom" constant="8" id="SlD-eC-ukp"/>
+                            <constraint firstItem="bbF-oy-ufA" firstAttribute="centerX" secondItem="CMN-mY-Yeb" secondAttribute="centerX" id="dmK-Ep-keb"/>
                             <constraint firstItem="75o-iJ-XT2" firstAttribute="top" secondItem="zc0-zr-kog" secondAttribute="bottom" constant="3" id="lkV-Is-f3d"/>
                             <constraint firstItem="ike-um-8Rf" firstAttribute="centerX" secondItem="CMN-mY-Yeb" secondAttribute="centerX" id="w6S-Tc-OW3"/>
                         </constraints>
@@ -84,6 +89,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="PAUSD Portal" id="u42-IZ-bq4"/>
+                    <connections>
+                        <outlet property="barcode" destination="bbF-oy-ufA" id="S7p-0i-Uvz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rF-Rb-97A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
