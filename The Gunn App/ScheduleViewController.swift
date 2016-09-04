@@ -24,6 +24,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     var whichSegControl : Int = 0
     
 
+    
+    
     @IBAction func updateInfo(sender: AnyObject) {
         viewDidLoad()
     }
@@ -121,41 +123,6 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
 
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     

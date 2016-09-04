@@ -42,8 +42,8 @@ class EventInfoViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //        navigationController!.navigationBar.barTintColor = UIColor.redColor()
         let ev = DownloadJSON()
-        
-        
+        print(thisEvent)
+        print(thisEvent.summary!.characters.count)
         if thisEvent.summary!.characters.count <= 33 {
             summary.font = UIFont.systemFontOfSize(22)
         } else if thisEvent.summary!.characters.count > 34 {
