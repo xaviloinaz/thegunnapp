@@ -905,7 +905,7 @@
         <scene sceneID="iiP-W4-R9v">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N3G-KJ-O0M" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Portal" image="home" id="IFD-YY-LXb"/>
+                    <tabBarItem key="tabBarItem" title="Portal" image="barcode tab icon" id="IFD-YY-LXb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="42I-L7-51T">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -961,8 +961,8 @@
     </scenes>
     <resources>
         <image name="PAUSDbadge250 copy" width="227" height="229"/>
+        <image name="barcode tab icon" width="30" height="30"/>
         <image name="calendar" width="29" height="30"/>
-        <image name="home" width="30" height="30"/>
         <image name="map-pin" width="30" height="30"/>
         <image name="phone-book" width="30" height="30"/>
         <image name="text-list" width="30" height="30"/>
