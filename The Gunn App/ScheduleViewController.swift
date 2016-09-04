@@ -125,8 +125,24 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     
+    var timer: NSTimer!
+    var refresher: UIRefreshControl!
     
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//            }
     
+    func refreshEvery15Secs(){
+        viewDidLoad()
+        print("Refreshed: ")
+    }
+    
+    func refresh(sender: AnyObject){
+        
+        refreshEvery15Secs() // calls when ever button is pressed
+    }
+    var num = 0;
     
     override func viewDidLoad() {
         var specialColor = UIColor(red: 255.0/255.0, green: 14.0/255.0, blue: 14.0/255.0, alpha: 1.0)
@@ -135,6 +151,14 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         //navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         //navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
         super.viewDidLoad()
+//        yourButton.addTarget(self, action: "refresh:", forControlEvents: .TouchUpInside)
+        if num < 1 {
+            refresher = UIRefreshControl()
+            refresher.addTarget(self, action: "refresh:", forControlEvents: .ValueChanged)
+        
+            timer = NSTimer.scheduledTimerWithTimeInterval(15.0, target: self, selector:"refreshEvery15Secs", userInfo: nil, repeats: true)
+            num += 1
+        }
         // Do any additional setup after loading the view, typically from a nib.
         scheduleTable.delegate = self
         scheduleTable.dataSource = self
