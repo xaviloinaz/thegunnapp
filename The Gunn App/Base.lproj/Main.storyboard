@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -559,7 +559,7 @@
         <!--Credits-->
         <scene sceneID="106-5N-y97">
             <objects>
-                <viewController id="1v8-Tc-WTj" sceneMemberID="viewController">
+                <viewController id="1v8-Tc-WTj" customClass="CreditsViewController" customModule="TheGunnApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Okv-V1-8Xv"/>
                         <viewControllerLayoutGuide type="bottom" id="FB0-iA-5AA"/>
@@ -569,80 +569,105 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Contributors:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jc5-ow-41J">
-                                <rect key="frame" x="220" y="257" width="159.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <rect key="frame" x="229" y="244" width="142" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alan Chen and Xavi Loinaz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qM-sg-CtW">
-                                <rect key="frame" x="204" y="225" width="191.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="214" y="215" width="171" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brandon Tang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vf-jm-hC9">
-                                <rect key="frame" x="250" y="282" width="101.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Brandon Tang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vf-jm-hC9">
+                                <rect key="frame" x="256" y="267" width="90" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luke Cheng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jev-VA-VV3">
-                                <rect key="frame" x="257" y="360.5" width="86.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="262" y="336" width="77" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matthew Pauly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHv-Gg-bxL">
-                                <rect key="frame" x="247" y="386" width="107" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="253" y="359" width="95" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="David Chen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSW-De-Zgy">
-                                <rect key="frame" x="259" y="308" width="83.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="263" y="290" width="74.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Leaders:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPS-xR-fto">
-                                <rect key="frame" x="238" y="200" width="123.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <rect key="frame" x="245" y="192" width="110" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app was produced" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knv-hu-XWZ">
-                                <rect key="frame" x="155" y="84" width="290" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <rect key="frame" x="165" y="84" width="270" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by the Gunn iOS App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vs-Qv-Gsm">
-                                <rect key="frame" x="169" y="120" width="261" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <rect key="frame" x="178" y="117" width="242.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Development Club!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15g-Dh-HOm">
-                                <rect key="frame" x="180" y="154" width="239" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <rect key="frame" x="189" y="149" width="221.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sam Lysaght" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spD-Gw-8Gg">
-                                <rect key="frame" x="254" y="411.5" width="93" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="259" y="382" width="82.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Divakar Saini" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XX-cD-hap">
-                                <rect key="frame" x="251" y="333.5" width="98" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="258" y="313" width="83" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivV-7t-G0I">
+                                <rect key="frame" x="181.5" y="442" width="237" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="wlv-Jv-FAF"/>
+                                </constraints>
+                                <state key="normal" title="Want to make cool things like this?">
+                                    <color key="titleColor" red="1" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToSignupForm:" destination="1v8-Tc-WTj" eventType="touchUpInside" id="Unl-XW-URw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmx-pO-McG">
+                                <rect key="frame" x="181" y="413" width="238" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="ztv-DW-FPV"/>
+                                </constraints>
+                                <state key="normal" title="Have any feedback about the app?">
+                                    <color key="titleColor" red="1" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToFeedbackForm:" destination="1v8-Tc-WTj" eventType="touchUpInside" id="elH-L1-50y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jc5-ow-41J" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="2Fc-H7-CCY"/>
                             <constraint firstItem="Jev-VA-VV3" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="7vH-Be-aZb"/>
+                            <constraint firstItem="Xmx-pO-McG" firstAttribute="top" secondItem="spD-Gw-8Gg" secondAttribute="bottom" constant="14" id="8gn-aB-E8s"/>
                             <constraint firstItem="mSW-De-Zgy" firstAttribute="top" secondItem="4vf-jm-hC9" secondAttribute="bottom" constant="6" id="C17-aN-gpu"/>
                             <constraint firstItem="2qM-sg-CtW" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="Ch5-Bu-V4k"/>
                             <constraint firstItem="SHv-Gg-bxL" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="EE2-x1-y37"/>
@@ -655,8 +680,11 @@
                             <constraint firstItem="2qM-sg-CtW" firstAttribute="top" secondItem="wPS-xR-fto" secondAttribute="bottom" constant="6" id="epH-dt-yAj"/>
                             <constraint firstItem="spD-Gw-8Gg" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="fXp-k3-ytw"/>
                             <constraint firstItem="Jev-VA-VV3" firstAttribute="top" secondItem="5XX-cD-hap" secondAttribute="bottom" constant="6" id="kna-NL-3PF"/>
+                            <constraint firstItem="Xmx-pO-McG" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="lOS-vB-lAT"/>
                             <constraint firstItem="4vf-jm-hC9" firstAttribute="top" secondItem="jc5-ow-41J" secondAttribute="bottom" constant="6" id="lgE-q6-r3L"/>
                             <constraint firstItem="7Vs-Qv-Gsm" firstAttribute="top" secondItem="knv-hu-XWZ" secondAttribute="bottom" constant="2" id="mLI-br-fwB"/>
+                            <constraint firstItem="ivV-7t-G0I" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="miK-vY-Wap"/>
+                            <constraint firstItem="ivV-7t-G0I" firstAttribute="top" secondItem="Xmx-pO-McG" secondAttribute="bottom" constant="10" id="oc5-mR-qgP"/>
                             <constraint firstItem="Jev-VA-VV3" firstAttribute="top" secondItem="mSW-De-Zgy" secondAttribute="bottom" constant="6" id="qLh-Tw-SJH"/>
                             <constraint firstItem="4vf-jm-hC9" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="rAX-Sx-kQB"/>
                             <constraint firstItem="5XX-cD-hap" firstAttribute="top" secondItem="mSW-De-Zgy" secondAttribute="bottom" constant="6" id="sZ9-nd-FPD"/>

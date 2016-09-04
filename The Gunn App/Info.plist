@@ -35,9 +35,9 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-	<key>LSApplicationQueriesSchemes</key>
+	<key>UIRequiredDeviceCapabilities</key>
 	<array>
-		<string>skype</string>
+		<string>armv7</string>
 	</array>
 	<key>UIStatusBarTintParameters</key>
 	<dict>
@@ -55,9 +55,5 @@
 	</array>
 	<key>idleTimerDisabled</key>
 	<true/>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
 </dict>
 </plist>
