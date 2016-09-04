@@ -55,5 +55,7 @@
 	</array>
 	<key>idleTimerDisabled</key>
 	<true/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array/>
 </dict>
 </plist>
