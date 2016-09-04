@@ -13,7 +13,7 @@ import UIKit
 
 
 
-class CreditsViewController: UIViewController {
+class CreditsViewController: UIViewController, UIScrollViewDelegate {
     
     
     @IBAction func goToFeedbackForm(sender: AnyObject) {
