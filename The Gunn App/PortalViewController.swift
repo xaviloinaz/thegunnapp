@@ -13,7 +13,7 @@ class PortalViewController: UIViewController {
     
     @IBOutlet weak var barcode: UIImageView!
     @IBAction func myPAUSDButton() {
-        if let url = NSURL(string: "https://id.pausd.org/arms/p/applications/my") {
+        if let url = NSURL(string: "https://id.pausd.org/arms/m") {
             
             UIApplication.sharedApplication().openURL(url)
             
