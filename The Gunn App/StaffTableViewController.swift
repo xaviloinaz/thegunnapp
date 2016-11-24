@@ -42,7 +42,7 @@ class StaffTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         
-        var specialColor = UIColor(red: 255.0/255.0, green: 14.0/255.0, blue: 14.0/255.0, alpha: 1.0)
+        let specialColor = UIColor(red: 255.0/255.0, green: 14.0/255.0, blue: 14.0/255.0, alpha: 1.0)
         navigationController!.navigationBar.barTintColor = specialColor
         
         super.viewDidLoad()
@@ -289,11 +289,11 @@ class StaffTableViewController: UITableViewController {
         
         
         
-        var indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
         
         
         
-        var destViewController = segue.destinationViewController as! StaffInfoViewController
+        let destViewController = segue.destinationViewController as! StaffInfoViewController
         
         
         

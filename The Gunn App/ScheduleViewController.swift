@@ -145,7 +145,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     var num = 0;
     
     override func viewDidLoad() {
-        var specialColor = UIColor(red: 255.0/255.0, green: 14.0/255.0, blue: 14.0/255.0, alpha: 1.0)
+        let specialColor = UIColor(red: 255.0/255.0, green: 14.0/255.0, blue: 14.0/255.0, alpha: 1.0)
         navigationController!.navigationBar.barTintColor = specialColor
         //navigationController!.navigationBar.barStyle = UIBarStyle.Black
         //navigationController!.navigationBar.tintColor = UIColor.whiteColor()
@@ -154,9 +154,9 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
 //        yourButton.addTarget(self, action: "refresh:", forControlEvents: .TouchUpInside)
         if num < 1 {
             refresher = UIRefreshControl()
-            refresher.addTarget(self, action: "refresh:", forControlEvents: .ValueChanged)
+            refresher.addTarget(self, action: #selector(ScheduleViewController.refresh(_:)), forControlEvents: .ValueChanged)
         
-            timer = NSTimer.scheduledTimerWithTimeInterval(15.0, target: self, selector:"refreshEvery15Secs", userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(15.0, target: self, selector:#selector(ScheduleViewController.refreshEvery15Secs), userInfo: nil, repeats: true)
             num += 1
         }
         // Do any additional setup after loading the view, typically from a nib.
@@ -237,7 +237,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 
                 let scheduleRawString = theAltScheduleEvent.getDescription()
 
-                var arrayOfPeriodStrings = scheduleRawString!.componentsSeparatedByString("\n")
+                let arrayOfPeriodStrings = scheduleRawString!.componentsSeparatedByString("\n")
                 
                 var listOfPeriodsForDay : [String] = []
                 var listOfStartTimesForDay : [String] = []
@@ -310,7 +310,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 }
                 
             } else { // the code below is for regular schedules
-                if var dayOfWeek = getDayOfWeek(todayDate) {
+                if let dayOfWeek = getDayOfWeek(todayDate) {
                     
                     var displayedText = String(dayOfWeek) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(Regular Schedule)"
                     
@@ -408,7 +408,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             }
             
             
-            var minutesPassedInDay = Int(hour * 60 + minute)
+            let minutesPassedInDay = Int(hour * 60 + minute)
             var timeUntilPeriod = false
             var minutesUntil = 0
             var whichPeriod = ""
@@ -424,8 +424,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 } else {
                     theHoursStart = Int(hoursAndMinutesStart[0])! + 12
                 }
-                var theMinutesStart = hoursAndMinutesStart[1]
-                var minutesForTimeStart = theHoursStart * 60 + Int(theMinutesStart)!
+                let theMinutesStart = hoursAndMinutesStart[1]
+                let minutesForTimeStart = theHoursStart * 60 + Int(theMinutesStart)!
                 
                 if minutesPassedInDay < minutesForTimeStart {
                     minutesUntil = minutesForTimeStart - minutesPassedInDay
@@ -437,11 +437,11 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     }
                     if counter > 0 {
                         var hoursAndMinutesEndPrev = scheduleForCurrentDay[counter-1].getEndTime().componentsSeparatedByString(":")
-                        var theHoursEndPrev = hoursAndMinutesEndPrev[0]
-                        var theMinutesEndPrev = hoursAndMinutesEndPrev[1]
-                        var minutesForTimeEndPrev = Int(theHoursEndPrev)! * 60 + Int(theMinutesEndPrev)!
-                        var lengthOfGap = Float(minutesForTimeStart - minutesForTimeEndPrev)
-                        var timePassedInGap = Float(minutesPassedInDay - minutesForTimeEndPrev)
+                        let theHoursEndPrev = hoursAndMinutesEndPrev[0]
+                        let theMinutesEndPrev = hoursAndMinutesEndPrev[1]
+                        let minutesForTimeEndPrev = Int(theHoursEndPrev)! * 60 + Int(theMinutesEndPrev)!
+                        let lengthOfGap = Float(minutesForTimeStart - minutesForTimeEndPrev)
+                        let timePassedInGap = Float(minutesPassedInDay - minutesForTimeEndPrev)
                         progressBarValue = timePassedInGap / lengthOfGap
                     }
                     break
@@ -454,8 +454,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 } else {
                     theHoursEnd = Int(hoursAndMinutesEnd[0])! + 12
                 }
-                var theMinutesEnd = hoursAndMinutesEnd[1]
-                var minutesForTimeEnd = theHoursEnd * 60 + Int(theMinutesEnd)!
+                let theMinutesEnd = hoursAndMinutesEnd[1]
+                let minutesForTimeEnd = theHoursEnd * 60 + Int(theMinutesEnd)!
                 
                 if minutesPassedInDay < minutesForTimeEnd {
                     minutesUntil = minutesForTimeEnd - minutesPassedInDay
@@ -465,8 +465,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     } else {
                         whichPeriod = "\(y.getName()) ends"
                     }
-                    var lengthOfPeriod = Float(minutesForTimeEnd - minutesForTimeStart)
-                    var progressThroughPeriod  = Float(minutesPassedInDay - minutesForTimeStart)
+                    let lengthOfPeriod = Float(minutesForTimeEnd - minutesForTimeStart)
+                    let progressThroughPeriod  = Float(minutesPassedInDay - minutesForTimeStart)
                     progressBarValue = progressThroughPeriod / lengthOfPeriod
                     break
                 }
@@ -560,7 +560,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 
                 let scheduleRawString = theAltScheduleEvent.getDescription()
 
-                var arrayOfPeriodStrings = scheduleRawString!.componentsSeparatedByString("\n")
+                let arrayOfPeriodStrings = scheduleRawString!.componentsSeparatedByString("\n")
                 
                 var listOfPeriodsForDay : [String] = []
                 var listOfStartTimesForDay : [String] = []
@@ -638,7 +638,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 }
                 
             } else { // the code below is for regular schedules
-                if var dayOfWeek = getDayOfWeek(todayDate) {
+                if let dayOfWeek = getDayOfWeek(todayDate) {
                     
                     var displayedText = String(dayOfWeek) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(Regular Schedule)"
                     

@@ -86,8 +86,8 @@ class DownloadJSON {
             let day = str![8...9]
             
             //            datestr += month + "/" + day + "/" + year
-            var week = year + "-" + month + "-" + day
-            var dayNum = getDayOfWeek(week)!
+            let week = year + "-" + month + "-" + day
+            let dayNum = getDayOfWeek(week)!
             datestr = intToDayString(dayNum)! + ", " + month + "/" + day + "/" + year
         }
         

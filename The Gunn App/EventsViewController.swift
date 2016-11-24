@@ -42,7 +42,7 @@ class EventsViewController: UITableViewController {
     // When the view loads, create necessary subviews
     // and initialize the Google Calendar API service
     override func viewDidLoad() {
-        var specialColor = UIColor(red: 255.0/255.0, green: 14.0/255.0, blue: 14.0/255.0, alpha: 1.0)
+        let specialColor = UIColor(red: 255.0/255.0, green: 14.0/255.0, blue: 14.0/255.0, alpha: 1.0)
         navigationController!.navigationBar.barTintColor = specialColor
         super.viewDidLoad()
         //        downloadAndParseJSON()
@@ -149,7 +149,7 @@ class EventsViewController: UITableViewController {
         //        cell.startingTime.text = event.startTime
         
         //        let sumthin = stations[indexPath.row]
-        var text = event.summary!
+        let text = event.summary!
         
         
         //while (text[text.characters.count-1] == " ") {
@@ -216,15 +216,15 @@ class EventsViewController: UITableViewController {
         
         
         
-        var indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
         
         
         
-        var destViewController = segue.destinationViewController as! EventInfoViewController
+        let destViewController = segue.destinationViewController as! EventInfoViewController
         
         
         
-        var thisEvent : Event = events[indexPath.row]
+        let thisEvent : Event = events[indexPath.row]
         
         
         

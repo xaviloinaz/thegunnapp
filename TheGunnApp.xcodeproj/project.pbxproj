@@ -274,13 +274,16 @@
 				TargetAttributes = {
 					47D7D40A1D04D24A00BC1F5D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 					47D7D4201D04D24A00BC1F5D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 47D7D40A1D04D24A00BC1F5D;
 					};
 					47D7D42B1D04D24A00BC1F5D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 47D7D40A1D04D24A00BC1F5D;
 					};
 				};
@@ -559,6 +562,7 @@
 				PRODUCT_NAME = TheGunnApp;
 				PROVISIONING_PROFILE = "2507a1eb-148c-4f59-9f51-cb64928b1f1e";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -577,6 +581,7 @@
 				PRODUCT_NAME = TheGunnApp;
 				PROVISIONING_PROFILE = "2507a1eb-148c-4f59-9f51-cb64928b1f1e";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -588,6 +593,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-AppTests";
 				PRODUCT_NAME = TheGunnApp;
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheGunnApp.app/TheGunnApp";
 			};
 			name = Debug;
@@ -600,6 +606,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-AppTests";
 				PRODUCT_NAME = TheGunnApp;
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheGunnApp.app/TheGunnApp";
 			};
 			name = Release;
@@ -611,6 +618,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-AppUITests";
 				PRODUCT_NAME = TheGunnApp;
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "The Gunn App";
 			};
 			name = Debug;
@@ -622,6 +630,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-AppUITests";
 				PRODUCT_NAME = TheGunnApp;
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "The Gunn App";
 			};
 			name = Release;
