@@ -12,6 +12,19 @@ import UIKit
 class MapViewController: UIViewController, UIScrollViewDelegate {
 
     
+    
+    
+    @IBAction func goToPortal() {
+        if let url = NSURL(string: "https://id.pausd.org/arms/m") {
+            
+            UIApplication.sharedApplication().openURL(url)
+            
+        }
+    }
+
+    
+    
+    
     @IBOutlet weak var scrollView: UIScrollView!
 
     @IBOutlet weak var gunnMap: UIImageView!

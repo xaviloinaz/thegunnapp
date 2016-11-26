@@ -31,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Student ID Barcode-->
+        <!--Student Barcode-->
         <scene sceneID="wAi-wk-Ldj">
             <objects>
                 <viewController id="HFb-1v-Q6L" customClass="PortalViewController" customModule="TheGunnApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,7 +81,28 @@
                             <constraint firstItem="bbF-oy-ufA" firstAttribute="top" secondItem="hYM-hv-Ewh" secondAttribute="bottom" constant="24" id="ymU-QH-qjl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Student ID Barcode" id="u42-IZ-bq4"/>
+                    <navigationItem key="navigationItem" title="Student Barcode" id="u42-IZ-bq4">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="pLU-gZ-mbp">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="s7t-UF-gyQ">
+                                <rect key="frame" x="16" y="7" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ID Portal"/>
+                                <connections>
+                                    <action selector="goToPortal" destination="HFb-1v-Q6L" eventType="touchUpInside" id="589-yC-QVC"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="k3f-GF-nSW">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Ch-x6-VA6">
+                                <rect key="frame" x="309" y="7" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Credits"/>
+                                <connections>
+                                    <segue destination="1v8-Tc-WTj" kind="show" id="H1X-ZI-ifs"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="barcode" destination="bbF-oy-ufA" id="S7p-0i-Uvz"/>
                         <outlet property="textbox" destination="hYM-hv-Ewh" id="Rzz-gr-eOV"/>
@@ -137,7 +158,28 @@
                             <constraint firstAttribute="trailing" secondItem="Al8-40-ErU" secondAttribute="trailing" id="tny-qk-xVR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Map" id="SIe-bt-0wQ"/>
+                    <navigationItem key="navigationItem" title="Map" id="SIe-bt-0wQ">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="CLd-UU-4BY">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zy1-ug-eH8">
+                                <rect key="frame" x="16" y="7" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ID Portal"/>
+                                <connections>
+                                    <action selector="goToPortal" destination="ht1-yG-0xa" eventType="touchUpInside" id="kEq-Jj-lWO"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="yre-49-M8h">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qec-iG-uvl">
+                                <rect key="frame" x="309" y="7" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Credits"/>
+                                <connections>
+                                    <segue destination="1v8-Tc-WTj" kind="show" id="Zd7-AX-ub1"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="gunnMap" destination="J9R-AK-qDY" id="cZv-6Z-zhV"/>
                         <outlet property="scrollView" destination="Al8-40-ErU" id="TWd-ko-GwU"/>
@@ -195,7 +237,25 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Directory" id="7iH-ss-c9E"/>
+                    <navigationItem key="navigationItem" title="Directory" id="7iH-ss-c9E">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="cO3-wm-gC5">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gGq-UP-RMz">
+                                <rect key="frame" x="16" y="7" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ID Portal"/>
+                                <connections>
+                                    <action selector="goToPortal" destination="kxF-Ei-VNd" eventType="touchUpInside" id="nKI-ez-cGc"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="jMe-aI-CnJ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ipa-pU-A5s">
+                                <rect key="frame" x="309" y="7" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Credits"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DKt-9Q-yOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -329,7 +389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yN1-HL-53b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2688" y="594"/>
+            <point key="canvasLocation" x="3222" y="1122"/>
         </scene>
         <!--Events-->
         <scene sceneID="bHH-1g-eNr">
@@ -398,7 +458,31 @@
                             <outlet property="delegate" destination="DPa-68-Rf0" id="MDE-La-oWq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Events" id="Kx3-EL-dQa"/>
+                    <navigationItem key="navigationItem" title="Events" id="Kx3-EL-dQa">
+                        <barButtonItem key="leftBarButtonItem" title="PAUSD Portal" style="plain" id="PTO-zb-DWq">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="q4L-Nm-fvl">
+                                <rect key="frame" x="16" y="7" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ID Portal"/>
+                                <connections>
+                                    <action selector="goToPortal" destination="DPa-68-Rf0" eventType="touchUpInside" id="85W-Up-6g8"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="koT-Cu-noL">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uTV-Ai-iCY">
+                                <rect key="frame" x="309" y="7" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Credits"/>
+                                <connections>
+                                    <action selector="goToCredits:" destination="DPa-68-Rf0" eventType="touchUpInside" id="OBt-Nn-aHd"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="1v8-Tc-WTj" kind="show" identifier="toCredits" id="pzx-CI-a8H"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEw-lI-XAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -560,7 +644,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTU-Od-uhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3564" y="-1117"/>
+            <point key="canvasLocation" x="3868" y="-837"/>
         </scene>
         <!--Credits-->
         <scene sceneID="106-5N-y97">
@@ -574,9 +658,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IPv-r4-I8O">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                            </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Project Contributors:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="383-nj-gUU">
                                 <rect key="frame" x="229" y="244.5" width="142" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
@@ -677,11 +758,8 @@
                             <constraint firstItem="B62-aA-AdT" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="1R1-qV-6de"/>
                             <constraint firstItem="gLg-NX-Keq" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="1aP-Cv-sUN"/>
                             <constraint firstItem="383-nj-gUU" firstAttribute="top" secondItem="uln-iS-rbj" secondAttribute="bottom" constant="12" id="1ln-zn-klS"/>
-                            <constraint firstItem="FB0-iA-5AA" firstAttribute="top" secondItem="IPv-r4-I8O" secondAttribute="bottom" id="2eA-JR-SgX"/>
                             <constraint firstItem="Qab-a4-F2h" firstAttribute="top" secondItem="383-nj-gUU" secondAttribute="bottom" constant="6" id="38Y-UU-ai6"/>
                             <constraint firstItem="383-nj-gUU" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="3Sg-lb-RMy"/>
-                            <constraint firstItem="IPv-r4-I8O" firstAttribute="top" secondItem="OyZ-1p-HKC" secondAttribute="bottom" constant="-100" id="4la-dg-1Zo"/>
-                            <constraint firstItem="IPv-r4-I8O" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="5Yk-Um-wd6"/>
                             <constraint firstItem="1wc-Ji-oCI" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="5wR-Iv-cOc"/>
                             <constraint firstItem="OyZ-1p-HKC" firstAttribute="top" secondItem="Okv-V1-8Xv" secondAttribute="bottom" constant="20" id="6vW-SP-yxt"/>
                             <constraint firstItem="cFv-k9-hEW" firstAttribute="top" secondItem="HHo-Z6-Nky" secondAttribute="bottom" constant="6" id="7G8-w6-Pg9"/>
@@ -693,11 +771,9 @@
                             <constraint firstItem="HHo-Z6-Nky" firstAttribute="top" secondItem="HqA-4U-hi0" secondAttribute="bottom" constant="6" id="KR6-bk-wrs"/>
                             <constraint firstItem="1wc-Ji-oCI" firstAttribute="top" secondItem="B62-aA-AdT" secondAttribute="bottom" id="LDC-XO-qlG"/>
                             <constraint firstItem="uln-iS-rbj" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="QNF-2R-Xgd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IPv-r4-I8O" secondAttribute="trailing" constant="-20" id="Sfe-Oi-NBZ"/>
                             <constraint firstItem="cFv-k9-hEW" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="T5q-8O-TjU"/>
                             <constraint firstItem="gLg-NX-Keq" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="TP8-HG-R46"/>
                             <constraint firstItem="HqA-4U-hi0" firstAttribute="top" secondItem="VbH-zq-RCE" secondAttribute="bottom" constant="6" id="U48-eU-V8G"/>
-                            <constraint firstItem="IPv-r4-I8O" firstAttribute="leading" secondItem="Ynd-eL-oza" secondAttribute="leadingMargin" constant="-20" id="VDB-BN-sNJ"/>
                             <constraint firstItem="0Oa-w6-tUx" firstAttribute="top" secondItem="UnB-8X-UYy" secondAttribute="bottom" constant="10" id="WIy-TT-1lR"/>
                             <constraint firstItem="VbH-zq-RCE" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="bQ3-WE-o0H"/>
                             <constraint firstItem="HHo-Z6-Nky" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="cdJ-bc-55I"/>
@@ -708,10 +784,8 @@
                             <constraint firstItem="Qab-a4-F2h" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="g2D-xh-7GH"/>
                             <constraint firstItem="UnB-8X-UYy" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="gPv-Zo-1Ng"/>
                             <constraint firstItem="HqA-4U-hi0" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="hSc-Nu-Z2A"/>
-                            <constraint firstItem="IPv-r4-I8O" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="i1v-a5-s6I"/>
                             <constraint firstItem="UnB-8X-UYy" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="i2T-R1-bsf"/>
                             <constraint firstItem="0Oa-w6-tUx" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="iSd-oG-3om"/>
-                            <constraint firstItem="IPv-r4-I8O" firstAttribute="top" secondItem="Okv-V1-8Xv" secondAttribute="bottom" id="iuI-gk-EjQ"/>
                             <constraint firstItem="ci1-jX-xdY" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="j1d-R6-Spd"/>
                             <constraint firstItem="HqA-4U-hi0" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="jZ2-MN-cVz"/>
                             <constraint firstItem="OyZ-1p-HKC" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="koI-CW-iiz"/>
@@ -724,18 +798,12 @@
                             <constraint firstItem="B62-aA-AdT" firstAttribute="top" secondItem="OyZ-1p-HKC" secondAttribute="bottom" constant="2" id="x4e-MP-pjZ"/>
                             <constraint firstItem="Qab-a4-F2h" firstAttribute="centerX" secondItem="Ynd-eL-oza" secondAttribute="centerX" id="zZZ-a2-0au"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="4la-dg-1Zo"/>
-                                <exclude reference="i1v-a5-s6I"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Credits" id="Q94-AW-nt2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8P-wz-bWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="-1675"/>
+            <point key="canvasLocation" x="3682" y="-1491"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="sRU-C9-lqR">
@@ -854,10 +922,15 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Schedule" id="bba-JH-8LZ">
-                        <barButtonItem key="leftBarButtonItem" title="Credits" id="5oK-uf-L9x">
-                            <connections>
-                                <segue destination="1v8-Tc-WTj" kind="show" id="Pjb-Fo-GZL"/>
-                            </connections>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="BBm-H6-wjm">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gxn-hI-Zvj">
+                                <rect key="frame" x="16" y="7" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ID Portal"/>
+                                <connections>
+                                    <action selector="goToPortal" destination="Tnd-0i-gzu" eventType="touchUpInside" id="f9S-7C-RIw"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="20f-Sh-RAI">
                             <connections>
@@ -899,11 +972,11 @@
             </objects>
             <point key="canvasLocation" x="874" y="505"/>
         </scene>
-        <!--Portal-->
+        <!--Barcode-->
         <scene sceneID="iiP-W4-R9v">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N3G-KJ-O0M" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Portal" image="barcode tab icon" id="IFD-YY-LXb"/>
+                    <tabBarItem key="tabBarItem" title="Barcode" image="barcode tab icon v3" selectedImage="barcode tab icon v3" id="IFD-YY-LXb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="42I-L7-51T">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -959,12 +1032,15 @@
     </scenes>
     <resources>
         <image name="Screen Shot 2016-11-23 at 8.04.25 PM" width="402" height="168"/>
-        <image name="barcode tab icon" width="30" height="30"/>
+        <image name="barcode tab icon v3" width="26" height="26"/>
         <image name="calendar" width="29" height="30"/>
         <image name="map-pin" width="30" height="30"/>
         <image name="phone-book" width="30" height="30"/>
         <image name="text-list" width="30" height="30"/>
         <image name="thisisthemap" width="720" height="960"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="pzx-CI-a8H"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

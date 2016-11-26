@@ -23,6 +23,19 @@ class StaffTableViewController: UITableViewController {
     
     
     
+    @IBAction func goToPortal() {
+        if let url = NSURL(string: "https://id.pausd.org/arms/m") {
+            
+            UIApplication.sharedApplication().openURL(url)
+            
+        }
+    }
+
+    
+
+    
+    
+    
     
     var staffs = [Staff]()
     

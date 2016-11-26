@@ -11,6 +11,19 @@ import UIKit
 
 class PortalViewController: UIViewController, UITextFieldDelegate {
     
+    
+
+    
+    
+    @IBAction func goToPortal() {
+        if let url = NSURL(string: "https://id.pausd.org/arms/m") {
+            
+            UIApplication.sharedApplication().openURL(url)
+            
+        }
+    }
+    
+    
     @IBOutlet weak var textbox: UITextField!
     @IBOutlet weak var barcode: UIImageView!
     @IBAction func myPAUSDButton() {
@@ -44,7 +57,7 @@ class PortalViewController: UIViewController, UITextFieldDelegate {
     func generateBarcodeFromString(string: String) -> UIImage? {
         let data = string.dataUsingEncoding(NSASCIIStringEncoding)
         
-        if let filter = CIFilter(name: "CICode39BarcodeGenerator") {
+        if let filter = CIFilter(name: "CICode128BarcodeGenerator") {
             filter.setValue(data, forKey: "inputMessage")
             let transform = CGAffineTransformMakeScale(3, 3)
             

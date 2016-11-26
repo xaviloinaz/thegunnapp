@@ -24,6 +24,13 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     var whichSegControl : Int = 0
     
 
+    @IBAction func goToPortal() {
+        if let url = NSURL(string: "https://id.pausd.org/arms/m") {
+            
+            UIApplication.sharedApplication().openURL(url)
+            
+        }
+    }
     
     
     @IBAction func updateInfo(sender: AnyObject) {
