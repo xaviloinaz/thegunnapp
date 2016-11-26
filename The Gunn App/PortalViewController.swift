@@ -23,7 +23,12 @@ class PortalViewController: UIViewController, UITextFieldDelegate {
             
         }
     }
-    
+    var studentid: String = NSUserDefaults.standardUserDefaults().stringForKey("mystudentid") ?? "" {
+        didSet {
+            NSUserDefaults.standardUserDefaults().setValue(studentid, forKey: "mystudentid")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
     
     @IBOutlet weak var textbox: UITextField!
     @IBOutlet weak var barcode: UIImageView!
@@ -66,6 +71,7 @@ class PortalViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func editingdidend(sender: AnyObject) {
         print("editingdidend")
+        studentid = textbox.text!
         barcode.image = generateBarcodeFromString(textbox.text!)
     }
 
@@ -95,6 +101,8 @@ class PortalViewController: UIViewController, UITextFieldDelegate {
 //        barcode.image = generateBarcodeFromString("95016633");
         self.textbox.delegate = self;
         self.textbox.keyboardType = UIKeyboardType.NumberPad;
+        self.textbox.text = studentid;
+        barcode.image = generateBarcodeFromString(textbox.text!)
 
     }
     
