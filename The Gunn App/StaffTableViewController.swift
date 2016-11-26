@@ -32,6 +32,9 @@ class StaffTableViewController: UITableViewController {
     }
 
     
+    @IBAction func goToCredits(sender: AnyObject) {
+        performSegueWithIdentifier("toCredits", sender: self)
+    }
 
     
     
@@ -301,7 +304,9 @@ class StaffTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         
-        
+        if segue.identifier == "toCredits" {
+            // nothing
+        } else {
         let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
         
         
@@ -332,7 +337,7 @@ class StaffTableViewController: UITableViewController {
             
         }
         
-        
+        }
         
     }
     

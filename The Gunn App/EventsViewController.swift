@@ -231,37 +231,38 @@ class EventsViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         
-        
-        let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
-        
-        
-        
-        let destViewController = segue.destinationViewController as! EventInfoViewController
-        
-        
-        
-        let thisEvent : Event = events[indexPath.row]
-        
-        
-        
-        //        destViewController.thisStaff = thisStaff
-        
-        
-        
-        //        if searchController.active && searchController.searchBar.text != "" {
-        
-        //            thisStaff = filteredStaff[indexPath.row]
-        
-        destViewController.thisEvent = thisEvent
-        
-        //        } else {
-        
-        //            thisStaff = staffs[indexPath.row]
-        
-        
-        //        }
-        
-        
+        if segue.identifier == "toCredits"{
+            //nothing
+        } else {
+            let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
+            
+            
+            
+            let destViewController = segue.destinationViewController as! EventInfoViewController
+            
+            
+            
+            let thisEvent : Event = events[indexPath.row]
+            
+            
+            
+            //        destViewController.thisStaff = thisStaff
+            
+            
+            
+            //        if searchController.active && searchController.searchBar.text != "" {
+            
+            //            thisStaff = filteredStaff[indexPath.row]
+            
+            destViewController.thisEvent = thisEvent
+            
+            //        } else {
+            
+            //            thisStaff = staffs[indexPath.row]
+            
+            
+            //        }
+        }
         
     }
 }
