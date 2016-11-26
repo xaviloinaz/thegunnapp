@@ -15,7 +15,7 @@ class PortalViewController: UIViewController, UITextFieldDelegate {
     static var studID = ""
 
     
-    
+    var eight_characters = false
     @IBAction func goToPortal() {
         if let url = NSURL(string: "https://id.pausd.org/arms/m") {
             
@@ -35,10 +35,25 @@ class PortalViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func editingdidbegin(sender: UITextField) {
+        print("editingdidbegin")
+        if(textbox.text?.characters.count>=8){
+            print("8 characters")
+            eight_characters = true
+        }
+        else{
+            eight_characters = false
+        }
+    }
     @IBAction func editingchanged(sender: UITextField) {
         print("editingchanged")
+        
+
         if(textbox.text?.characters.count >= 8){
             print(textbox.text)
+            // make sure it can only be editable until it's 8 characters
+            let subStr = textbox.text?[(textbox.text?.startIndex.advancedBy(0))!...(textbox.text?.startIndex.advancedBy(7))!]
+            textbox.text = subStr
             textFieldShouldReturn(textbox);
             barcode.image = generateBarcodeFromString(textbox.text!)
         }

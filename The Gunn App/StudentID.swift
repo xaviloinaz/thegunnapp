@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class StudentID : NSObject, NSCoding {
+class StudentID {
     
-    var studentID
+   /* var studentID
     var studentIDKey
     
     
@@ -23,5 +23,5 @@ class StudentID : NSObject, NSCoding {
     required convenience init?(coder aDecoder: NSCoder) {
         let studID = aDecoder.decodeObjectForKey(studentIDKey) as! String
     }
-    
+    */
 }
