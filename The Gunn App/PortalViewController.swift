@@ -37,7 +37,6 @@ class PortalViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func editingchanged(sender: UITextField) {
         print("editingchanged")
-//        studID = textbox.text
         if(textbox.text?.characters.count >= 8){
             print(textbox.text)
             textFieldShouldReturn(textbox);

@@ -29,6 +29,7 @@
 		47D7D4851D17465300BC1F5D /* StaffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4841D17465300BC1F5D /* StaffTableViewCell.swift */; };
 		47D7D4871D174DB500BC1F5D /* StaffTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4861D174DB500BC1F5D /* StaffTableViewController.swift */; };
 		47D7D48B1D174F4C00BC1F5D /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D48A1D174F4C00BC1F5D /* Staff.swift */; };
+		47DD55301DE9314600275BE0 /* StudentID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DD552F1DE9314600275BE0 /* StudentID.swift */; };
 		E710DB061D456756000B0508 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = E710DB051D456756000B0508 /* events.json */; };
 		E7AF28191D4EADB700FFEA15 /* EventInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AF28181D4EADB700FFEA15 /* EventInfoViewController.swift */; };
 		E7EF96751D47FAF5008540B3 /* kannada.ttc in Resources */ = {isa = PBXBuildFile; fileRef = E7EF96741D47FAF5008540B3 /* kannada.ttc */; };
@@ -81,6 +82,7 @@
 		47D7D4841D17465300BC1F5D /* StaffTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StaffTableViewCell.swift; path = ../StaffTableViewCell.swift; sourceTree = "<group>"; };
 		47D7D4861D174DB500BC1F5D /* StaffTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffTableViewController.swift; sourceTree = "<group>"; };
 		47D7D48A1D174F4C00BC1F5D /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		47DD552F1DE9314600275BE0 /* StudentID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentID.swift; sourceTree = "<group>"; };
 		938100FDE7F78A8239592CDB /* Pods-TheGunnApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGunnApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheGunnApp/Pods-TheGunnApp.release.xcconfig"; sourceTree = "<group>"; };
 		C5DD0517FCF6BA736214175E /* Pods_TheGunnApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheGunnApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E710DB051D456756000B0508 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				E7EF96741D47FAF5008540B3 /* kannada.ttc */,
 				E710DB051D456756000B0508 /* events.json */,
 				4759AEF91D2270E300BB502B /* PortalViewController.swift */,
+				47DD552F1DE9314600275BE0 /* StudentID.swift */,
 				47D7D4141D04D24A00BC1F5D /* Main.storyboard */,
 				475F506E1D7CC51E00115A7D /* CreditsViewController.swift */,
 				47D057821D370C6700A3ACCB /* MapViewController.swift */,
@@ -405,6 +408,7 @@
 				47D057811D34880100A3ACCB /* StaffInfoViewController.swift in Sources */,
 				479770391D45CA8200E7FD66 /* Period.swift in Sources */,
 				47D00AF51D3C5960004B5E8F /* ScheduleViewCell.swift in Sources */,
+				47DD55301DE9314600275BE0 /* StudentID.swift in Sources */,
 				4759AEFA1D2270E300BB502B /* PortalViewController.swift in Sources */,
 				47D7D4871D174DB500BC1F5D /* StaffTableViewController.swift in Sources */,
 			);
