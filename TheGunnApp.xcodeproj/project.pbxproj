@@ -567,6 +567,7 @@
 				PROVISIONING_PROFILE = "2507a1eb-148c-4f59-9f51-cb64928b1f1e";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -586,6 +587,7 @@
 				PROVISIONING_PROFILE = "2507a1eb-148c-4f59-9f51-cb64928b1f1e";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
