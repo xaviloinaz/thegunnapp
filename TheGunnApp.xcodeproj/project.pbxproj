@@ -277,7 +277,9 @@
 				TargetAttributes = {
 					47D7D40A1D04D24A00BC1F5D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 282V6W269K;
 						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
 					};
 					47D7D4201D04D24A00BC1F5D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -559,12 +561,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Xavi Loinaz (282V6W269K)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 282V6W269K;
 				INFOPLIST_FILE = "The Gunn App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.xaviloinaz.TheGunnApp;
 				PRODUCT_NAME = TheGunnApp;
-				PROVISIONING_PROFILE = "2507a1eb-148c-4f59-9f51-cb64928b1f1e";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -578,13 +582,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Xavi Loinaz (282V6W269K)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 282V6W269K;
 				GCC_OPTIMIZATION_LEVEL = 2;
 				INFOPLIST_FILE = "The Gunn App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.xaviloinaz.TheGunnApp;
 				PRODUCT_NAME = TheGunnApp;
-				PROVISIONING_PROFILE = "2507a1eb-148c-4f59-9f51-cb64928b1f1e";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 1;
