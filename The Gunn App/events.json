@@ -8927,6 +8927,7 @@
    "created": "2016-06-01T14:32:20.000Z",
    "updated": "2016-06-01T14:32:20.397Z",
    "summary": "International Week",
+   "description": "Go to tinyurl.com/gunninternationalweek for a schedule of the International Week activities.",
    "creator": {
     "email": "melderon@pausd.org",
     "displayName": "Martha Elderon"
@@ -8940,7 +8941,7 @@
     "date": "2017-04-17"
    },
    "end": {
-    "date": "2017-04-22"
+    "date": "2017-04-21"
    },
    "transparency": "transparent",
    "iCalUID": "7d1l1klle4uuig8e1umbl3182c@google.com",
@@ -8980,6 +8981,64 @@
    "iCalUID": "gealcgia2sfng90ukimhgofevk@google.com",
    "sequence": 0
   },
+    {
+           "kind": "calendar#event",
+           "etag": "\"2929583080794000\"",
+           "id": "7d1l1klle4uuig8e1umbl3182c",
+           "status": "confirmed",
+           "htmlLink": "https://www.google.com/calendar/event?eid=N2QxbDFrbGxlNHV1aWc4ZTF1bWJsMzE4MmMgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+           "created": "2016-06-01T14:32:20.000Z",
+           "updated": "2016-06-01T14:32:20.397Z",
+           "summary": "International Week",
+           "description": "Go to tinyurl.com/gunninternationalweek for a schedule of the International Week activities.",
+           "creator": {
+           "email": "melderon@pausd.org",
+           "displayName": "Martha Elderon"
+           },
+           "organizer": {
+           "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+           "displayName": "Gunn High School",
+           "self": true
+           },
+           "start": {
+           "date": "2017-04-18"
+           },
+           "end": {
+           "date": "2017-04-21"
+           },
+           "transparency": "transparent",
+           "iCalUID": "7d1l1klle4uuig8e1umbl3182c@google.com",
+           "sequence": 0
+           },
+           {
+           "kind": "calendar#event",
+           "etag": "\"2929583080794000\"",
+           "id": "7d1l1klle4uuig8e1umbl3182c",
+           "status": "confirmed",
+           "htmlLink": "https://www.google.com/calendar/event?eid=N2QxbDFrbGxlNHV1aWc4ZTF1bWJsMzE4MmMgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+           "created": "2016-06-01T14:32:20.000Z",
+           "updated": "2016-06-01T14:32:20.397Z",
+           "summary": "International Week",
+           "description": "Go to tinyurl.com/gunninternationalweek for a schedule of the International Week activities.",
+           "creator": {
+           "email": "melderon@pausd.org",
+           "displayName": "Martha Elderon"
+           },
+           "organizer": {
+           "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+           "displayName": "Gunn High School",
+           "self": true
+           },
+           "start": {
+           "date": "2017-04-19"
+           },
+           "end": {
+           "date": "2017-04-21"
+           },
+           "transparency": "transparent",
+           "iCalUID": "7d1l1klle4uuig8e1umbl3182c@google.com",
+           "sequence": 0
+           },
   {
    "kind": "calendar#event",
    "etag": "\"2932878806298000\"",
@@ -9051,6 +9110,36 @@
    "iCalUID": "f983g5tnl0gpnab3e20ruj6958@google.com",
    "sequence": 0
   },
+           {
+           "kind": "calendar#event",
+           "etag": "\"2929583080794000\"",
+           "id": "7d1l1klle4uuig8e1umbl3182c",
+           "status": "confirmed",
+           "htmlLink": "https://www.google.com/calendar/event?eid=N2QxbDFrbGxlNHV1aWc4ZTF1bWJsMzE4MmMgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+           "created": "2016-06-01T14:32:20.000Z",
+           "updated": "2016-06-01T14:32:20.397Z",
+           "summary": "International Week",
+           "description": "Go to tinyurl.com/gunninternationalweek for a schedule of the International Week activities.",
+           "creator": {
+           "email": "melderon@pausd.org",
+           "displayName": "Martha Elderon"
+           },
+           "organizer": {
+           "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+           "displayName": "Gunn High School",
+           "self": true
+           },
+           "start": {
+           "date": "2017-04-20"
+           },
+           "end": {
+           "date": "2017-04-21"
+           },
+           "transparency": "transparent",
+           "iCalUID": "7d1l1klle4uuig8e1umbl3182c@google.com",
+           "sequence": 0
+           },
+
   {
    "kind": "calendar#event",
    "etag": "\"2932219978802000\"",
@@ -9059,7 +9148,7 @@
    "htmlLink": "https://www.google.com/calendar/event?eid=ajJrYTVmMHE1Z3BmZWkzbXM3MGh0OWxucGcgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
    "created": "2016-06-07T19:15:53.000Z",
    "updated": "2016-06-16T20:46:29.401Z",
-   "summary": "(tent) International Potluck (see alternate schedule below)",
+   "summary": "International Potluck (see alternate schedule below)",
    "description": "Period E (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod A (10:05-11:15)\nPeriod B (11:25-12:35)\nExtended Lunch (12:35-1:45)\nPeriod G (1:45-2:55)\nTutorial (3:05-3:35)\n",
    "location": "Quad",
    "creator": {
@@ -9152,6 +9241,36 @@
    "iCalUID": "f983g5tnl0gpnab3e20ruj6958@google.com",
    "sequence": 0
   },
+           {
+           "kind": "calendar#event",
+           "etag": "\"2929583080794000\"",
+           "id": "7d1l1klle4uuig8e1umbl3182c",
+           "status": "confirmed",
+           "htmlLink": "https://www.google.com/calendar/event?eid=N2QxbDFrbGxlNHV1aWc4ZTF1bWJsMzE4MmMgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+           "created": "2016-06-01T14:32:20.000Z",
+           "updated": "2016-06-01T14:32:20.397Z",
+           "summary": "International Week",
+           "description": "Go to tinyurl.com/gunninternationalweek for a schedule of the International Week activities.",
+           "creator": {
+           "email": "melderon@pausd.org",
+           "displayName": "Martha Elderon"
+           },
+           "organizer": {
+           "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+           "displayName": "Gunn High School",
+           "self": true
+           },
+           "start": {
+           "date": "2017-04-21"
+           },
+           "end": {
+           "date": "2017-04-21"
+           },
+           "transparency": "transparent",
+           "iCalUID": "7d1l1klle4uuig8e1umbl3182c@google.com",
+           "sequence": 0
+           },
+
   {
    "kind": "calendar#event",
    "etag": "\"2915106836830000\"",
