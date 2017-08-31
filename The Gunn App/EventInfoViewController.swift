@@ -45,9 +45,9 @@ class EventInfoViewController: UIViewController {
         print(thisEvent)
         print(thisEvent.summary!.characters.count)
         if thisEvent.summary!.characters.count <= 33 {
-            summary.font = UIFont.systemFontOfSize(22)
+            summary.font = UIFont.systemFont(ofSize: 22)
         } else if thisEvent.summary!.characters.count > 34 {
-            summary.font = UIFont.systemFontOfSize(18)
+            summary.font = UIFont.systemFont(ofSize: 18)
         }
 //        summary.adjustFontSizeToFitWidth = true
 //        } else if thisEvent.summary!.characters.count <= 42 {
@@ -104,15 +104,15 @@ class EventInfoViewController: UIViewController {
             descriptionText.text = thisEvent.description
         }
         else{
-            desc.hidden = true
-            descriptionText.hidden = true
+            desc.isHidden = true
+            descriptionText.isHidden = true
         }
-        descriptionText.editable = false
-        summary.editable = false
-        desc.editable = false
-        date.editable = false
-        startingTime.editable = false
-        summary.scrollEnabled = false
+        descriptionText.isEditable = false
+        summary.isEditable = false
+        desc.isEditable = false
+        date.isEditable = false
+        startingTime.isEditable = false
+        summary.isScrollEnabled = false
         
     }
     

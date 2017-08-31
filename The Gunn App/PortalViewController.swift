@@ -8,6 +8,30 @@
 
 import Foundation
 import UIKit
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l >= r
+  default:
+    return !(lhs < rhs)
+  }
+}
+
 
 class PortalViewController: UIViewController, UITextFieldDelegate {
     
@@ -17,30 +41,30 @@ class PortalViewController: UIViewController, UITextFieldDelegate {
     
     var eight_characters = false
     @IBAction func goToPortal() {
-        if let url = NSURL(string: "https://id.pausd.org/arms/m") {
+        if let url = URL(string: "https://id.pausd.org/arms/m") {
             
-            UIApplication.sharedApplication().openURL(url)
+            UIApplication.shared.openURL(url)
             
         }
     }
-    var studentid: String = NSUserDefaults.standardUserDefaults().stringForKey("mystudentid") ?? "" {
+    var studentid: String = UserDefaults.standard.string(forKey: "mystudentid") ?? "" {
         didSet {
-            NSUserDefaults.standardUserDefaults().setValue(studentid, forKey: "mystudentid")
-            NSUserDefaults.standardUserDefaults().synchronize()
+            UserDefaults.standard.setValue(studentid, forKey: "mystudentid")
+            UserDefaults.standard.synchronize()
         }
     }
     
     @IBOutlet weak var textbox: UITextField!
     @IBOutlet weak var barcode: UIImageView!
     @IBAction func myPAUSDButton() {
-        if let url = NSURL(string: "https://id.pausd.org/arms/m") {
+        if let url = URL(string: "https://id.pausd.org/arms/m") {
             
-            UIApplication.sharedApplication().openURL(url)
+            UIApplication.shared.openURL(url)
             
         }
     }
     
-    @IBAction func editingdidbegin(sender: UITextField) {
+    @IBAction func editingdidbegin(_ sender: UITextField) {
         print("editingdidbegin")
         if(textbox.text?.characters.count>=8){
             print("8 characters")
@@ -50,41 +74,41 @@ class PortalViewController: UIViewController, UITextFieldDelegate {
             eight_characters = false
         }
     }
-    @IBAction func editingchanged(sender: UITextField) {
+    @IBAction func editingchanged(_ sender: UITextField) {
         print("editingchanged")
         
 
         if(textbox.text?.characters.count >= 8){
             print(textbox.text)
             // make sure it can only be editable until it's 8 characters
-            let subStr = textbox.text?[(textbox.text?.startIndex.advancedBy(0))!...(textbox.text?.startIndex.advancedBy(7))!]
+            let subStr = textbox.text?[(textbox.text?.characters.index((textbox.text?.startIndex)!, offsetBy: 0))!...(textbox.text?.characters.index((textbox.text?.startIndex)!, offsetBy: 7))!]
             textbox.text = subStr
             textFieldShouldReturn(textbox);
             barcode.image = generateBarcodeFromString(textbox.text!)
         }
     }
-    @IBAction func valuechanged(sender: UITextField) {
+    @IBAction func valuechanged(_ sender: UITextField) {
         print("valuechanged")
     }
 
     
 
-    @IBAction func editingdidend(sender: AnyObject) {
+    @IBAction func editingdidend(_ sender: AnyObject) {
         print("editingdidend")
         studentid = textbox.text!
         barcode.image = generateBarcodeFromString(textbox.text!)
     }
 
     
-    func generateBarcodeFromString(string: String) -> UIImage? {
-        let data = string.dataUsingEncoding(NSASCIIStringEncoding)
+    func generateBarcodeFromString(_ string: String) -> UIImage? {
+        let data = string.data(using: String.Encoding.ascii)
         
         if let filter = CIFilter(name: "CICode128BarcodeGenerator") {
             filter.setValue(data, forKey: "inputMessage")
-            let transform = CGAffineTransformMakeScale(3, 3)
+            let transform = CGAffineTransform(scaleX: 3, y: 3)
             
-            if let output = filter.outputImage?.imageByApplyingTransform(transform) {
-                return UIImage(CIImage: output)
+            if let output = filter.outputImage?.applying(transform) {
+                return UIImage(ciImage: output)
             }
         }
         
@@ -100,7 +124,7 @@ class PortalViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
 //        barcode.image = generateBarcodeFromString("95016633");
         self.textbox.delegate = self;
-        self.textbox.keyboardType = UIKeyboardType.NumberPad;
+        self.textbox.keyboardType = UIKeyboardType.numberPad;
         self.textbox.text = studentid;
         barcode.image = generateBarcodeFromString(textbox.text!)
 
@@ -111,16 +135,16 @@ class PortalViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
     }
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         print("textfield")
         
-        let aSet = NSCharacterSet(charactersInString:"0123456789").invertedSet
-        let compSepByCharInSet = string.componentsSeparatedByCharactersInSet(aSet)
-        let numberFiltered = compSepByCharInSet.joinWithSeparator("")
+        let aSet = CharacterSet(charactersIn:"0123456789").inverted
+        let compSepByCharInSet = string.components(separatedBy: aSet)
+        let numberFiltered = compSepByCharInSet.joined(separator: "")
         return string == numberFiltered
         
     }

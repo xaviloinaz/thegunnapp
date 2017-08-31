@@ -30,7 +30,10 @@
 		47D7D4871D174DB500BC1F5D /* StaffTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D4861D174DB500BC1F5D /* StaffTableViewController.swift */; };
 		47D7D48B1D174F4C00BC1F5D /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7D48A1D174F4C00BC1F5D /* Staff.swift */; };
 		47DD55301DE9314600275BE0 /* StudentID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DD552F1DE9314600275BE0 /* StudentID.swift */; };
-		E710DB061D456756000B0508 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = E710DB051D456756000B0508 /* events.json */; };
+		47EC157E1F5557DC0038EF74 /* events-yes.json in Resources */ = {isa = PBXBuildFile; fileRef = 47EC157D1F5557DC0038EF74 /* events-yes.json */; };
+		47EC15801F55FE030038EF74 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 47EC157F1F55FE030038EF74 /* events.json */; };
+		47EC15821F5618110038EF74 /* String+Indexing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC15811F5618110038EF74 /* String+Indexing.swift */; };
+		E710DB061D456756000B0508 /* events-original.json in Resources */ = {isa = PBXBuildFile; fileRef = E710DB051D456756000B0508 /* events-original.json */; };
 		E7AF28191D4EADB700FFEA15 /* EventInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AF28181D4EADB700FFEA15 /* EventInfoViewController.swift */; };
 		E7EF96751D47FAF5008540B3 /* kannada.ttc in Resources */ = {isa = PBXBuildFile; fileRef = E7EF96741D47FAF5008540B3 /* kannada.ttc */; };
 /* End PBXBuildFile section */
@@ -83,9 +86,12 @@
 		47D7D4861D174DB500BC1F5D /* StaffTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffTableViewController.swift; sourceTree = "<group>"; };
 		47D7D48A1D174F4C00BC1F5D /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
 		47DD552F1DE9314600275BE0 /* StudentID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentID.swift; sourceTree = "<group>"; };
+		47EC157D1F5557DC0038EF74 /* events-yes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "events-yes.json"; sourceTree = "<group>"; };
+		47EC157F1F55FE030038EF74 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		47EC15811F5618110038EF74 /* String+Indexing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Indexing.swift"; sourceTree = "<group>"; };
 		938100FDE7F78A8239592CDB /* Pods-TheGunnApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGunnApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheGunnApp/Pods-TheGunnApp.release.xcconfig"; sourceTree = "<group>"; };
 		C5DD0517FCF6BA736214175E /* Pods_TheGunnApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheGunnApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E710DB051D456756000B0508 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		E710DB051D456756000B0508 /* events-original.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "events-original.json"; sourceTree = "<group>"; };
 		E7AF28181D4EADB700FFEA15 /* EventInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInfoViewController.swift; sourceTree = "<group>"; };
 		E7EF96741D47FAF5008540B3 /* kannada.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = kannada.ttc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +150,7 @@
 				47D00AEC1D3AE2CD004B5E8F /* GTMOAuth2ViewTouch.xib */,
 				47D7D40E1D04D24A00BC1F5D /* AppDelegate.swift */,
 				47D7D4101D04D24A00BC1F5D /* ScheduleViewController.swift */,
+				47EC15811F5618110038EF74 /* String+Indexing.swift */,
 				47D00AF41D3C5960004B5E8F /* ScheduleViewCell.swift */,
 				479770381D45CA8200E7FD66 /* Period.swift */,
 				47D7D4121D04D24A00BC1F5D /* EventsViewController.swift */,
@@ -151,8 +158,10 @@
 				47D00AF21D3C4C85004B5E8F /* DownloadJSON.swift */,
 				4797703E1D4EAC7C00E7FD66 /* EventInfoViewController.swift */,
 				47D00AF01D3C3F2F004B5E8F /* Event.swift */,
+				E710DB051D456756000B0508 /* events-original.json */,
+				47EC157F1F55FE030038EF74 /* events.json */,
+				47EC157D1F5557DC0038EF74 /* events-yes.json */,
 				E7EF96741D47FAF5008540B3 /* kannada.ttc */,
-				E710DB051D456756000B0508 /* events.json */,
 				4759AEF91D2270E300BB502B /* PortalViewController.swift */,
 				47DD552F1DE9314600275BE0 /* StudentID.swift */,
 				47D7D4141D04D24A00BC1F5D /* Main.storyboard */,
@@ -278,17 +287,17 @@
 					47D7D40A1D04D24A00BC1F5D = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 282V6W269K;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					47D7D4201D04D24A00BC1F5D = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0830;
 						TestTargetID = 47D7D40A1D04D24A00BC1F5D;
 					};
 					47D7D42B1D04D24A00BC1F5D = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0830;
 						TestTargetID = 47D7D40A1D04D24A00BC1F5D;
 					};
 				};
@@ -318,10 +327,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47EC15801F55FE030038EF74 /* events.json in Resources */,
 				47D00AED1D3AE2CD004B5E8F /* GTMOAuth2ViewTouch.xib in Resources */,
 				47D7D41B1D04D24A00BC1F5D /* LaunchScreen.storyboard in Resources */,
 				E7EF96751D47FAF5008540B3 /* kannada.ttc in Resources */,
-				E710DB061D456756000B0508 /* events.json in Resources */,
+				47EC157E1F5557DC0038EF74 /* events-yes.json in Resources */,
+				E710DB061D456756000B0508 /* events-original.json in Resources */,
 				47D7D4181D04D24A00BC1F5D /* Assets.xcassets in Resources */,
 				47D7D4161D04D24A00BC1F5D /* Main.storyboard in Resources */,
 			);
@@ -398,6 +409,7 @@
 			files = (
 				47D7D4131D04D24A00BC1F5D /* EventsViewController.swift in Sources */,
 				47D00AF11D3C3F2F004B5E8F /* Event.swift in Sources */,
+				47EC15821F5618110038EF74 /* String+Indexing.swift in Sources */,
 				47D7D40F1D04D24A00BC1F5D /* AppDelegate.swift in Sources */,
 				475F506F1D7CC51E00115A7D /* CreditsViewController.swift in Sources */,
 				47D00AF31D3C4C85004B5E8F /* DownloadJSON.swift in Sources */,
@@ -570,7 +582,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -592,7 +604,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -605,7 +617,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-AppTests";
 				PRODUCT_NAME = TheGunnApp;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheGunnApp.app/TheGunnApp";
 			};
 			name = Debug;
@@ -618,7 +630,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-AppTests";
 				PRODUCT_NAME = TheGunnApp;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheGunnApp.app/TheGunnApp";
 			};
 			name = Release;
@@ -630,7 +642,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-AppUITests";
 				PRODUCT_NAME = TheGunnApp;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "The Gunn App";
 			};
 			name = Debug;
@@ -642,7 +654,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xaviloinaz.The-Gunn-AppUITests";
 				PRODUCT_NAME = TheGunnApp;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "The Gunn App";
 			};
 			name = Release;

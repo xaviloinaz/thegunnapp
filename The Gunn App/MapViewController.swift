@@ -15,9 +15,9 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
     
     
     @IBAction func goToPortal() {
-        if let url = NSURL(string: "https://id.pausd.org/arms/m") {
+        if let url = URL(string: "https://id.pausd.org/arms/m") {
             
-            UIApplication.sharedApplication().openURL(url)
+            UIApplication.shared.openURL(url)
             
         }
     }
@@ -38,8 +38,8 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.maximumZoomScale = 2.0
         self.scrollView.zoomScale = 0.45
         //scrollView.contentSize = CGSizeMake(view.frame.size.height, 1.0)
-        scrollView.contentSize = CGSizeMake(scrollView.contentSize.width,scrollView.frame.size.height)
-        scrollView.contentInset = UIEdgeInsetsZero
+        scrollView.contentSize = CGSize(width: scrollView.contentSize.width,height: scrollView.frame.size.height)
+        scrollView.contentInset = UIEdgeInsets.zero
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,11 +48,11 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.gunnMap
     }
     
-    private func updateMinZoomScaleForSize(size: CGSize) {
+    fileprivate func updateMinZoomScaleForSize(_ size: CGSize) {
         let widthScale = size.width * 0.83 / gunnMap.bounds.width
         let heightScale = size.height * 0.83 / gunnMap.bounds.height
         let minScale = min(widthScale, heightScale)

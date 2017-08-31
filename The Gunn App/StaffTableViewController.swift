@@ -24,16 +24,16 @@ class StaffTableViewController: UITableViewController {
     
     
     @IBAction func goToPortal() {
-        if let url = NSURL(string: "https://id.pausd.org/arms/m") {
+        if let url = URL(string: "https://id.pausd.org/arms/m") {
             
-            UIApplication.sharedApplication().openURL(url)
+            UIApplication.shared.openURL(url)
             
         }
     }
 
     
-    @IBAction func goToCredits(sender: AnyObject) {
-        performSegueWithIdentifier("toCredits", sender: self)
+    @IBAction func goToCredits(_ sender: AnyObject) {
+        performSegue(withIdentifier: "toCredits", sender: self)
     }
 
     
@@ -100,11 +100,11 @@ class StaffTableViewController: UITableViewController {
     
     
     
-    func filterContentForSearchText(searchText: String, scope: String = "All") {
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
         
         filteredStaff = staffs.filter { staff in
             
-            return staff.name.lowercaseString.containsString(searchText.lowercaseString)
+            return staff.name.lowercased().contains(searchText.lowercased())
             
         }
         
@@ -132,7 +132,7 @@ class StaffTableViewController: UITableViewController {
         
         
         
-        var arrayOfStaffStrings = stringOfStaffs.characters.split("#").map(String.init)
+        var arrayOfStaffStrings = stringOfStaffs.characters.split(separator: "#").map(String.init)
         
         
         
@@ -210,7 +210,7 @@ class StaffTableViewController: UITableViewController {
     
     
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
         
@@ -218,9 +218,9 @@ class StaffTableViewController: UITableViewController {
     
     
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if searchController.active && searchController.searchBar.text != "" {
+        if searchController.isActive && searchController.searchBar.text != "" {
             
             return filteredStaff.count
             
@@ -231,17 +231,17 @@ class StaffTableViewController: UITableViewController {
     
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
         
         let cellIdentifier = "StaffTableViewCell"
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! StaffTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! StaffTableViewCell
         
         let staff: Staff
         
-        if searchController.active && searchController.searchBar.text != "" {
+        if searchController.isActive && searchController.searchBar.text != "" {
             
             staff = filteredStaff[indexPath.row]
             
@@ -301,17 +301,17 @@ class StaffTableViewController: UITableViewController {
     
     
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
         if segue.identifier == "toCredits" {
             // nothing
         } else {
-        let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let indexPath : IndexPath = self.tableView.indexPathForSelectedRow!
         
         
         
-        let destViewController = segue.destinationViewController as! StaffInfoViewController
+        let destViewController = segue.destination as! StaffInfoViewController
         
         
         
@@ -323,7 +323,7 @@ class StaffTableViewController: UITableViewController {
         
         
         
-        if searchController.active && searchController.searchBar.text != "" {
+        if searchController.isActive && searchController.searchBar.text != "" {
             
             thisStaff = filteredStaff[indexPath.row]
             
@@ -353,7 +353,7 @@ class StaffTableViewController: UITableViewController {
 
 extension StaffTableViewController : UISearchResultsUpdating {
     
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
+    func updateSearchResults(for searchController: UISearchController) {
         
         filterContentForSearchText(searchController.searchBar.text!)
         

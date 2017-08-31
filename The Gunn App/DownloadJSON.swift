@@ -13,11 +13,46 @@
 
 import Foundation
 import UIKit
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    switch (lhs, rhs) {
+    case let (l?, r?):
+        return l < r
+    case (nil, _?):
+        return true
+    default:
+        return false
+    }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    switch (lhs, rhs) {
+    case let (l?, r?):
+        return l > r
+    default:
+        return rhs < lhs
+    }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    switch (lhs, rhs) {
+    case let (l?, r?):
+        return l >= r
+    default:
+        return !(lhs < rhs)
+    }
+}
+
 
 extension String {
     
     subscript (i: Int) -> Character {
-        return self[self.startIndex.advancedBy(i)]
+        return self[self.characters.index(self.startIndex, offsetBy: i)]
     }
     
     subscript (i: Int) -> String {
@@ -25,8 +60,9 @@ extension String {
     }
     
     subscript (r: Range<Int>) -> String {
-        let start = startIndex.advancedBy(r.startIndex)
-        let end = start.advancedBy(r.endIndex - r.startIndex)
+        let start = characters.index(startIndex, offsetBy: r.lowerBound)
+        let end = characters.index(startIndex, offsetBy: r.upperBound - r.lowerBound)
+        // let end = String.CharacterView.index(currentIndex: start, offsetBy: r.upperBound - r.lowerBound)
         return self[Range(start ..< end)]
     }
 }
@@ -38,7 +74,7 @@ class DownloadJSON {
     
     
     
-    func intToDayString(day: Int?) -> String? {
+    func intToDayString(_ day: Int?) -> String? {
         if(day! == 1){
             return "Sunday"
         }
@@ -63,13 +99,13 @@ class DownloadJSON {
         return ""
     }
     
-    func getDayOfWeek(today:String)->Int? {
+    func getDayOfWeek(_ today:String)->Int? {
         
-        let formatter  = NSDateFormatter()
+        let formatter  = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
-        if let todayDate = formatter.dateFromString(today) {
-            let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
-            let myComponents = myCalendar.components(.Weekday, fromDate: todayDate)
+        if let todayDate = formatter.date(from: today) {
+            let myCalendar = Calendar(identifier: Calendar.Identifier.gregorian)
+            let myComponents = (myCalendar as NSCalendar).components(.weekday, from: todayDate)
             let weekDay = myComponents.weekday
             return weekDay
         } else {
@@ -77,13 +113,13 @@ class DownloadJSON {
         }
     }
     
-    func dateString(str:String?) -> String{
+    func dateString(_ str:String?) -> String{
         var datestr = ""
         if(str!.characters.count > 9){
             //            print(str!.characters.count)
-            let year = str![0...3]
-            let month = str![5...6]
-            let day = str![8...9]
+            let year = str![0] + str![1] + str![2] + str![3]
+            let month = str![5] + str![6]
+            let day = str![8] + str![9]
             
             //            datestr += month + "/" + day + "/" + year
             let week = year + "-" + month + "-" + day
@@ -95,47 +131,47 @@ class DownloadJSON {
         return datestr
     }
     
-    func yearString(str:String?) -> String{
+    func yearString(_ str:String?) -> String{
         var result = ""
         if(str!.characters.count > 9){
             
             //            print(str!.characters.count)
-            let year = str![0...3]
+            let year = str![0] + str![1] + str![2] + str![3]
             result = year
         }
         return result
     }
-    func monthString(str:String?) -> String{
+    func monthString(_ str:String?) -> String{
         var result = ""
         if(str!.characters.count > 9){
-            let month = str![5...6]
+            let month = str![5] + str![6]
             result = month
         }
         return result
     }
-    func dayString(str:String?) -> String{
+    func dayString(_ str:String?) -> String{
         var result = ""
         if(str!.characters.count > 9){
-            let day = str![8...9]
+            let day = str![8] + str![9]
             result = day
         }
         return result
     }
     
     
-    func timeString(str: String?) -> String{
+    func timeString(_ str: String?) -> String{
         var time = ""
         if(str!.characters.count > 9){
-            time += str![11...15]
+            time += str![11] + str![12] + str![13] + str![14] + str![15]
             
-            if(Int(time[0...1]) > 12){
-                time = String(Int(time[0...1])!-12) + time[2...4] + " PM"
+            if(Int(time[0] + time[1]) > 12){
+                time = String(Int(time[0] + time[1])!-12) + time[2] + time[3] + time[4] + " PM"
             }
             else{
                 time += " AM"
             }
             if (time[0] == "0"){
-                time = time[1...time.characters.count-1]
+                time = time[1..<time.characters.count]
             }
             
             
@@ -145,11 +181,11 @@ class DownloadJSON {
         return time
         
     }
-    let date = NSDate()
-    let calendar = NSCalendar.currentCalendar()
-    func laterThanToday(str1: String?) -> Bool {
-       
-        let components = calendar.components([.Day , .Month , .Year], fromDate: date)
+    let date = Date()
+    let calendar = Calendar.current
+    func laterThanToday(_ str1: String?) -> Bool {
+        
+        let components = (calendar as NSCalendar).components([.day , .month , .year], from: date)
         
         let curYear = components.year
         let curMonth = components.month
@@ -167,35 +203,234 @@ class DownloadJSON {
                 }
             }
         }
-//        print(curMonth + curDay + curYear)
+        //        print(curMonth + curDay + curYear)
         return false
     }
     
     
     func downloadAndParseJSON()-> [Event]{
-        let eventsURL: NSURL = [#FileReference(fileReferenceLiteral: "events.json")#]
-        let data = NSData(contentsOfURL: eventsURL)!
+        
+        
+
+        
         
         
         
         do {
-            let json = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+            if let file = Bundle.main.url(forResource: "events", withExtension: "json") {
+                let data = try Data(contentsOf: file)
+                let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                if let events = json as? [[String: Any]] {
+                    // json is a dictionary
+                    // print("Dictionary")
+                    // print(events)
+                    
+                    for event in events {
+                        let eve : Event? = Event()
+                        if let startingPoint = event["start"] as? [String: Any] {
+                            if let startDate = startingPoint["date"] as? String {
+                                eve!.startDate = startDate
+                            }
+                            if let startTime = startingPoint["dateTime"] as? String {
+                                eve!.startTime = startTime
+                            }
+                        }
+                        if let endingPoint = event["end"] as? [String: Any] {
+                            if let endDate = endingPoint["date"] as? String {
+                                eve!.endDate = endDate
+                            }
+                            if let endTime = endingPoint["dateTime"] as? String {
+                                eve!.endTime = endTime
+                            }
+                        }
+                        if let summary = event["summary"] as? String {
+                            eve!.summary = summary
+                            // print("This happened (Summary stuff)")
+                        }
+                        if let location = event["location"] as? String {
+                            eve!.location = location
+                            // print("This happened (Location stuff)")
+                        }
+                        if let description = event["description"] as? String {
+                            eve!.description = description
+                            // print("This happened (Description stuff)")
+                        }
+                        
+                        if(eve!.startTime! != ""){
+                            if(laterThanToday(eve!.startTime!)){
+                                self.events.append(eve!)
+                                print("This happened")
+                            }
+                        }
+                        else if(eve!.startDate != ""){
+                            if(laterThanToday(eve!.startDate!)){
+                                self.events.append(eve!)
+                                print("This happened")
+                            }
+                        }
+                        
+                    }
+                    
+                    
+                    
+                } else if let event = json as? [Any] {
+                    // json is an array
+                    print("Array")
+                    print(events)
+                } else {
+                    print("JSON is invalid")
+                }
+            } else {
+                print("no file")
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        print(events.count)
+        return events
+        
+        
+        
+        
+        
+        
+        
+        /*
+        do {
+            if let file = Bundle.main.url(forResource: "events", withExtension: "json") {
+                let data = try Data(contentsOf: file)
+                let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                if let object = json as? [String: Any] {
+                // if let events = json as? [String: Any] {
+                // if let events = json["items"] as? [[String: Any]] {
+                    // json is a dictionary
+                    print("Dictionary")
+                    print(events)
+                    /*
+                    for event in events {
+                        let eve : Event? = Event()
+                        if let startingPoint = event["start"] as? [String: Any] {
+                            if let endDate = startingPoint["date"] as? String {
+                                eve!.endDate = endDate
+                            }
+                            if let endTime = startingPoint["dateTime"] as? String {
+                                eve!.endTime = endTime
+                            }
+                        }
+                        if let endingPoint = event["end"] as? [String: Any] {
+                            if let endDate = endingPoint["date"] as? String {
+                                eve!.endDate = endDate
+                            }
+                            if let endTime = endingPoint["dateTime"] as? String {
+                                eve!.endTime = endTime
+                            }
+                        }
+                        if let summary = event["summary"] as? String {
+                            eve!.summary = summary
+                        }
+                        if let location = event["location"] as? String {
+                            eve!.location = location
+                        }
+                        if let description = event["description"] as? String {
+                            eve!.description = description
+                        }
+                        
+                        if(eve!.startTime! != ""){
+                            if(laterThanToday(eve!.startTime!)){
+                                self.events.append(eve!)
+                            }
+                        }
+                        else if(eve!.startDate != ""){
+                            if(laterThanToday(eve!.startDate!)){
+                                self.events.append(eve!)
+                            }
+                        }
+                        
+                    }
+                    */
+                } else if let object = json as? [Any] {
+                    // json is an array
+                    print("Array")
+                    print(events)
+                } else {
+                    print("JSON is invalid")
+                }
+            } else {
+                print("no file")
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        */
+        
+        
+        
+        
+        
+        
+        /*
+        let eventsURL: URL = #fileLiteral(resourceName: "events.json")
+        // let data = Data(contentsOf: eventsURL)
+        file = Bundle.main.url(forResource: "events", withExtension: "json")
+        
+        do {
+            if let data = data,
+                let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
+                let blogs = json["blogs"] as? [[String: Any]] {
+                for blog in blogs {
+                    if let name = blog["name"] as? String {
+                        names.append(name)
+                    }
+                }
+            }
+        } catch {
+            print("Error deserializing JSON: \(error)")
+        }
+ 
+        
+        do {
+            // let items = data["items"] as? [String: Any]
+            let data = try Data(contentsOf: eventsURL)
+            print(data)
+            print("AT LEAST WE GOT THIS FAR")
             
-            if let events = json["items"] as? [[String: AnyObject]] {
+            if let json = try JSONSerialization.jsonObject(with: data/*, options: .allowFragments*/) as? [String: Any],
+                let events = json["items"] as? [[String: Any]] {
+                print("Nice")
+                // if let json["items"] = try JSONSerialization.jsonObject(with: urlContent, options: []) as? [[String:AnyObject]] {
+            
                 for event in events {
                     let eve : Event? = Event()
-                    if let startDate = event["start"]!["date"]! as? String {
-                        eve!.startDate = startDate
+                    if let startingPoint = event["start"] as? [String: Any] {
+                        if let endDate = startingPoint["date"] as? String {
+                            eve!.endDate = endDate
+                        }
+                        if let endTime = startingPoint["dateTime"] as? String {
+                            eve!.endTime = endTime
+                        }
                     }
-                    if let endDate = event["end"]!["date"]! as? String {
-                        eve!.endDate = endDate
+                    if let endingPoint = event["end"] as? [String: Any] {
+                        if let endDate = endingPoint["date"] as? String {
+                            eve!.endDate = endDate
+                        }
+                        if let endTime = endingPoint["dateTime"] as? String {
+                            eve!.endTime = endTime
+                        }
                     }
-                    if let startTime = event["start"]!["dateTime"]! as? String {
-                        eve!.startTime = startTime
-                    }
-                    if let endTime = event["end"]!["dateTime"]! as? String {
-                        eve!.endTime = endTime
-                    }
+                    /*
+                     if let startDate = event["start"]["date"] as? String {
+                     eve!.startDate = startDate
+                     }
+                     if let endDate = event["end"]["date"] as? String {
+                     eve!.endDate = endDate
+                     }
+                     if let startTime = event["start"]["dateTime"] as? String {
+                     eve!.startTime = startTime
+                     }
+                     if let endTime = event["end"]["dateTime"] as? String {
+                     eve!.endTime = endTime
+                     }
+                     */
                     if let summary = event["summary"] as? String {
                         eve!.summary = summary
                     }
@@ -205,7 +440,7 @@ class DownloadJSON {
                     if let description = event["description"] as? String {
                         eve!.description = description
                     }
-
+                    
                     if(eve!.startTime! != ""){
                         if(laterThanToday(eve!.startTime!)){
                             self.events.append(eve!)
@@ -216,16 +451,16 @@ class DownloadJSON {
                             self.events.append(eve!)
                         }
                     }
-
+                    
                 }
-            }
+        }
         } catch {
             print("error serializing JSON: \(error)")
         }
-        print (events.count)
-        
+        print("This is how many events there are: \(events.count)")
+ 
         return events
-        
-        
-}
+ */
+    }
+    
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2016 Xavi Loinaz. All rights reserved.
 //
 import Foundation
-import GoogleAPIClient
-import GTMOAuth2
+// import GoogleAPIClient
+// import GTMOAuth2
 import UIKit
 
 
@@ -18,29 +18,29 @@ class EventsViewController: UITableViewController {
     
     
     @IBAction func goToPortal() {
-        if let url = NSURL(string: "https://id.pausd.org/arms/m") {
+        if let url = URL(string: "https://id.pausd.org/arms/m") {
             
-            UIApplication.sharedApplication().openURL(url)
+            UIApplication.shared.openURL(url)
             
         }
     }
     
     
-    @IBAction func goToCredits(sender: AnyObject) {
-        performSegueWithIdentifier("toCredits", sender: self)
+    @IBAction func goToCredits(_ sender: AnyObject) {
+        performSegue(withIdentifier: "toCredits", sender: self)
     }
     
     
     
     // If modifying these scopes, delete your previously saved credentials by
     // resetting the iOS simulator or uninstall the app.
-    private let scopes = [kGTLAuthScopeCalendarReadonly]
-    private let kKeychainItemName = "Google Calendar API"
+    // private let scopes = [kGTLAuthScopeCalendarReadonly]
+    fileprivate let kKeychainItemName = "Google Calendar API"
     //    private let kClientID = "999725457631-j71getcvrp65q372a1mfnc7cqajisuh1.apps.googleusercontent.com"
-    private let kClientID = "68302956867-mulu2q103u9jg7faua2mi3gka1g0k07d.apps.googleusercontent.com"
-    private let service = GTLServiceCalendar()
+    fileprivate let kClientID = "68302956867-mulu2q103u9jg7faua2mi3gka1g0k07d.apps.googleusercontent.com"
+    // private let service = GTLServiceCalendar()
     
-    let url = NSURL(string: "https://www.googleapis.com/calendar/v3/calendars/email.gmail.com/events?maxResults=15&key=APIKey-here")
+    let url = URL(string: "https://www.googleapis.com/calendar/v3/calendars/email.gmail.com/events?maxResults=15&key=APIKey-here")
     
     let output = UITextView()
     var eventNames = [String]()
@@ -66,7 +66,7 @@ class EventsViewController: UITableViewController {
         events = ev!.downloadAndParseJSON()
         
         
-        for index in 0...events.count-1 {
+        for index in 0..<events.count {
         }
         //        output.frame = view.bounds
         //        output.editable = false
@@ -90,10 +90,11 @@ class EventsViewController: UITableViewController {
         
         
         
-        let requestURL: NSURL = NSURL(string: "http://www.learnswiftonline.com/Samples/subway.json")!
-        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
-        let session = NSURLSession.sharedSession()
-        let task = session.dataTaskWithRequest(urlRequest)
+        let requestURL: URL = URL(string: "http://www.learnswiftonline.com/Samples/subway.json")!
+        // let urlRequest: NSMutableURLRequest = NSMutableURLRequest(url: requestURL)
+        let urlRequest = URLRequest(url: requestURL)
+        let session = URLSession.shared
+        let task = session.dataTask(with: urlRequest)
         
         //            let httpResponse = response as! NSHTTPURLResponse
         //            let statusCode = httpResponse.statusCode
@@ -121,7 +122,7 @@ class EventsViewController: UITableViewController {
     
     
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         
         //        downloadAndParseJSON()
         return 1
@@ -130,15 +131,16 @@ class EventsViewController: UITableViewController {
     
     
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //        downloadAndParseJSON()
         // return events.count
         return 300
+        // return 10
     }
     
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //        downloadAndParseJSON()
         
         
@@ -150,14 +152,14 @@ class EventsViewController: UITableViewController {
         
         let cellIdentifier = "EventsViewCell"
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! EventsViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! EventsViewCell
         
         
         
         //        let cell = tableView.dequeueReusableCellWithIdentifier("EventsViewCell", forIndexPath: indexPath) as! EventsViewCell
         
         // Configure the cell...
-        
+        print("Number of events: \(events.count)")
         let event = events[indexPath.row]
         
         //        cell.summary.text = event.summary
@@ -177,10 +179,10 @@ class EventsViewController: UITableViewController {
         
         
         if (text.characters.count > 31){
-            cell.summary.font = UIFont.systemFontOfSize(18)
+            cell.summary.font = UIFont.systemFont(ofSize: 18)
         }
         if(text.characters.count > 39){
-            cell.summary.font = UIFont.systemFontOfSize(14)
+            cell.summary.font = UIFont.systemFont(ofSize: 14)
         }
         if((event.startDate) != ""){
             cell.dayAndDate.text = ev!.dateString(event.startDate!)
@@ -196,15 +198,15 @@ class EventsViewController: UITableViewController {
             //            cell.startingTime.text = ""
         }
         
-        if cell.summary.text!.rangeOfString("PSAT & Grade-level Assemblies (see alternate schedule below)") != nil {
+        if cell.summary.text!.range(of: "PSAT & Grade-level Assemblies (see alternate schedule below)") != nil {
             cell.summary.text = "PSAT & Grade-level Assemblies (see alternate sche..."
         }
         if cell.summary.text!.characters.count > 37 {
-            cell.summary.font = UIFont.systemFontOfSize(11)
-        } else if cell.summary.text!.rangeOfString("STAFF DEVELOPMENT DAY (no stud") != nil{
-            cell.summary.font = UIFont.systemFontOfSize(11)
+            cell.summary.font = UIFont.systemFont(ofSize: 11)
+        } else if cell.summary.text!.range(of: "STAFF DEVELOPMENT DAY (no stud") != nil{
+            cell.summary.font = UIFont.systemFont(ofSize: 11)
         }else {
-            cell.summary.font = UIFont.systemFontOfSize(17)
+            cell.summary.font = UIFont.systemFont(ofSize: 17)
         }
 
         
@@ -228,17 +230,17 @@ class EventsViewController: UITableViewController {
     }
     
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
         if segue.identifier == "toCredits"{
             //nothing
         } else {
-            let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
+            let indexPath : IndexPath = self.tableView.indexPathForSelectedRow!
             
             
             
-            let destViewController = segue.destinationViewController as! EventInfoViewController
+            let destViewController = segue.destination as! EventInfoViewController
             
             
             

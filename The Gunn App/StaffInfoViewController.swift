@@ -49,13 +49,13 @@ class StaffInfoViewController: UIViewController,MFMailComposeViewControllerDeleg
         phoneNumber.text = thisStaff.getPhoneNumber()
         
         if thisStaff.getWebsite() != " " && thisStaff.getWebsite() != "" {
-            goToWebsiteButton.hidden = false
+            goToWebsiteButton.isHidden = false
         } else {
-            goToWebsiteButton.hidden = true
+            goToWebsiteButton.isHidden = true
         }
         
         if teacherName.text!.characters.count > 20 {
-            teacherName.font = UIFont.systemFontOfSize(24)
+            teacherName.font = UIFont.systemFont(ofSize: 24)
         }
         
         
@@ -64,7 +64,7 @@ class StaffInfoViewController: UIViewController,MFMailComposeViewControllerDeleg
     @IBAction func emailTeacher() {
         let mailComposeViewController = configuredMailComposeViewController()
         if MFMailComposeViewController.canSendMail() {
-            self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+            self.present(mailComposeViewController, animated: true, completion: nil)
         } else {
             self.showSendMailErrorAlert()
         }
@@ -75,9 +75,9 @@ class StaffInfoViewController: UIViewController,MFMailComposeViewControllerDeleg
     @IBAction func goToWebsite() {
         if let website = thisStaff.getWebsite(){
             var websiteEdit = website
-            websiteEdit.removeAtIndex(websiteEdit.endIndex.predecessor())
-            if let checkURL = NSURL(string: websiteEdit) {
-                if UIApplication.sharedApplication().openURL(checkURL) {
+            websiteEdit.remove(at: websiteEdit.characters.index(before: websiteEdit.endIndex))
+            if let checkURL = URL(string: websiteEdit) {
+                if UIApplication.shared.openURL(checkURL) {
                     print("url successfully opened")
                 }
             } else {
@@ -108,8 +108,8 @@ class StaffInfoViewController: UIViewController,MFMailComposeViewControllerDeleg
     
     // MARK: MFMailComposeViewControllerDelegate
     
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
+    func mailComposeController(_ controller: MFMailComposeViewController!, didFinishWith result: MFMailComposeResult, error: Error!) {
+        controller.dismiss(animated: true, completion: nil)
         
     }
 

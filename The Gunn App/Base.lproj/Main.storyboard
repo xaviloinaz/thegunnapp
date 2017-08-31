@@ -404,7 +404,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h1I-jD-KHj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Events" image="calendar" id="cPa-gy-q4n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rSc-1n-9jR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rSc-1n-9jR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -974,7 +974,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nxm-eT-Th2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Directory" image="phone-book" id="bu7-GK-bba"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ZZu-Lw-kfi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZZu-Lw-kfi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -993,7 +993,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N3G-KJ-O0M" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Barcode" image="barcode tab icon v3" selectedImage="barcode tab icon v3" id="IFD-YY-LXb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="42I-L7-51T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="42I-L7-51T">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1012,7 +1012,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QuQ-px-9CB" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="map-pin" id="J9p-Ih-aZt"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="KLG-Cy-rOo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KLG-Cy-rOo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1031,7 +1031,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Z0-Wv-5Bb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Schedule" image="text-list" id="T1E-aQ-8TS"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="skS-sF-QX0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="skS-sF-QX0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
