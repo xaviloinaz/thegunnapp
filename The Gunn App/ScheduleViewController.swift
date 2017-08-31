@@ -593,22 +593,23 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             let components = (calendar as NSCalendar).components([.day , .month , .year, .hour , .minute], from: tomorrow!)
             
             
-            let year = components.year
-            let month = components.month
-            let day = components.day
-            let hour = components.hour
-            let minute = components.minute
+            let year = components.year!
+            let month = components.month!
+            let day = components.day!
+            let hour = components.hour!
+            let minute = components.minute!
+            print("Tomorrow: \(year), \(month), \(day), \(hour), \(minute)")
             
             
             var alternateScheduleDay = false
             
             var todayDate : String = String(describing: year) + "-" + String(describing: month) + "-" + String(describing: day)
             
-            if month! < 10 && day! < 10 {
+            if month < 10 && day < 10 {
                 todayDate = String(describing: year) + "-0" + String(describing: month) + "-0" + String(describing: day)
-            } else if month! < 10 {
+            } else if month < 10 {
                 todayDate = String(describing: year) + "-0" + String(describing: month) + "-" + String(describing: day)
-            } else if day! < 10 {
+            } else if day < 10 {
                 todayDate = String(describing: year) + "-" + String(describing: month) + "-0" + String(describing: day)
             }
             
@@ -639,10 +640,10 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             }
             
             
-            if (month! == 6 && day! > 2) || (month! == 7) || (month! == 8 && day! < 15) || holiday { // The code below is for summer and holidays
+            if (month == 6 && day > 2) || (month == 7) || (month == 8 && day < 15) || holiday { // The code below is for summer and holidays
                 
                 var todayDateText1 = String(describing: getDayOfWeek) + ", "
-                var todayDateText2 = String(monthConverter(month!))
+                var todayDateText2 = String(monthConverter(month))
                 var todayDateText3 = " " + String(describing: day) + ", " + String(describing: year) + " "
                 var todayDateText = todayDateText1 + todayDateText2! + todayDateText3
                 dayAndDate.text = todayDateText + "(No School!)"
@@ -664,8 +665,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     if !(b.isEmpty){
                         
                         // Gets array of periods for the day's schedule
-                        let endIndex = Int(String(describing: b.characters.index(of: "(")!))! - 2
-                        var periodSubstring = b[0..<endIndex]
+                        let endIndex = getIndexOf(theString: b, character: "(") - 2
+                        var periodSubstring = b[0..<endIndex+1]
                         if periodSubstring.lowercased().range(of: "period") != nil && 9 >= periodSubstring.characters.count && periodSubstring.characters.count >= 8 {
                             periodSubstring = periodSubstring[endIndex]
                         }
@@ -674,15 +675,19 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                         }
                         
                         // Gets array of period start times for the day's schedule
-                        let startIndex2 = Int(String(describing: b.characters.index(of: "(")!))! + 1
-                        let endIndex2 = Int(String(describing: b.characters.index(of: "-")!))!
-                        let periodStartTimeSubstring = b[startIndex2..<endIndex2-1]
+                        // let startIndex2 = Int(String(describing: b.characters.index(of: "(")!))! + 1
+                        // let endIndex2 = Int(String(describing: b.characters.index(of: "-")!))!
+                        let startIndex2 = getIndexOf(theString: b, character: "(") + 1
+                        let endIndex2 = getIndexOf(theString: b, character: "-")
+                        let periodStartTimeSubstring = b[startIndex2..<endIndex2]
                         listOfStartTimesForDay.append(periodStartTimeSubstring)
                         
                         // Gets array of period end times for the day's schedule
-                        let startIndex3 = Int(String(describing: b.characters.index(of: "-")!))! + 1
-                        let endIndex3 = Int(String(describing: b.characters.index(of: ")")!))!
-                        let periodEndTimeSubstring = b[startIndex3..<endIndex3-1]
+                        // let startIndex3 = Int(String(describing: b.characters.index(of: "-")!))! + 1
+                        // let endIndex3 = Int(String(describing: b.characters.index(of: ")")!))!
+                        let startIndex3 = getIndexOf(theString: b, character: "-") + 1
+                        let endIndex3 = getIndexOf(theString: b, character: ")")
+                        let periodEndTimeSubstring = b[startIndex3..<endIndex3]
                         listOfEndTimesForDay.append(periodEndTimeSubstring)
                     }
                 }
@@ -693,7 +698,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     }
                 } else {
                     var todayDateText1 = String(describing: getDayOfWeek) + ", "
-                    var todayDateText2 = String(monthConverter(month!))
+                    var todayDateText2 = String(monthConverter(month))
                     var todayDateText3 = " " + String(describing: day) + ", " + String(describing: year) + " "
                     var todayDateText = todayDateText1 + todayDateText2! + todayDateText3
                     dayAndDate.text = todayDateText + "(No School!)"
@@ -710,14 +715,14 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     
                     if dayOfWeek != "Monday" && dayOfWeek != "Tuesday" && dayOfWeek != "Wednesday" && dayOfWeek != "Thursday" && dayOfWeek != "Friday" {
                         var todayDateText1 = String(describing: dayOfWeek) + ", "
-                        var todayDateText2 = String(monthConverter(month!))
-                        var todayDateText3 = " " + String(describing: day!) + ", " + String(describing: year!) + " "
+                        var todayDateText2 = String(monthConverter(month))
+                        var todayDateText3 = " " + String(describing: day) + ", " + String(describing: year) + " "
                         var todayDateText = todayDateText1 + todayDateText2! + todayDateText3
                         dayAndDate.text = todayDateText + "(No School!)"
                     }
                     
                     var todayDateText1 = String(describing: dayOfWeek) + ", "
-                    var todayDateText2 = String(monthConverter(month!))
+                    var todayDateText2 = String(monthConverter(month))
                     var todayDateText3 = " " + String(describing: day) + ", " + String(describing: year) + " "
                     var todayDateText = todayDateText1 + todayDateText2! + todayDateText3
                     dayAndDate.text = todayDateText + "(No School!)"
@@ -747,8 +752,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             } else { // the code below is for regular schedules
                 if let dayOfWeek = getDayOfWeek(today: todayDate) {
                     
-                    var part1OfDisplayedText = String(dayOfWeek) + ", " + String(monthConverter(month!))
-                    var part2OfDisplayedText = " " + String(describing: day!) + ", " + String(describing: year!) + " " + "(Regular Schedule)"
+                    var part1OfDisplayedText = String(dayOfWeek) + ", " + String(monthConverter(month))
+                    var part2OfDisplayedText = " " + String(describing: day) + ", " + String(describing: year) + " " + "(Regular Schedule)"
                     var displayedText = part1OfDisplayedText + part2OfDisplayedText
                     // var displayedText = String(dayOfWeek) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(Regular Schedule)"
                     
@@ -818,7 +823,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                         
                     } else {
                         var displayedText1 = String(dayOfWeek) + ", "
-                        var displayedText2 = String(monthConverter(month!)) + " "
+                        var displayedText2 = String(monthConverter(month)) + " "
                         var displayedText3 = String(describing: day) + ", " + String(describing: year) + " " + "(No School!)"
                         displayedText = displayedText1 + displayedText2 + displayedText3
                         
