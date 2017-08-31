@@ -48,11 +48,10 @@ fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     }
 }
 
-
 extension String {
     
     subscript (i: Int) -> Character {
-        return self[self.characters.index(self.startIndex, offsetBy: i)]
+        return self[index(startIndex, offsetBy: i)]
     }
     
     subscript (i: Int) -> String {
@@ -60,12 +59,12 @@ extension String {
     }
     
     subscript (r: Range<Int>) -> String {
-        let start = characters.index(startIndex, offsetBy: r.lowerBound)
-        let end = characters.index(startIndex, offsetBy: r.upperBound - r.lowerBound)
-        // let end = String.CharacterView.index(currentIndex: start, offsetBy: r.upperBound - r.lowerBound)
+        let start = index(startIndex, offsetBy: r.lowerBound)
+        let end = index(startIndex, offsetBy: r.upperBound)
         return self[Range(start ..< end)]
     }
 }
+
 
 
 class DownloadJSON {
@@ -259,13 +258,13 @@ class DownloadJSON {
                         if(eve!.startTime! != ""){
                             if(laterThanToday(eve!.startTime!)){
                                 self.events.append(eve!)
-                                print("This happened")
+                                // print("This happened")
                             }
                         }
                         else if(eve!.startDate != ""){
                             if(laterThanToday(eve!.startDate!)){
                                 self.events.append(eve!)
-                                print("This happened")
+                                // print("This happened")
                             }
                         }
                         

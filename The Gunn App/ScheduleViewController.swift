@@ -297,15 +297,21 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     if !(b.isEmpty){
                         
                         // Gets array of periods for the day's schedule
-                        /*
+                        
                         print(b)
-                        // let endIndex = b.index(of: "(")
+                        
+                        
+                        // getIndexOf is a function I created in this class
+                        let endIndex = getIndexOf(theString: b, character: "(") - 2
+                        
+                        
+                        // let endIndex = Int(b.index(of: "("))
                         //print(type(of: endIndex))
                         //print(endIndex)
-                        //let endIndex = Int(String(describing: b.characters.index(of: "(")))! - 2
-                        let endIndex = 2
+                        // let endIndex = Int(String(describing: b.characters.index(of: "(")))! - 2
+                        // let endIndex = 2
                         
-                        var periodSubstring = b[0..<endIndex]
+                        var periodSubstring = b[0..<endIndex+1]
                         if periodSubstring.lowercased().range(of: "period") != nil && 9 >= periodSubstring.characters.count && periodSubstring.characters.count >= 8 {
                             periodSubstring = periodSubstring[endIndex]
                         }
@@ -314,17 +320,21 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                         }
                         
                         // Gets array of period start times for the day's schedule
-                        let startIndex2 = Int(String(describing: b.characters.index(of: "(")!))! + 1
-                        let endIndex2 = Int(String(describing: b.characters.index(of: "-")!))!
-                        let periodStartTimeSubstring = b[startIndex2..<endIndex2-1]
+                        // let startIndex2 = Int(String(describing: b.characters.index(of: "(")!))! + 1
+                        let startIndex2 = getIndexOf(theString: b, character: "(") + 1
+                        // let endIndex2 = Int(String(describing: b.characters.index(of: "-")!))!
+                        let endIndex2 = getIndexOf(theString: b, character: "-")
+                        let periodStartTimeSubstring = b[startIndex2..<endIndex2]
                         listOfStartTimesForDay.append(periodStartTimeSubstring)
                         
                         // Gets array of period end times for the day's schedule
-                        let startIndex3 = Int(String(describing: b.characters.index(of: "-")!))! + 1
-                        let endIndex3 = Int(String(describing: b.characters.index(of: ")")!))!
-                        let periodEndTimeSubstring = b[startIndex3..<endIndex3-1]
+                        // let startIndex3 = Int(String(describing: b.characters.index(of: "-")!))! + 1
+                        let startIndex3 = getIndexOf(theString: b, character: "-") + 1
+                        // let endIndex3 = Int(String(describing: b.characters.index(of: ")")!))!
+                        let endIndex3 = getIndexOf(theString: b, character: ")")
+                        let periodEndTimeSubstring = b[startIndex3..<endIndex3]
                         listOfEndTimesForDay.append(periodEndTimeSubstring)
-                        */
+                        
                     }
                 }
                 if !listOfPeriodsForDay.isEmpty {
@@ -344,7 +354,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     
                     var todayDateText1 = String(dayOfWeek) + ", "
                     var todayDateText2 = String(monthConverter(month!))
-                    var todayDateText3 = " " + String(describing: day) + ", " + String(describing: year) + " "
+                    var todayDateText3 = " " + String(describing: day!) + ", " + String(describing: year!) + " "
                     var todayDateText = todayDateText1 + todayDateText2! + todayDateText3
                     
                     if dayOfWeek != "Monday" && dayOfWeek != "Tuesday" && dayOfWeek != "Wednesday" && dayOfWeek != "Thursday" && dayOfWeek != "Friday" {
@@ -528,6 +538,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 }
                 
                 var hoursAndMinutesEnd = y.getEndTime().components(separatedBy: ":")
+                print(hoursAndMinutesEnd)
                 var theHoursEnd : Int = Int(hoursAndMinutesEnd[0])!
                 if Int(theHoursEnd) > 7 {
                     theHoursEnd = Int(hoursAndMinutesEnd[0])!
@@ -856,6 +867,22 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
     
+    
+    
+    
+    func getIndexOf(theString: String, character: String)->Int {
+        
+        var endIndex = 0
+        var counter = 0
+        for letter in theString.characters {
+            if letter == character.characters[character.startIndex] {
+                endIndex = counter
+            }
+            counter += 1
+        }
+        return endIndex
+        
+    }
     
     func adjustTextSize(_ label: UILabel) {
         if label.text!.characters.count <= 38 {
