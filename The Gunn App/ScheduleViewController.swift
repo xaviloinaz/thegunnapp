@@ -222,8 +222,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             
             let year =  components.year!
-            let month = 12//components.month!
-            let day = 20//components.day!
+            let month = components.month!
+            let day = components.day!
             let hour = components.hour!
             let minute = components.minute!
             
@@ -600,7 +600,6 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             let day = components.day!
             let hour = components.hour!
             let minute = components.minute!
-            print("Tomorrow: \(year), \(month), \(day), \(hour), \(minute)")
             
             
             var alternateScheduleDay = false
@@ -645,7 +644,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             if (month == 6 && day > 2) || (month == 7) || (month == 8 && day < 15) || holiday { // The code below is for summer and holidays
                 
-                var todayDateText1 = String(describing: getDayOfWeek(today: todayDate)) + ", "
+                var todayDateText1 = String(describing: getDayOfWeek(today: todayDate)!) + ", "
                 var todayDateText2 = String(monthConverter(month))
                 var todayDateText3 = " " + String(describing: day) + ", " + String(describing: year) + " "
                 var todayDateText = todayDateText1 + todayDateText2! + todayDateText3
@@ -704,7 +703,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     var todayDateText2 = String(monthConverter(month))
                     var todayDateText3 = " " + String(describing: day) + ", " + String(describing: year) + " "
                     var todayDateText = todayDateText1 + todayDateText2! + todayDateText3
-                    dayAndDate.text = todayDateText + "(No School!)"
+                    dayAndDate.text = todayDateText + "(Alternate Schedule)"
                     
                 }
                 
@@ -728,8 +727,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                     var todayDateText2 = String(monthConverter(month))
                     var todayDateText3 = " " + String(describing: day) + ", " + String(describing: year) + " "
                     var todayDateText = todayDateText1 + todayDateText2! + todayDateText3
-                    dayAndDate.text = todayDateText + "(No School!)"
-                    var displayedText = todayDateText + "(No School!)"
+                    dayAndDate.text = todayDateText + "(Alternate Schedule)"
+                    var displayedText = todayDateText + "(Alternate Schedule)"
                     
                     if displayedText.characters.count <= 38 {
                         dayAndDate.font = UIFont.systemFont(ofSize: 17)
