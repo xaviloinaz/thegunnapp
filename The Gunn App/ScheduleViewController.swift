@@ -212,6 +212,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 }
             }
         }
+        print("Here are the alternate schedule dates: \(alternateScheduleDates)")
         
         if (whichSegControl == 0) {
             
@@ -220,27 +221,27 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             let components = (calendar as NSCalendar).components([.day , .month , .year, .hour , .minute], from: date)
             
             
-            let year = components.year
-            let month = components.month
-            let day = components.day
-            let hour = components.hour
-            let minute = components.minute
+            let year =  components.year!
+            let month = 10//components.month!
+            let day = 11//components.day!
+            let hour = components.hour!
+            let minute = components.minute!
             
             var alternateScheduleDay = false
             
-            var todayDateYear = String(describing: year!)
-            var todayDateMonth = String(describing: month!)
-            var todayDateDay = String(describing: day!)
+            var todayDateYear = String(describing: year)
+            var todayDateMonth = String(describing: month)
+            var todayDateDay = String(describing: day)
             print(todayDateDay)
             var todayDate : String = todayDateYear + "-" + todayDateMonth + "-" + todayDateDay
             print(todayDate)
             
-            if month! < 10 && day! < 10 {
-                todayDate = String(describing: year!) + "-0" + String(describing: month!) + "-0" + String(describing: day!)
-            } else if month! < 10 {
-                todayDate = String(describing: year!) + "-0" + String(describing: month!) + "-" + String(describing: day!)
-            } else if day! < 10 {
-                todayDate = String(describing: year!) + "-" + String(describing: month!) + "-0" + String(describing: day!)
+            if month < 10 && day < 10 {
+                todayDate = String(describing: year) + "-0" + String(describing: month) + "-0" + String(describing: day)
+            } else if month < 10 {
+                todayDate = String(describing: year) + "-0" + String(describing: month) + "-" + String(describing: day)
+            } else if day < 10 {
+                todayDate = String(describing: year) + "-" + String(describing: month) + "-0" + String(describing: day)
             }
             print(todayDate)
             
@@ -261,16 +262,16 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             var holiday = false
             for e in events {
                 if e.getStartDate() == todayDate {
-                    if e.getSummary()!.range(of: "HOLIDAY") != nil || e.getSummary()!.range(of: "WINTER BREAK") != nil || e.getSummary()!.range(of: "STAFF DEVELOPMENT DAY") != nil || e.getSummary()!.range(of: "SPRING BREAK") != nil || e.getSummary()!.lowercased().range(of: "teacher work day") != nil {
+                    if e.getSummary()!.range(of: "HOLIDAY") != nil || e.getSummary()!.range(of: "WINTER BREAK") != nil || e.getSummary()!.range(of: "Winter Break Holiday") != nil || e.getSummary()!.range(of: "STAFF DEVELOPMENT DAY") != nil || e.getSummary()!.range(of: "SPRING BREAK") != nil || e.getSummary()!.lowercased().range(of: "teacher work day") != nil {
                         holiday = true
                     }
                 }
             }
             
             // The code below is for summer and holidays
-            if (month! == 6 && day! > 1) || (month! == 7) || (month! == 8 && day! < 15) || holiday {
-                
-                var DAndDTextP1 = String(getDayOfWeek(today: todayDate)!) + ", " + String(monthConverter(month!))
+            if (month == 6 && day > 1) || (month == 7) || (month == 8 && day < 15) || holiday {
+                print("todayDate: \(todayDate)")
+                var DAndDTextP1 = String(getDayOfWeek(today: todayDate)!) + ", " + String(monthConverter(month))
                 var DAndDTextP2 = " " + String(describing: day) + ", " + String(describing: year) + " " + "(No School!)"
                 dayAndDate.text = DAndDTextP1 + DAndDTextP2
                 // dayAndDate.text = String(getDayOfWeek(todayDate)!) + ", " + String(monthConverter(month)) + " " + String(day) + ", " + String(year) + " " + "(No School!)"
@@ -344,7 +345,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 } else {
                     var prep1 = getDayOfWeek(today: todayDate)!
                     var p1 = String(prep1)
-                    var p2 = ", " + String(monthConverter(month!))
+                    var p2 = ", " + String(monthConverter(month))
                     var p3 = " " + String(describing: day) + ", " + String(describing: year) + " " + "(No School!)"
                     dayAndDate.text = p1! + p2 + p3
                 }
@@ -353,8 +354,8 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 if let dayOfWeek = getDayOfWeek(today: todayDate){
                     
                     var todayDateText1 = String(dayOfWeek) + ", "
-                    var todayDateText2 = String(monthConverter(month!))
-                    var todayDateText3 = " " + String(describing: day!) + ", " + String(describing: year!) + " "
+                    var todayDateText2 = String(monthConverter(month))
+                    var todayDateText3 = " " + String(describing: day) + ", " + String(describing: year) + " "
                     var todayDateText = todayDateText1 + todayDateText2! + todayDateText3
                     
                     if dayOfWeek != "Monday" && dayOfWeek != "Tuesday" && dayOfWeek != "Wednesday" && dayOfWeek != "Thursday" && dayOfWeek != "Friday" {
@@ -394,9 +395,9 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                 let dayOfWeek = getDayOfWeek(today: todayDate)
                     print("It looks like we passed the dayOfWeek if let successfully")
                     var todayDateText1 = String(describing: dayOfWeek!) + ", "
-                    var todayDateText2 = String(monthConverter(month!)) + " "
-                    var todayDateText3 = String(describing: day!) + ", "
-                    var todayDateText4 = String(describing: year!) + " "
+                    var todayDateText2 = String(monthConverter(month)) + " "
+                    var todayDateText3 = String(describing: day) + ", "
+                    var todayDateText4 = String(describing: year) + " "
                     var todayDateText = todayDateText1 + todayDateText2 + todayDateText3 + todayDateText4
                     var displayedText = todayDateText + "(Regular Schedule)"
                     
@@ -465,8 +466,9 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                         scheduleForCurrentDay.append(Period(name: "G", startTime: "2:25", endTime: "3:35"))
                         
                     } else {
-                        var todayDateText1 = String(describing: getDayOfWeek) + ", "
-                        var todayDateText2 = String(monthConverter(month!))
+                        var todayDateText1 = String(describing: dayOfWeek!) + ", "
+                        print("todayDateText1: \(todayDateText1)")
+                        var todayDateText2 = String(monthConverter(month))
                         var todayDateText3 = " " + String(describing: day) + ", " + String(describing: year) + " "
                         var todayDateText = todayDateText1 + todayDateText2! + todayDateText3
                         displayedText = todayDateText + "(No School!)"
@@ -498,7 +500,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             }
             
             
-            let minutesPassedInDay = Int(hour! * 60 + minute!)
+            let minutesPassedInDay = Int(hour * 60 + minute)
             var timeUntilPeriod = false
             var minutesUntil = 0
             var whichPeriod = ""
@@ -617,11 +619,12 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             for x in 0..<events.count {
                 for altDate in alternateScheduleDates {
-                    if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate && events[x].getSummary()!.lowercased().range(of: "schedule") != nil && events[x].getSummary()!.lowercased().range(of: "below") != nil || events[x].getSummary()!.lowercased().range(of: "minimum day") != nil{
+                    if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate && events[x].getSummary()!.lowercased().range(of: "schedule") != nil && events[x].getSummary()!.lowercased().range(of: "below") != nil {
                         alternateScheduleDay = true
                         theAltScheduleEvent = events[x]
                         //break
                     }
+                    
                 }
                 //break
             }
@@ -642,7 +645,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             if (month == 6 && day > 2) || (month == 7) || (month == 8 && day < 15) || holiday { // The code below is for summer and holidays
                 
-                var todayDateText1 = String(describing: getDayOfWeek) + ", "
+                var todayDateText1 = String(describing: getDayOfWeek(today: todayDate)) + ", "
                 var todayDateText2 = String(monthConverter(month))
                 var todayDateText3 = " " + String(describing: day) + ", " + String(describing: year) + " "
                 var todayDateText = todayDateText1 + todayDateText2! + todayDateText3
@@ -697,7 +700,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
                         scheduleForCurrentDay.append(Period(name: listOfPeriodsForDay[c], startTime: listOfStartTimesForDay[c], endTime: listOfEndTimesForDay[c]))
                     }
                 } else {
-                    var todayDateText1 = String(describing: getDayOfWeek) + ", "
+                    var todayDateText1 = String(describing: getDayOfWeek(today: todayDate)) + ", "
                     var todayDateText2 = String(monthConverter(month))
                     var todayDateText3 = " " + String(describing: day) + ", " + String(describing: year) + " "
                     var todayDateText = todayDateText1 + todayDateText2! + todayDateText3
