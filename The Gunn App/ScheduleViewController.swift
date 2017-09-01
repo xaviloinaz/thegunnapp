@@ -206,7 +206,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
         let events = json.downloadAndParseJSON()
         for i in 0..<events.count {
             if let summary = events[i].getSummary() {
-                if summary.lowercased().range(of: "schedule") != nil &&  summary.lowercased().range(of: "below") != nil && summary.lowercased().range(of: "back") == nil && summary.lowercased().range(of: "school") == nil && summary.lowercased().range(of: "night") == nil {
+                if summary.lowercased().range(of: "schedule") != nil && summary.lowercased().range(of: "below") != nil && summary.lowercased().range(of: "back") == nil && summary.lowercased().range(of: "school") == nil && summary.lowercased().range(of: "night") == nil {
                     alternateScheduleDates.append(events[i].getStartDate()!)
                     
                 }
@@ -617,7 +617,7 @@ class ScheduleViewController: UIViewController, UITableViewDataSource, UITableVi
             
             for x in 0..<events.count {
                 for altDate in alternateScheduleDates {
-                    if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate && events[x].getSummary()!.lowercased().range(of: "schedule") != nil &&  events[x].getSummary()!.lowercased().range(of: "below") != nil{
+                    if events[x].getStartDate() == todayDate && events[x].getStartDate() == altDate && events[x].getSummary()!.lowercased().range(of: "schedule") != nil && events[x].getSummary()!.lowercased().range(of: "below") != nil || events[x].getSummary()!.lowercased().range(of: "minimum day") != nil{
                         alternateScheduleDay = true
                         theAltScheduleEvent = events[x]
                         //break
