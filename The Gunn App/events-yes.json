@@ -1,0 +1,1410 @@
+[
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994740020200000\"",
+ "id": "b23jjub6e0hjq0hdii50aj4knc",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=YjIzamp1YjZlMGhqcTBoZGlpNTBhajRrbmMgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T18:10:23.000Z",
+ "updated": "2017-06-13T16:06:50.100Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period D (8:25-9:57)\nBrunch (9:57-10:12)\nFlexTime (10:12-10:50)\nPeriod E (11:00-12:15)\nLunch (12:15-12:55)\nPeriod A (12:55-2:15)\nPeriod G (2:25-3:40)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2017-08-15"
+ },
+ "end": {
+ "date": "2017-08-16"
+ },
+ "transparency": "transparent",
+ "iCalUID": "b23jjub6e0hjq0hdii50aj4knc@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"3004960289208000\"",
+ "id": "2dm8rut64921569dteuajulm7i",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=MmRtOHJ1dDY0OTIxNTY5ZHRldWFqdWxtN2kgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-08-11T19:35:44.000Z",
+ "updated": "2017-08-11T19:35:44.604Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff Collaboration (3:05-3:40)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2017-08-28"
+ },
+ "end": {
+ "date": "2017-08-29"
+ },
+ "transparency": "transparent",
+ "iCalUID": "2dm8rut64921569dteuajulm7i@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"3004961873366000\"",
+ "id": "0oh75ttuka5h71vlnd282624l4",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=MG9oNzV0dHVrYTVoNzF2bG5kMjgyNjI0bDQgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-08-11T19:48:56.000Z",
+ "updated": "2017-08-11T19:48:56.683Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2017-08-29"
+ },
+ "end": {
+ "date": "2017-08-30"
+ },
+ "transparency": "transparent",
+ "iCalUID": "0oh75ttuka5h71vlnd282624l4@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"3004962766720000\"",
+ "id": "0kpot149sr1co5tkh5f4tdpq98",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=MGtwb3QxNDlzcjFjbzV0a2g1ZjR0ZHBxOTggdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-08-11T19:49:36.000Z",
+ "updated": "2017-08-11T19:56:23.360Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2017-08-30"
+ },
+ "end": {
+ "date": "2017-08-31"
+ },
+ "transparency": "transparent",
+ "iCalUID": "0kpot149sr1co5tkh5f4tdpq98@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"3004974203940000\"",
+ "id": "05qtapfuk9lfcb3f57rlakmn3f",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=MDVxdGFwZnVrOWxmY2IzZjU3cmxha21uM2YgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-08-11T19:53:21.000Z",
+ "updated": "2017-08-11T21:31:41.970Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\nBACK TO SCHOOL NIGHT (6:00-9:00pm)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2017-08-31"
+ },
+ "end": {
+ "date": "2017-09-01"
+ },
+ "transparency": "transparent",
+ "iCalUID": "05qtapfuk9lfcb3f57rlakmn3f@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994740443434000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g84q3cd1k8crj6ghi84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g68pkcchl84pjgci6650jihhk8h13ce9p6ook8cq36kq38chh6gog",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc4NHEzY2Qxazhjcmo2Z2hpODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNjhwa2NjaGw4NHBqZ2NpNjY1MGppaGhrOGgxM2NlOXA2b29rOGNxMzZrcTM4Y2hoNmdvZyB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:10:21.717Z",
+ "summary": "Minimum Day (see schedule below)",
+ "description": "Period C (8:25-9:15)\nPeriod D (9:25-10:10)\nBrunch (10:10-10:25)\nPeriod E (10:25-11:10)\nPeriod F (11:20-12:05)\nPeriod G (12:15-1:00)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-09-01T08:25:00-07:00"
+ },
+ "end": {
+ "dateTime": "2017-09-01T08:55:00-07:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E00800000000A4644C73B2A8D20100000000000000001000000023F25A382F1A9F4DB69961D3C5442141",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994740514420000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g60o3ac2168o38ghj84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g8kpjaga46opj8d9h6l2j0g9k8gskcgpo60q4ad1g8h1j8cpp6l10",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2MG8zYWMyMTY4bzM4Z2hqODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnOGtwamFnYTQ2b3BqOGQ5aDZsMmowZzlrOGdza2NncG82MHE0YWQxZzhoMWo4Y3BwNmwxMCB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:10:57.210Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff Collaboration (3:05-3:40)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-09-05T07:00:00-07:00"
+ },
+ "end": {
+ "dateTime": "2017-09-05T07:30:00-07:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E008000000000050A204B3A8D201000000000000000010000000E35AD634515E0A4D9FC804E40DC4395B",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994740579510000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6p1j4hhn64o44ghj84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g6sp48e2484q30h9i6ko30g9k71144dpl88o32hi168rj6e9i74sg",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2cDFqNGhobjY0bzQ0Z2hqODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNnNwNDhlMjQ4NHEzMGg5aTZrbzMwZzlrNzExNDRkcGw4OG8zMmhpMTY4cmo2ZTlpNzRzZyB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:11:29.755Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-09-06T07:00:00-07:00"
+ },
+ "end": {
+ "dateTime": "2017-09-06T07:30:00-07:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E008000000006C2F710BB3A8D20100000000000000001000000072D8DA40E2500A48BB75B01FA2739299",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994740634492000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6ks42di66goj0ghj84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g74rjge1g65146cq26p2j6ghk6h13gd1g84ok8ea270sj4ha468rg",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2a3M0MmRpNjZnb2owZ2hqODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNzRyamdlMWc2NTE0NmNxMjZwMmo2Z2hrNmgxM2dkMWc4NG9rOGVhMjcwc2o0aGE0NjhyZyB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:11:57.246Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:40-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff/Dept. Meeting (3:05-3:40)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2017-09-07"
+ },
+ "end": {
+ "date": "2017-09-08"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E0080000000058A6F410B3A8D201000000000000000010000000978801BC3B6E3B44B840A1D9B892ED27",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994597453118000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g74s3ge2164ojaghj84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g61234e1n6t1jgc1k70oj4d1k8d0jcc9o8cpjce1g852k6c1m610g",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc3NHMzZ2UyMTY0b2phZ2hqODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNjEyMzRlMW42dDFqZ2Mxazcwb2o0ZDFrOGQwamNjOW84Y3BqY2UxZzg1Mms2YzFtNjEwZyB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-12T20:18:46.559Z",
+ "summary": "Assembly alternate schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nAssembly for 9th/10th graders in Titan Gym (10:05-10:40)\n11th/12th graders to FlexTime\nAssembly for 11th/12th graders in Titan Gym (10:50-11:25)\n9th/10th graders to FlexTime\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2017-09-08"
+ },
+ "end": {
+ "date": "2017-09-09"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E008000000009888A115B3A8D2010000000000000000100000000D2877C80481244CA618C3680AEC060A",
+ "sequence": 1
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994740752128000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6kr3ec1o6spjighl84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g84sjee2289236e1m8crk8cpk8d136dhh711k4ghn6h234d1i6go0",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2a3IzZWMxbzZzcGppZ2hsODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnODRzamVlMjI4OTIzNmUxbThjcms4Y3BrOGQxMzZkaGg3MTFrNGdobjZoMjM0ZDFpNmdvMCB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:12:56.064Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff Collaboration (3:05-3:40)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-10-02T07:00:00-07:00"
+ },
+ "end": {
+ "dateTime": "2017-10-02T07:30:00-07:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E0080000000056708739B5A8D201000000000000000010000000A978BBD386C7D34CB3618CBB74D24240",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994741080884000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g8os30dq18gpkcghl84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g8p346cq468q3acpj60rj2h1k6t0j6gq16oqj0hi664q3egq56os0",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc4b3MzMGRxMThncGtjZ2hsODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnOHAzNDZjcTQ2OHEzYWNwajYwcmoyaDFrNnQwajZncTE2b3FqMGhpNjY0cTNlZ3E1Nm9zMCB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:15:40.442Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-10-03T07:00:00-07:00"
+ },
+ "end": {
+ "dateTime": "2017-10-03T07:30:00-07:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E00800000000F807AD3FB5A8D201000000000000000010000000FFC3D24533071D47A3CA650FF147CE68",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994741132246000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6kpj2d2260q3ighl84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g6t1jahhp692j6c9o65142h9k8l13ac9o64s48c248os4adph6gpg",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2a3BqMmQyMjYwcTNpZ2hsODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNnQxamFoaHA2OTJqNmM5bzY1MTQyaDlrOGwxM2FjOW82NHM0OGMyNDhvczRhZHBoNmdwZyB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:16:06.123Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff/Dept. meeting (3:05-3:40)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-10-04T07:00:00-07:00"
+ },
+ "end": {
+ "dateTime": "2017-10-04T07:30:00-07:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E008000000005314B049B5A8D2010000000000000000100000007C5F92E3181BAE4EB51818D0DF8E7143",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994741187264000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g651jid1l84q4aghl84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g711k2dq68gq34gpm84r3gh9k6os46c1p8gr3cca68cs46d9j6530",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2NTFqaWQxbDg0cTRhZ2hsODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNzExazJkcTY4Z3EzNGdwbTg0cjNnaDlrNm9zNDZjMXA4Z3IzY2NhNjhjczQ2ZDlqNjUzMCB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:16:33.632Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-10-05T07:00:00-07:00"
+ },
+ "end": {
+ "dateTime": "2017-10-05T07:30:00-07:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E008000000001C945A4EB5A8D2010000000000000000100000008CA7FD42C6A68E468C09D661FC8C531F",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994741792562000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g60p3cd226d0jcghl84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g84q34h268l34agpk84qj0g9k60s36di16os42hhh6ko44c1j60q0",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2MHAzY2QyMjZkMGpjZ2hsODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnODRxMzRoMjY4bDM0YWdwazg0cWowZzlrNjBzMzZkaTE2b3M0MmhoaDZrbzQ0YzFqNjBxMCB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:21:36.281Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff Collaboration (3:05-3:40)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-10-09T07:00:00-07:00"
+ },
+ "end": {
+ "dateTime": "2017-10-09T07:30:00-07:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E008000000000264B3A6B5A8D201000000000000000010000000A42DFEFEC4A50A40836A68AF150B0304",
+ "sequence": 1
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994741815680000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g8h0jee9h6l0k6ghl84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g8l2j4c1p8l338c1n8l0jahhk6ss3cdi48p1jiha269348chp6cpg",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc4aDBqZWU5aDZsMGs2Z2hsODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnOGwyajRjMXA4bDMzOGMxbjhsMGphaGhrNnNzM2NkaTQ4cDFqaWhhMjY5MzQ4Y2hwNmNwZyB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:21:47.840Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-10-10T07:00:00-07:00"
+ },
+ "end": {
+ "dateTime": "2017-10-10T07:30:00-07:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E00800000000DA7915ACB5A8D201000000000000000010000000EE209EF407EA5F47866DFC9EB2FD2933",
+ "sequence": 1
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994741349546000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g84pj8di58h130ghl84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g6os3ad1g8l24cg9n8h33ad9k850kac1l60ok2ea38kqkadq48gpg",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc4NHBqOGRpNThoMTMwZ2hsODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNm9zM2FkMWc4bDI0Y2c5bjhoMzNhZDlrODUwa2FjMWw2MG9rMmVhMzhrcWthZHE0OGdwZyB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:17:54.773Z",
+ "summary": "PSAT Alternate Schedule (see below)",
+ "description": "8:30-12:00\nNo afternoon classes\nStaff Collaboration (1:00-3:45)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2017-10-11"
+ },
+ "end": {
+ "date": "2017-10-12"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E00800000000A346EDB0B5A8D20100000000000000001000000068540EDFA7DF554AAE0501A9CE5E7DD3",
+ "sequence": 1
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994742727110000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6h230h9k6513cghl84s48chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g8go42c1m74qkcdhh6p230hhk6csk4gpl68p32chp890jce9l64pg",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2aDIzMGg5azY1MTNjZ2hsODRzNDhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnOGdvNDJjMW03NHFrY2RoaDZwMjMwaGhrNmNzazRncGw2OHAzMmNocDg5MGpjZTlsNjRwZyB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:29:23.555Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-10-12T07:00:00-07:00"
+ },
+ "end": {
+ "dateTime": "2017-10-12T07:30:00-07:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E008000000004D0E41B6B5A8D201000000000000000010000000D0A0695F616D0F439BC522129BA69513",
+ "sequence": 1
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994741974864000\"",
+ "id": "hojd86o2bffq2i6g360d49osu0",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=aG9qZDg2bzJiZmZxMmk2ZzM2MGQ0OW9zdTAgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-13T16:22:49.000Z",
+ "updated": "2017-06-13T16:23:07.432Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nE period (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2017-10-13"
+ },
+ "end": {
+ "date": "2017-10-14"
+ },
+ "transparency": "transparent",
+ "iCalUID": "hojd86o2bffq2i6g360d49osu0@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994742843896000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6gsjge1k84ojce9h84sk8chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g6gojadi18l146g9h8l230e1k8513gc9j712jgd9i64pk4dpo6cr0_20171106T150000Z",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2Z3NqZ2Uxazg0b2pjZTloODRzazhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNmdvamFkaTE4bDE0Nmc5aDhsMjMwZTFrODUxM2djOWo3MTJqZ2Q5aTY0cGs0ZHBvNmNyMF8yMDE3MTEwNlQxNTAwMDBaIHU1bWdiMnZsZGRmajcwZDdmcmYzcjAxNWgwQGc",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:30:21.948Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff Collaboration (3:05-3:40)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-11-06T07:00:00-08:00"
+ },
+ "end": {
+ "dateTime": "2017-11-06T07:30:00-08:00"
+ },
+ "recurringEventId": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6gsjge1k84ojce9h84sk8chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g6gojadi18l146g9h8l230e1k8513gc9j712jgd9i64pk4dpo6cr0",
+ "originalStartTime": {
+ "dateTime": "2017-11-06T07:00:00-08:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E0080000000049884A1691A9D2010000000000000000100000004156AEBCA1ED084AB8138E85213B7836",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994742909710000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6gsjge1k84ojce9h84sk8chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g6gojadi18l146g9h8l230e1k8513gc9j712jgd9i64pk4dpo6cr0_20171107T150000Z",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2Z3NqZ2Uxazg0b2pjZTloODRzazhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNmdvamFkaTE4bDE0Nmc5aDhsMjMwZTFrODUxM2djOWo3MTJqZ2Q5aTY0cGs0ZHBvNmNyMF8yMDE3MTEwN1QxNTAwMDBaIHU1bWdiMnZsZGRmajcwZDdmcmYzcjAxNWgwQGc",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:30:54.855Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-11-07T07:00:00-08:00"
+ },
+ "end": {
+ "dateTime": "2017-11-07T07:30:00-08:00"
+ },
+ "recurringEventId": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6gsjge1k84ojce9h84sk8chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g6gojadi18l146g9h8l230e1k8513gc9j712jgd9i64pk4dpo6cr0",
+ "originalStartTime": {
+ "dateTime": "2017-11-07T07:00:00-08:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E0080000000049884A1691A9D2010000000000000000100000004156AEBCA1ED084AB8138E85213B7836",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994742957798000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6gsjge1k84ojce9h84sk8chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g6gojadi18l146g9h8l230e1k8513gc9j712jgd9i64pk4dpo6cr0_20171108T150000Z",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2Z3NqZ2Uxazg0b2pjZTloODRzazhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNmdvamFkaTE4bDE0Nmc5aDhsMjMwZTFrODUxM2djOWo3MTJqZ2Q5aTY0cGs0ZHBvNmNyMF8yMDE3MTEwOFQxNTAwMDBaIHU1bWdiMnZsZGRmajcwZDdmcmYzcjAxNWgwQGc",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:31:18.899Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff/Dept. meetings (3:05-3:40)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-11-08T07:00:00-08:00"
+ },
+ "end": {
+ "dateTime": "2017-11-08T07:30:00-08:00"
+ },
+ "recurringEventId": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6gsjge1k84ojce9h84sk8chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g6gojadi18l146g9h8l230e1k8513gc9j712jgd9i64pk4dpo6cr0",
+ "originalStartTime": {
+ "dateTime": "2017-11-08T07:00:00-08:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E0080000000049884A1691A9D2010000000000000000100000004156AEBCA1ED084AB8138E85213B7836",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743014742000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6gsjge1k84ojce9h84sk8chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g6gojadi18l146g9h8l230e1k8513gc9j712jgd9i64pk4dpo6cr0_20171109T150000Z",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2Z3NqZ2Uxazg0b2pjZTloODRzazhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNmdvamFkaTE4bDE0Nmc5aDhsMjMwZTFrODUxM2djOWo3MTJqZ2Q5aTY0cGs0ZHBvNmNyMF8yMDE3MTEwOVQxNTAwMDBaIHU1bWdiMnZsZGRmajcwZDdmcmYzcjAxNWgwQGc",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T16:31:47.371Z",
+ "summary": "Alternate Schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-11-09T07:00:00-08:00"
+ },
+ "end": {
+ "dateTime": "2017-11-09T07:30:00-08:00"
+ },
+ "recurringEventId": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g6gsjge1k84ojce9h84sk8chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g6gojadi18l146g9h8l230e1k8513gc9j712jgd9i64pk4dpo6cr0",
+ "originalStartTime": {
+ "dateTime": "2017-11-09T07:00:00-08:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E0080000000049884A1691A9D2010000000000000000100000004156AEBCA1ED084AB8138E85213B7836",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994770627416000\"",
+ "id": "_60q30c1g60o30e1i60o4ac1g60rj8gpl88rj2c1h84s34h9g60s30c1g60o30c1g60pj6chp70s3ge9h84sk8chg64o30c1g60o30c1g60o30c1g60o32c1g60o30c1g68rk4chn6ks3egpj690jah9k6t132hhk6gp3icpk64rj8gpg751g",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=XzYwcTMwYzFnNjBvMzBlMWk2MG80YWMxZzYwcmo4Z3BsODhyajJjMWg4NHMzNGg5ZzYwczMwYzFnNjBvMzBjMWc2MHBqNmNocDcwczNnZTloODRzazhjaGc2NG8zMGMxZzYwbzMwYzFnNjBvMzBjMWc2MG8zMmMxZzYwbzMwYzFnNjhyazRjaG42a3MzZWdwajY5MGphaDlrNnQxMzJoaGs2Z3AzaWNwazY0cmo4Z3BnNzUxZyB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-06T21:00:33.000Z",
+ "updated": "2017-06-13T20:21:53.708Z",
+ "summary": "Turkey Feast  (see alternate schedule below)",
+ "description": "Period E (8:25-9:46)\nBrunch (9:56-10:11)\nFlexTime (10:11-11:57)\nPeriod B (11:07-12:13)\nExtended Lunch (12:13-1:13)\nPeriod A (1:13-2:19)\nPeriod G (2:29-3:35)\n\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-11-16T12:00:00-08:00"
+ },
+ "end": {
+ "dateTime": "2017-11-16T13:00:00-08:00"
+ },
+ "visibility": "public",
+ "iCalUID": "040000008200E00074C5B7101A82E008000000000332988891A9D20100000000000000001000000027B27587C32A5E47B1F442934174C09C",
+ "sequence": 1
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994770698846000\"",
+ "id": "r1km3ccjetc9pqejo1ac5jc1t0",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=cjFrbTNjY2pldGM5cHFlam8xYWM1amMxdDAgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:25:36.000Z",
+ "updated": "2017-06-13T20:22:29.423Z",
+ "summary": "Staff Holiday Luncheon (see alt. schedule below)",
+ "description": "Period E (8:25-9:46)\nBrunch (9:56-10:11)\nFlexTime (10:11-11:57)\nPeriod B (11:07-12:13)\nExtended Lunch (12:13-1:13)\nPeriod A (1:13-2:19)\nPeriod G (2:29-3:35)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "dateTime": "2017-12-07T12:00:00-08:00"
+ },
+ "end": {
+ "dateTime": "2017-12-07T13:00:00-08:00"
+ },
+ "transparency": "transparent",
+ "iCalUID": "r1km3ccjetc9pqejo1ac5jc1t0@google.com",
+ "sequence": 1
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743292274000\"",
+ "id": "k3atlrpu0rha9a9lpr9dpsbsuo",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=azNhdGxycHUwcmhhOWE5bHByOWRwc2JzdW8gdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:26:15.000Z",
+ "updated": "2017-06-13T16:34:06.137Z",
+ "summary": "Final Exams (see alternate schedule below)",
+ "description": "Period B Final (8:30-10:10)\nBrunch (10:10-10:25)\nPeriod D Final (10:30-12:10)\nBreak with NO LUNCH SERVED (12:10-12:40)\nZero & H Period Finals (12:45-2:25)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2017-12-19"
+ },
+ "end": {
+ "date": "2017-12-20"
+ },
+ "transparency": "transparent",
+ "iCalUID": "k3atlrpu0rha9a9lpr9dpsbsuo@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743328812000\"",
+ "id": "5ojki2u4j57vopb5ucu0qk0s88",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=NW9qa2kydTRqNTd2b3BiNXVjdTBxazBzODggdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:26:24.000Z",
+ "updated": "2017-06-13T16:34:24.406Z",
+ "summary": "Final Exams (see alternate schedule below)",
+ "description": "Period A Final (8:30-10:10)\nBrunch (10:10-10:25)\nPeriod C Final (10:30-12:10)\nLunch (12:10-12:40)\nPeriod G Final (12:45-2:25)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2017-12-20"
+ },
+ "end": {
+ "date": "2017-12-21"
+ },
+ "transparency": "transparent",
+ "iCalUID": "5ojki2u4j57vopb5ucu0qk0s88@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743363052000\"",
+ "id": "bd71kgst4uovpnk70l2ptgdirg",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=YmQ3MWtnc3Q0dW92cG5rNzBsMnB0Z2RpcmcgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-03-24T17:56:25.000Z",
+ "updated": "2017-06-13T16:34:41.526Z",
+ "summary": "Final Exams (see alternate schedule below)",
+ "description": "Period E Final (8:30-10:10)\nBrunch (10:10-10:25)\nPeriod F Final (10:30-12:10)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2017-12-21"
+ },
+ "end": {
+ "date": "2017-12-22"
+ },
+ "transparency": "transparent",
+ "iCalUID": "bd71kgst4uovpnk70l2ptgdirg@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743461246000\"",
+ "id": "9rskfnuh14sb33njht5fs2rmk0",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=OXJza2ZudWgxNHNiMzNuamh0NWZzMnJtazAgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-13T16:35:30.000Z",
+ "updated": "2017-06-13T16:35:30.623Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff Collaboration (3:05-3:40)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-01-09"
+ },
+ "end": {
+ "date": "2018-01-10"
+ },
+ "transparency": "transparent",
+ "iCalUID": "9rskfnuh14sb33njht5fs2rmk0@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743505084000\"",
+ "id": "b84kf5f8s7c8vjpchpjn7vgrmk",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=Yjg0a2Y1ZjhzN2M4dmpwY2hwam43dmdybWsgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T19:33:04.000Z",
+ "updated": "2017-06-13T16:35:52.542Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-01-10"
+ },
+ "end": {
+ "date": "2018-01-11"
+ },
+ "transparency": "transparent",
+ "iCalUID": "b84kf5f8s7c8vjpchpjn7vgrmk@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743547598000\"",
+ "id": "suoc1oo6m53cleeou1ge14ee7k",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=c3VvYzFvbzZtNTNjbGVlb3UxZ2UxNGVlN2sgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T19:33:11.000Z",
+ "updated": "2017-06-13T16:36:13.799Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff/Dept. meeting (3:05-3:40)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-01-11"
+ },
+ "end": {
+ "date": "2018-01-12"
+ },
+ "transparency": "transparent",
+ "iCalUID": "suoc1oo6m53cleeou1ge14ee7k@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743612184000\"",
+ "id": "rd1uv8l648bg695qkftfplhin0",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=cmQxdXY4bDY0OGJnNjk1cWtmdGZwbGhpbjAgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T19:33:17.000Z",
+ "updated": "2017-06-13T16:36:46.092Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-01-12"
+ },
+ "end": {
+ "date": "2018-01-13"
+ },
+ "transparency": "transparent",
+ "iCalUID": "rd1uv8l648bg695qkftfplhin0@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743668298000\"",
+ "id": "47fbu5vk9n9v8ch6i0haul1elk",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=NDdmYnU1dms5bjl2OGNoNmkwaGF1bDFlbGsgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:30:54.000Z",
+ "updated": "2017-06-13T16:37:14.149Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff Collaboration (3:05-3:40)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-01-16"
+ },
+ "end": {
+ "date": "2018-01-17"
+ },
+ "transparency": "transparent",
+ "iCalUID": "47fbu5vk9n9v8ch6i0haul1elk@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743706066000\"",
+ "id": "gcso1hqhcn077l10396ovdd600",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=Z2NzbzFocWhjbjA3N2wxMDM5Nm92ZGQ2MDAgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:31:01.000Z",
+ "updated": "2017-06-13T16:37:33.033Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-01-17"
+ },
+ "end": {
+ "date": "2018-01-18"
+ },
+ "transparency": "transparent",
+ "iCalUID": "gcso1hqhcn077l10396ovdd600@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743740954000\"",
+ "id": "41el5aug4fr47iie8ss84po6jo",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=NDFlbDVhdWc0ZnI0N2lpZThzczg0cG82am8gdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:31:09.000Z",
+ "updated": "2017-06-13T16:37:50.477Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff/Dept. meeting (3:05-3:40)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-01-18"
+ },
+ "end": {
+ "date": "2018-01-19"
+ },
+ "transparency": "transparent",
+ "iCalUID": "41el5aug4fr47iie8ss84po6jo@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743780730000\"",
+ "id": "3q6udaidlmupismg8jng1cu54c",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=M3E2dWRhaWRsbXVwaXNtZzhqbmcxY3U1NGMgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:31:15.000Z",
+ "updated": "2017-06-13T16:38:10.365Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-01-19"
+ },
+ "end": {
+ "date": "2018-01-20"
+ },
+ "transparency": "transparent",
+ "iCalUID": "3q6udaidlmupismg8jng1cu54c@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743827640000\"",
+ "id": "i38jepca4bkva0r0nk5v6mmua4",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=aTM4amVwY2E0Ymt2YTByMG5rNXY2bW11YTQgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:35:12.000Z",
+ "updated": "2017-06-13T16:38:33.820Z",
+ "summary": "(tent) AMC Math Test (see alternate schedule below)",
+ "description": "AMC Math Test for test-takers only (8:25-9:50)\nPeriod D (10:00-11:08)\nPeriod E (11:18-12:26)\nLunch (12:26-1:09)\nPeriod A (1:09-2:17)\nPeriod G (2:27-3:35)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-02-06"
+ },
+ "end": {
+ "date": "2018-02-07"
+ },
+ "transparency": "transparent",
+ "iCalUID": "i38jepca4bkva0r0nk5v6mmua4@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743866304000\"",
+ "id": "akvpqkbv6n3gmim2gq0ufnesg0",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=YWt2cHFrYnY2bjNnbWltMmdxMHVmbmVzZzAgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:36:38.000Z",
+ "updated": "2017-06-13T16:38:53.152Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff Collaboration (3:05-3:40)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-02-12"
+ },
+ "end": {
+ "date": "2018-02-13"
+ },
+ "transparency": "transparent",
+ "iCalUID": "akvpqkbv6n3gmim2gq0ufnesg0@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743907718000\"",
+ "id": "kblosgr5tpu9dpc0e9kj71ccbc",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=a2Jsb3NncjV0cHU5ZHBjMGU5a2o3MWNjYmMgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:36:45.000Z",
+ "updated": "2017-06-13T16:39:13.859Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-02-13"
+ },
+ "end": {
+ "date": "2018-02-14"
+ },
+ "transparency": "transparent",
+ "iCalUID": "kblosgr5tpu9dpc0e9kj71ccbc@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743944520000\"",
+ "id": "824hum61214dpuhtskptnmoa7k",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=ODI0aHVtNjEyMTRkcHVodHNrcHRubW9hN2sgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:36:52.000Z",
+ "updated": "2017-06-13T16:39:32.260Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff/Dept. meeting (3:05-3:40)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-02-14"
+ },
+ "end": {
+ "date": "2018-02-15"
+ },
+ "transparency": "transparent",
+ "iCalUID": "824hum61214dpuhtskptnmoa7k@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994743983238000\"",
+ "id": "vfsa65ldls0s7hlud8pj2plb1g",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=dmZzYTY1bGRsczBzN2hsdWQ4cGoycGxiMWcgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:36:59.000Z",
+ "updated": "2017-06-13T16:39:51.619Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-02-15"
+ },
+ "end": {
+ "date": "2018-02-16"
+ },
+ "transparency": "transparent",
+ "iCalUID": "vfsa65ldls0s7hlud8pj2plb1g@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994744019910000\"",
+ "id": "8vjbb7jujqpc0opso065k79nkg",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=OHZqYmI3anVqcXBjMG9wc28wNjVrNzlua2cgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:37:17.000Z",
+ "updated": "2017-06-13T16:40:09.955Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff Collaboration (3:05-3:40)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-02-20"
+ },
+ "end": {
+ "date": "2018-02-21"
+ },
+ "transparency": "transparent",
+ "iCalUID": "8vjbb7jujqpc0opso065k79nkg@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994744059002000\"",
+ "id": "iuegtum9c78v53d1lf0t5fofdk",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=aXVlZ3R1bTljNzh2NTNkMWxmMHQ1Zm9mZGsgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:37:24.000Z",
+ "updated": "2017-06-13T16:40:29.501Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-02-21"
+ },
+ "end": {
+ "date": "2018-02-22"
+ },
+ "transparency": "transparent",
+ "iCalUID": "iuegtum9c78v53d1lf0t5fofdk@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994744092500000\"",
+ "id": "joj01d14rovdcm91sfkjnj546s",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=am9qMDFkMTRyb3ZkY205MXNma2puajU0NnMgdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:37:30.000Z",
+ "updated": "2017-06-13T16:40:46.250Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff/Dept. meeting (3:05-3:40)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-02-22"
+ },
+ "end": {
+ "date": "2018-02-23"
+ },
+ "transparency": "transparent",
+ "iCalUID": "joj01d14rovdcm91sfkjnj546s@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994744124790000\"",
+ "id": "m1ci87j0o8t3l1kl80mbba67co",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=bTFjaTg3ajBvOHQzbDFrbDgwbWJiYTY3Y28gdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:37:42.000Z",
+ "updated": "2017-06-13T16:41:02.395Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:25)\nPeriod E (11:35-12:55)\nLunch (12:55-1:35)\nPeriod G (1:35-2:55)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-02-23"
+ },
+ "end": {
+ "date": "2018-02-24"
+ },
+ "transparency": "transparent",
+ "iCalUID": "m1ci87j0o8t3l1kl80mbba67co@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994744323322000\"",
+ "id": "1497288188465",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=MTQ5NzI4ODE4ODQ2NSB1NW1nYjJ2bGRkZmo3MGQ3ZnJmM3IwMTVoMEBn",
+ "created": "2017-06-12T17:38:50.000Z",
+ "updated": "2017-06-13T16:42:41.661Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff Collaboration (3:05-3:40)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-03-13"
+ },
+ "end": {
+ "date": "2018-03-14"
+ },
+ "transparency": "transparent",
+ "iCalUID": "1497288188465@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994744372662000\"",
+ "id": "9odk10e2rvjvkqaa8d1hb8jtl8",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=OW9kazEwZTJydmp2a3FhYThkMWhiOGp0bDggdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:38:56.000Z",
+ "updated": "2017-06-13T16:43:06.331Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period D (8:25-9:50)\nBrunch (9:50-10:05)\nFlexTime (10:05-11:00)\nPeriod E (11:10-12:30)\nClash of the Titans extended lunch (12:30-1:35)\nPeriod G (1:35-2:55)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-03-14"
+ },
+ "end": {
+ "date": "2018-03-15"
+ },
+ "transparency": "transparent",
+ "iCalUID": "9odk10e2rvjvkqaa8d1hb8jtl8@google.com",
+ "sequence": 0
+ },
+ {
+ "kind": "calendar#event",
+ "etag": "\"2994744524164000\"",
+ "id": "toennh0ob46gr4c3n8kuc9peco",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=dG9lbm5oMG9iNDZncjRjM244a3VjOXBlY28gdTVtZ2IydmxkZGZqNzBkN2ZyZjNyMDE1aDBAZw",
+ "created": "2017-06-12T17:39:15.000Z",
+ "updated": "2017-06-13T16:44:22.082Z",
+ "summary": "Alternate schedule (see below)",
+ "description": "Period A (8:25-9:50)\nBrunch (9:50-10:05)\nPeriod B (10:05-11:25)\nPeriod C (11:35-12:55)\nLunch (12:55-1:35)\nPeriod F (1:35-2:55)\nStaff/Dept. meeting (3:05-3:40)\n",
+ "creator": {
+ "email": "melderon@pausd.org",
+ "displayName": "Martha Elderon"
+ },
+ "organizer": {
+ "email": "u5mgb2vlddfj70d7frf3r015h0@group.calendar.google.com",
+ "displayName": "Gunn High School",
+ "self": true
+ },
+ "start": {
+ "date": "2018-03-15"
+ },
+ "end": {
+ "date": "2018-03-16"
+ },
+ "transparency": "transparent",
+ "iCalUID": "toennh0ob46gr4c3n8kuc9peco@google.com",
+ "sequence": 0
+ }
+ ]
